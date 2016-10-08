@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/kline_tech_text_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.stockchart.MinBigTradeView android:id="@id/minute_big_trade" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.android.dazhihui.ui.widget.stockchart.GraphicView android:id="@id/minute_deals_gv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.android.dazhihui.ui.widget.stockchart.MinOrganizationTradeView android:id="@id/minute_organization_trade" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

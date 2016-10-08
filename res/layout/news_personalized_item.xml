@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_news_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/contentView" android:paddingLeft="10.0dip" android:paddingTop="20.0dip" android:paddingRight="10.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="借家电后市抢用户入口的借家电后市抢用户入口借家电后市抢用户入口借家电后市抢用户入口借家电后市抢用户入口借家电后市抢用户入口bdsbd 搞活动撒个谎 滑动是个工行" android:maxLines="2" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/kuaixun_summary" android:ellipsize="end" android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="抢用户入口借家电后市抢工行" android:singleLine="true" />
+            </LinearLayout>
+            <ImageView android:id="@id/img" android:visibility="gone" android:layout_width="90.0dip" android:layout_height="66.0dip" android:src="@drawable/about_icon" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/stockContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="#ff777777" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股市要闻" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffd7232e" android:id="@id/resType" android:background="@drawable/news_restype_bg" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="dsds" android:layout_toRightOf="@id/source" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff777777" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="18:21" android:layout_alignParentRight="true" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffe30000" android:id="@id/pinglun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2条专家评论" android:layout_toLeftOf="@id/time" android:layout_alignWithParentIfMissing="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/topLeftIco" android:visibility="visible" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/news_top_ico" />
+    <TextView android:textSize="10.0sp" android:textColor="#ffffffff" android:gravity="center|top" android:id="@id/topRightInfo" android:background="@drawable/orange_ico" android:paddingLeft="8.0dip" android:paddingTop="1.0dip" android:paddingRight="8.0dip" android:visibility="visible" android:layout_width="65.0dip" android:layout_height="20.0dip" android:text="名师面试" android:singleLine="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.adv.GifView android:id="@id/water1" android:background="@drawable/yacht_water_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.adv.GifView android:id="@id/water2" android:background="@drawable/yacht_water_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/youlun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-40.0dip" android:layout_above="@id/water1">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/youlunText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xx送了一个豪华游轮" />
+        <com.android.dazhihui.ui.widget.adv.GifView android:background="@drawable/youlun" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.adv.GifView android:id="@id/fireworks_bg" android:background="@drawable/yacht_heart_spark" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.dazhihui.ui.widget.adv.GifView android:id="@id/fireworks" android:background="@drawable/fireworks_anim3" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <com.android.dazhihui.ui.widget.adv.GifView android:id="@id/heart_arrow" android:background="@drawable/yacht_heart_arrow" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="88.0dip" />
+</RelativeLayout>

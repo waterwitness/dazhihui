@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="true"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="140" apk:drawable="@drawable/fireworks_1" />
+    <item apk:duration="140" apk:drawable="@drawable/fireworks_2" />
+    <item apk:duration="140" apk:drawable="@drawable/fireworks_3" />
+    <item apk:duration="140" apk:drawable="@drawable/fireworks_4" />
+    <item apk:duration="140" apk:drawable="@drawable/fireworks_5" />
+    <item apk:duration="140" apk:drawable="@drawable/fireworks_6" />
+</animation-list>

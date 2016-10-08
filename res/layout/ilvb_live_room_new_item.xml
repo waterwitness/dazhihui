@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:padding="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <RelativeLayout android:background="@drawable/livebar_room_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.roundedratioimageview.RoundedRatioImageView android:id="@id/ilvb_live_room_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ilvb_room_list_bg" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_alignParentTop="true" dzh:is_height_fix_drawable_size_ratio="true" dzh:height_to_width_ratio="1.0" dzh:riv_corner_radius_top_left="5.0dip" dzh:riv_corner_radius_top_right="5.0dip" dzh:riv_corner_radius_bottom_left="0.0dip" dzh:riv_corner_radius_bottom_right="0.0dip" dzh:riv_mutate_background="true" />
+        <TextView android:textSize="@dimen/font11" android:textColor="#9affffff" android:id="@id/ilvb_live_tag1" android:background="@drawable/ilvb_room_list_text_bg" android:paddingLeft="@dimen/dip2" android:paddingRight="@dimen/dip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/room_hongbao_info" android:background="@drawable/livebar_room_item_hongbao" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="8.0sp" android:textColor="#ffd7091b" android:gravity="center" android:id="@id/room_hongbao_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:text="1.2万" android:singleLine="true" />
+            <ImageView android:id="@id/room_hongbao_img" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/money_icon" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </LinearLayout>
+        <RelativeLayout android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ilvb_live_room_image">
+            <com.android.dazhihui.ui.widget.NoEllipsisTextView android:textSize="11.0sp" android:textColor="#ff999999" android:ellipsize="none" android:gravity="center" android:id="@id/ilvb_live_room_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:maxWidth="@dimen/dip45" android:singleLine="true" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip2" android:layout_marginRight="@dimen/dip5" android:layout_toRightOf="@id/ilvb_live_room_name" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/dip11" android:layout_height="@dimen/dip14" android:src="@drawable/ilvb_room_location_small" android:scaleType="centerInside" />
+                    <com.android.dazhihui.ui.widget.NoEllipsisTextView android:textSize="11.0dip" android:textColor="#ff999999" android:ellipsize="none" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/ilvb_live_room_location" android:paddingBottom="@dimen/dip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="火星人" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/funkstock_layout01_f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dip5" android:layout_below="@id/addTitle">
+        <LinearLayout android:orientation="horizontal" android:id="@id/funkstock_left_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/gray" android:gravity="center" android:id="@id/funkstock_rmb_button" android:background="@color/white" android:paddingTop="@dimen/dip4" android:paddingBottom="@dimen/dip4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rmb" />
+                <ImageView android:id="@id/funkstock_rmb_indicator" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/funkstock_rmb_button" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/gray" android:gravity="center" android:id="@id/funkstock_doller_button" android:background="@color/white" android:paddingTop="@dimen/dip4" android:paddingBottom="@dimen/dip4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/doller" />
+                <ImageView android:id="@id/funkstock_doller_indicator" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/funkstock_doller_button" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="16.0dip" android:textColor="@color/gray" android:gravity="center" android:id="@id/funkstock_hk_button" android:background="@color/white" android:paddingTop="@dimen/dip4" android:paddingBottom="@dimen/dip4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hkdol" />
+                <ImageView android:id="@id/funkstock_hk_indicator" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/funkstock_hk_button" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:background="#ffd0d0d0" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_marginBottom="@dimen/dip2" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/auto_ll" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <HorizontalScrollView android:id="@id/auto_sv1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableLayout android:id="@id/auto_table" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <ImageView android:background="#ffd0d0d0" android:layout_width="@dimen/dip1" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <HorizontalScrollView android:id="@id/auto_sv2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TableLayout android:id="@id/auto_table2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*" />
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/divider" android:background="#ffd0d0d0" android:layout_width="fill_parent" android:layout_height="@dimen/dip5" android:layout_marginTop="@dimen/dip8" android:layout_below="@id/funkstock_layout01_f" />
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/funkstock_tableLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="true" dzh:title="@string/gpmc" />
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/idIL" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/menu_ty11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/item_menustyle" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/idIIL" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/menu_ty22" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/item_menustyle" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/idIIIL" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/menu_ty23" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/item_menustyle" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/idIIIIL" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:id="@id/menu_ty24" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/item_menustyle" />
+            <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center|right" android:id="@id/moreCont" android:clickable="true" android:layout_width="@dimen/dip40" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/btnMoreNews" android:background="@android:color/transparent" android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:layout_marginRight="@dimen/dip1" android:src="@drawable/news_more_btn" />
+    </LinearLayout>
+</merge>

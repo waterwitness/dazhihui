@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="anim" name="adv_down_in">false</item>
+    <item type="anim" name="adv_up_out">false</item>
+    <item type="anim" name="gd_grow_from_bottom">false</item>
+    <item type="anim" name="gd_grow_from_bottomleft_to_topright">false</item>
+    <item type="anim" name="gd_grow_from_bottomright_to_topleft">false</item>
+    <item type="anim" name="gd_grow_from_top">false</item>
+    <item type="anim" name="gd_grow_from_topleft_to_bottomright">false</item>
+    <item type="anim" name="gd_grow_from_topright_to_bottomleft">false</item>
+    <item type="anim" name="gd_shrink_from_bottom">false</item>
+    <item type="anim" name="gd_shrink_from_bottomleft_to_topright">false</item>
+    <item type="anim" name="gd_shrink_from_bottomright_to_topleft">false</item>
+    <item type="anim" name="gd_shrink_from_top">false</item>
+    <item type="anim" name="gd_shrink_from_topleft_to_bottomright">false</item>
+    <item type="anim" name="gd_shrink_from_topright_to_bottomleft">false</item>
+    <item type="anim" name="popup_down_out">false</item>
+    <item type="anim" name="popup_up_in">false</item>
+</resources>

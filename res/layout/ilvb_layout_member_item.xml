@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="37.0dip" android:layout_height="35.0dip">
+        <com.tencent.avsdk.CircularImageButton android:layout_gravity="center_horizontal" android:id="@id/ilvb_head_image" android:background="@drawable/ilvb_circle_button_bg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ilvb_user_img" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/ilvb_member_level_layout" android:background="@drawable/ilvb_top_list_num_bg" android:paddingLeft="@dimen/dip2" android:paddingTop="@dimen/dip2" android:paddingRight="@dimen/dip2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="8.0sp" android:textColor="#ffe3f5fe" android:ellipsize="none" android:gravity="center" android:id="@id/ilvb_member_num" android:layout_width="@dimen/dip11" android:layout_height="@dimen/dip9" android:text="0" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ilvb_member_height_level_image" android:visibility="gone" android:layout_width="@dimen/dip24" android:layout_height="@dimen/dip13" android:layout_marginRight="-8.0dip" android:src="@drawable/ilvb_member_level_yueliang" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:ellipsize="none" android:layout_gravity="center_horizontal" android:id="@id/ilvb_member_name" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:singleLine="true" android:shadowColor="@color/black" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+</LinearLayout>

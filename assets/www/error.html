@@ -1,0 +1,58 @@
+﻿
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>404 - 对不起，您查找的页面不存在！</title>
+<script type="text/javascript" src="js/cordova-3.5.0.js"></script>
+<style>
+html,body{text-align:center;margin:0;padding:0;background-color: #efeff4;height: 100%;}
+#error{/*position:absolute;top:0;bottom:0;width:100%;*/color:#aaa;}	
+</style>
+</head>
+<body onclick="refresh();">
+<div id="error">
+	<img alt="" style="width:100px;margin-top:20%;"  src="images/refresh_02.png" />
+	<p>轻触屏幕重新加载</p>
+</div>
+<script type="text/javascript">
+
+		//按钮事件
+	document.addEventListener("backbutton", eventBackButton, false); //返回键
+	
+
+	//返回键
+	function eventBackButton(){
+		var params={};
+		params['action'] = "showToast";
+		cordova.exec(function(args){
+			alert(args);
+
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+	}
+
+
+	function refresh(){
+		
+		var params={};
+		params['action'] = "refresh";
+		cordova.exec(function(args){
+
+
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+
+	};
+
+
+</script>
+</html>

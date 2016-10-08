@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="com.szkingdom.activity" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
+    <name>
+Hello Cordova
+</name>
+    <description> A sample Apache Cordova application that responds to the deviceready event.
+</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io"> Apache Cordova Team
+</author>
+    <access origin="*" />
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="App">
+        <param name="android-package" value="org.apache.cordova.App" />
+    </feature>
+    <feature name="webInterface">
+        <param name="android-package" value="com.kwlopen.sdk.KwlOpenCordovaPlugin" />
+    </feature>
+    <feature name="KwlSignCertificate">
+        <param name="android-package" value="com.kwlopen.sdk.KwlSignCertificatePlugin" />
+    </feature>
+</widget>

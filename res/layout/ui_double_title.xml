@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:enabled="false" android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/title_lock" android:focusable="false" android:layout_width="70.0dip" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:text="沪深A股" android:singleLine="true" android:layout_alignParentLeft="true" android:isScrollContainer="false" />
+    <ImageView android:id="@id/arrow_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_src" android:layout_toRightOf="@id/title_lock" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrow_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_src" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <FrameLayout android:gravity="center_vertical" android:id="@id/title_container" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/arrow_right" android:layout_toRightOf="@id/arrow_left">
+        <LinearLayout android:orientation="horizontal" android:id="@id/title_content" android:layout_width="600.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="250.0dip" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/title_fst_year" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="2012年预期" android:layout_weight="1.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center|top" android:id="@id/title_fst_year_eps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="每股收益(EPS)" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center|top" android:id="@id/title_fst_scale" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="3日变动↓" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="250.0dip" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/title_snd_year" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="2013年预期" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center|top" android:id="@id/title_snd_year_eps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="每股收益(EPS)" android:singleLine="true" android:layout_weight="1.0" />
+                    <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center|top" android:id="@id/title_snd_scale" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="3日变动↓" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/title_count" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="一月预测次数" />
+        </LinearLayout>
+    </FrameLayout>
+</merge>

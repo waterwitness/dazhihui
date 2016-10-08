@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/menu_group" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/edit_selfstock" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/edit_selfstock_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selfstock_menu_edit_image" android:scaleType="centerInside" />
+                <TextView android:textColor="@color/theme_white_stock_name" android:gravity="center" android:id="@id/edit_selfstock_text" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minHeight="32.0dip" android:text="编辑" android:singleLine="true" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cancel_sort" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/cancel_sort_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selfstock_cancel_sort" android:scaleType="centerInside" />
+                <TextView android:textColor="@color/theme_white_self_stock_line" android:gravity="center" android:id="@id/cancel_sort_text" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minHeight="32.0dip" android:text="取消排序" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/selfstock_menu_2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/selfstock_menu_2_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selfstock_menu_2_image" android:scaleType="centerInside" />
+                <TextView android:textColor="@color/theme_white_stock_name" android:gravity="center" android:id="@id/selfstock_menu_2_text" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minHeight="32.0dip" android:text="新闻" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/zx_sort" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/theme_white_stock_name" android:gravity="center" android:id="@id/zx_sort_text" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:text="最新" android:singleLine="true" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/zx_sort_text" android:layout_centerVertical="true">
+                <ImageView android:id="@id/zx_sort_asc" android:layout_width="9.0dip" android:layout_height="5.0dip" android:scaleType="fitXY" />
+                <ImageView android:id="@id/zx_sort_desc" android:layout_width="9.0dip" android:layout_height="5.0dip" android:scaleType="fitXY" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/zf_sort" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/theme_white_stock_name" android:gravity="center" android:id="@id/zf_sort_text" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:text="涨幅" android:singleLine="true" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/zf_sort_text" android:layout_centerVertical="true">
+                <ImageView android:id="@id/zf_sort_asc" android:layout_width="9.0dip" android:layout_height="5.0dip" android:scaleType="fitXY" />
+                <ImageView android:id="@id/zf_sort_desc" android:layout_width="9.0dip" android:layout_height="5.0dip" android:scaleType="fitXY" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/theme_black_gridview_divider_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/menu_group" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/trade_login_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/haveOpenedAccount" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/imageView_add" android:background="@drawable/btn_selector" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="15.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加开户券商" />
+        </LinearLayout>
+        <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0sp" android:layout_marginTop="9.0dip" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TabPageIndicator android:id="@id/market_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <com.android.dazhihui.ui.widget.MyViewPager android:id="@id/market_pager" android:background="@color/theme_black_market_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

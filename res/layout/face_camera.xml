@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <SurfaceView android:id="@id/sView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:background="@drawable/border_dash" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="50.0dip" android:layerType="software" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <Button android:textColor="#ffffffff" android:id="@id/take" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="拍  照" android:layout_weight="1.0" android:onClick="capture" />
+        <Button android:textColor="#ffffffff" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取  消" android:layout_weight="1.0" android:onClick="cancel" />
+    </LinearLayout>
+</LinearLayout>

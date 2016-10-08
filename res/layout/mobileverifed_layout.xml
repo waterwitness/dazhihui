@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/addTitle">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@id/tx_mobileverifed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入手机号码激活" />
+        <EditText android:id="@id/et_mobileverifed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:numeric="integer" android:layout_below="@id/tx_mobileverifed" />
+        <Button android:textColor="@android:color/white" android:id="@id/btn_mobileverifed" android:background="@drawable/btn_blue_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确  定" android:layout_below="@id/et_mobileverifed" android:layout_centerHorizontal="false" />
+        <TextView android:textSize="20.0sp" android:id="@id/show" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/btn_mobileverifed" />
+        <TextView android:textSize="20.0sp" android:id="@id/show2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/show" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:id="@id/tx" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如未注册，请发送" android:layout_below="@id/show2" android:layout_alignBaseline="@id/btn_init" />
+        <Button android:textColor="@android:color/white" android:id="@id/btn_init" android:background="@drawable/btn_blue_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="短  信" android:layout_toRightOf="@id/tx" android:layout_below="@id/show2" android:layout_centerHorizontal="false" />
+    </RelativeLayout>
+</RelativeLayout>

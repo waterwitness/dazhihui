@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:camera="http://schemas.android.com/apk/res-auto">
+    <com.kwlopen.sdk.camera.FocusImageView android:id="@id/focusImageView" android:layout_width="75.0dip" android:layout_height="75.0dip" camera:focus_focusing_id="@drawable/kwlopen_focus_focusing" camera:focus_success_id="@drawable/kwlopen_focus_focused" camera:focus_fail_id="@drawable/kwlopen_focus_focus_failed" />
+</RelativeLayout>

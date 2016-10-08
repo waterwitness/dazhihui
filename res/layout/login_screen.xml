@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" dzh:midText="登录" dzh:leftDrawable="@drawable/back_arrow" style="@style/lottery_title" />
+    <ScrollView android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/dzh_logo" android:contentDescription="@null" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/etView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <ImageView android:id="@id/nickImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dip5" android:src="@drawable/username_bg" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/nickCancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lottery_register_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <EditText android:textSize="@dimen/font14" android:textColorHint="@color/darkgray" android:id="@id/loginNick" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip5" android:layout_marginRight="@dimen/dip5" android:hint="@string/loginHint" android:singleLine="true" android:layout_toLeftOf="@id/nickCancel" android:layout_toRightOf="@id/nickImg" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/wo_lines" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <ImageView android:id="@id/pwdImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dip5" android:src="@drawable/password_bg" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/pwdCancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lottery_register_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <EditText android:textSize="@dimen/font14" android:textColorHint="@color/darkgray" android:id="@id/loginPwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip5" android:layout_marginRight="@dimen/dip5" android:hint="@string/pwdLogin" android:singleLine="true" android:layout_toLeftOf="@id/pwdCancel" android:layout_toRightOf="@id/pwdImg" android:layout_centerVertical="true" android:inputType="textPassword" style="@style/pwd_format" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="right" android:id="@id/forgetView" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                <TextView android:textSize="@dimen/font14" android:textColor="@drawable/reg_tv_color" android:id="@id/forgetPwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.0dip" android:layout_marginBottom="20.0dip" android:text="@string/forgetPwd" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <TextView android:textSize="@dimen/font14" android:textColor="@drawable/reg_tv_color" android:gravity="center" android:id="@id/normalReg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户名注册" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="@drawable/reg_tv_color" android:gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" />
+                    <TextView android:textSize="@dimen/font14" android:textColor="@drawable/reg_tv_color" android:gravity="center" android:id="@id/fastReg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="一键注册" />
+                </LinearLayout>
+            </RelativeLayout>
+            <Button android:textSize="@dimen/font16" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/confirmBtn" android:background="@drawable/login_submit_bg" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="登　录" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/toldfriend_comphone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

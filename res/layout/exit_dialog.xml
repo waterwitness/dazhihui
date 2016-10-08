@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_style" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/message" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="19.0dip" android:text="是否退出？" />
+    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_style" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <Button android:textSize="@dimen/text_size" android:textColor="@color/main_gray" android:id="@id/btn_exit_ok" android:background="@drawable/dialog_btn_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="退出登录" android:layout_weight="1.0" />
+        <View android:background="#ffd1d1d1" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/text_size" android:textColor="@color/main_gray" android:id="@id/btn_middle" android:background="@drawable/dialog_btn_style" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="只听音频" android:layout_weight="1.0" />
+        <View android:id="@id/btn_middle_divider" android:background="#ffd1d1d1" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/text_size" android:textColor="#ffdc3839" android:id="@id/btn_exit_cancel" android:background="@drawable/dialog_btn_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="暂不退出" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

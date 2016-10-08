@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/theme_black_market_label_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/moreTv" android:paddingLeft="@dimen/dip15" android:paddingTop="@dimen/dip15" android:paddingRight="@dimen/dip10" android:paddingBottom="@dimen/dip15" android:layout_width="@dimen/dip50" android:layout_height="@dimen/dip36" android:src="@drawable/theme_black_label_more" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc" />
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/theme_black_market_list_label_name" android:gravity="center" android:id="@id/market_label_title" android:layout_width="wrap_content" android:layout_height="@dimen/dip36" android:layout_marginLeft="@dimen/dip10" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/theme_black_self_stock_label_name" android:gravity="center" android:id="@id/jump_bar" android:background="@drawable/theme_black_label_jump_bg" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:minWidth="64.0dip" android:layout_toLeftOf="@id/moreTv" android:layout_centerVertical="true" />
+</RelativeLayout>

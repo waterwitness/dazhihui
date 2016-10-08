@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/mainmenu_layout" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.android.dazhihui.ui.delegate.view.TradeAccountSwitchView android:id="@id/rasv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="#ffeeeeee" android:paddingLeft="@dimen/font15" android:paddingRight="@dimen/font15" android:layout_width="fill_parent" android:layout_height="@dimen/dip120" android:weightSum="2.0">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10" android:weightSum="3.0" android:layout_weight="1.0">
+                        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_zzc_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="总资产" />
+                            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_zzc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_zsz_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="证券市值" />
+                            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_zsz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_zyk_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="总盈亏" />
+                            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_zyk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="@dimen/dip10" android:weightSum="3.0" android:layout_weight="1.0">
+                        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_kyzj_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可用资金" />
+                            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_kyzj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_kqzj_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可取资金" />
+                            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/tv_kqzj" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <Button android:textSize="13.0sp" android:textColor="@drawable/fund_button_text_color_reverse" android:gravity="center" android:layout_gravity="center|left" android:id="@id/btn_yzzz" android:background="@drawable/fund_button_hot_guide" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip8" android:layout_marginBottom="@dimen/dip4" android:minWidth="75.0dip" android:minHeight="30.0dip" android:text="银证转账" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/fund_trade_menu" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_dbpmr" android:background="@drawable/btn_fest_background" android:paddingTop="@dimen/dip7" android:paddingBottom="@dimen/dip7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                            <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_margin_buy" android:scaleType="centerInside" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_dbpmr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="担保品买" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_dbpmc" android:background="@drawable/btn_fest_background" android:paddingTop="@dimen/dip7" android:paddingBottom="@dimen/dip7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                            <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_margin_sell" android:scaleType="centerInside" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_dbpmc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="担保品卖" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_rzmr" android:background="@drawable/btn_fest_background" android:paddingTop="@dimen/dip7" android:paddingBottom="@dimen/dip7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                            <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_buy" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_rzmr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="融资买" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_rqmc" android:background="@drawable/btn_fest_background" android:paddingTop="@dimen/dip7" android:paddingBottom="@dimen/dip7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                            <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_sell" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_rqmc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="融券卖" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_cancel" android:background="@drawable/btn_fest_background" android:paddingTop="@dimen/dip7" android:paddingBottom="@dimen/dip7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                            <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_chedan" />
+                            <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="撤单" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                    <LinearLayout android:orientation="vertical" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10">
+                        <LinearLayout android:orientation="vertical" android:id="@id/ll_listview" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_exit" android:layout_alignParentTop="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

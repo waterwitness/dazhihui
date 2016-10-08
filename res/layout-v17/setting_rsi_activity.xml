@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#ff2e3137" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true">
+        <com.android.dazhihui.ui.widget.WriteableImageView android:id="@id/head_menu_left" android:paddingLeft="3.0dip" android:paddingTop="7.0dip" android:paddingRight="1.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="@dimen/cheader_item_height" android:layout_marginLeft="2.0dip" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RSI" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/kilne_indicator_reset_color" android:id="@id/reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="恢复默认" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fff0f0f5" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <EditText android:textSize="19.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/value1" android:background="@drawable/offline_capital_et_bg" android:layout_width="60.0dip" android:layout_height="35.0dip" android:maxLength="3" android:layout_centerVertical="true" android:inputType="number" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="#ff222222" android:id="@id/tv1_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="日" android:layout_toRightOf="@id/value1" android:layout_centerVertical="true" android:layout_toEndOf="@id/value1" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <SeekBar android:id="@id/seekBar1" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="98" android:progress="0" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/setting_kline_seekbar_thumb_bg" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="#ff222222" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:text="2" android:layout_alignLeft="@id/seekBar1" android:layout_alignBottom="@id/seekBar1" android:layout_alignStart="@id/seekBar1" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="#ff222222" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:text="100" android:layout_alignRight="@id/seekBar1" android:layout_alignBottom="@id/seekBar1" android:layout_alignEnd="@id/seekBar1" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <EditText android:textSize="19.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/value2" android:background="@drawable/offline_capital_et_bg" android:layout_width="60.0dip" android:layout_height="35.0dip" android:maxLength="3" android:layout_centerVertical="true" android:inputType="number" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="#ff222222" android:id="@id/tv2_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="日" android:layout_toRightOf="@id/value2" android:layout_centerVertical="true" android:layout_toEndOf="@id/value2" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <SeekBar android:id="@id/seekBar2" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="98" android:progress="0" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/setting_kline_seekbar_thumb_bg" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="#ff222222" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:text="2" android:layout_alignLeft="@id/seekBar2" android:layout_alignBottom="@id/seekBar2" android:layout_alignStart="@id/seekBar2" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="#ff222222" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:text="100" android:layout_alignRight="@id/seekBar2" android:layout_alignBottom="@id/seekBar2" android:layout_alignEnd="@id/seekBar2" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/white_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <EditText android:textSize="19.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/value3" android:background="@drawable/offline_capital_et_bg" android:layout_width="60.0dip" android:layout_height="35.0dip" android:maxLength="3" android:layout_centerVertical="true" android:inputType="number" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="#ff222222" android:id="@id/tv3_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="日" android:layout_toRightOf="@id/value3" android:layout_centerVertical="true" android:layout_toEndOf="@id/value3" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <SeekBar android:id="@id/seekBar3" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="98" android:progress="0" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/setting_kline_seekbar_thumb_bg" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="#ff222222" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:text="2" android:layout_alignLeft="@id/seekBar3" android:layout_alignBottom="@id/seekBar3" android:layout_alignStart="@id/seekBar3" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="#ff222222" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10.0dip" android:text="100" android:layout_alignRight="@id/seekBar3" android:layout_alignBottom="@id/seekBar3" android:layout_alignEnd="@id/seekBar3" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="RSI" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" />
+            <RelativeLayout android:background="@color/white_color" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rsi_info" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+</RelativeLayout>

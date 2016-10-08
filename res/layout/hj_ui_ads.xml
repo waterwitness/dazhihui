@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <FrameLayout android:id="@id/advertContent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:id="@id/up_block_ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/advertContent">
+        <com.android.dazhihui.ui.widget.flip.ViewFlow android:id="@id/vf_ad_news" android:layout_width="fill_parent" android:layout_height="@dimen/dip180" />
+        <com.android.dazhihui.ui.widget.flip.CircleFlowIndicator android:id="@id/vf_indic_ad_news" android:padding="@dimen/dip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:layout_marginBottom="@dimen/dip12" android:layout_alignRight="@id/vf_ad_news" android:layout_alignBottom="@id/vf_ad_news" dzh:activeColor="#ff3399ff" dzh:inactiveColor="#ff808080" dzh:radius="2.399994dip" dzh:inactiveType="fill" dzh:activeType="fill" dzh:circleSeparation="@dimen/dip15" />
+    </RelativeLayout>
+</RelativeLayout>

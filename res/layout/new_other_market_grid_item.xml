@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="91.0dip" android:layout_height="@dimen/dip40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text" style="@style/style_other_market_text" />
+    <ImageView android:id="@id/hot_or_new" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="hot or new" />
+</RelativeLayout>

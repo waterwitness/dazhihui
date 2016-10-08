@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/captial_analysis_bg" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="@dimen/dip50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_above="@id/line" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_weight="1.0">
+            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_medium" android:textColor="@color/captial_stock_black" android:gravity="center|left" android:id="@id/tv_stock_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="国泰君安" android:layout_weight="1.0" />
+            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_smaller" android:textColor="@color/captial_stock_gray" android:gravity="center|left" android:id="@id/tv_stock_code" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="134644" android:layout_weight="1.0" />
+        </LinearLayout>
+        <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="18.0dip" android:textColor="@color/captial_stock_red" android:gravity="center" android:id="@id/tv_ykje" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="64646" android:layout_weight="1.0" />
+        <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="18.0dip" android:textColor="@color/captial_stock_red" android:gravity="center" android:id="@id/tv_jyfy" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="64646" android:layout_weight="1.0" />
+        <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="18.0dip" android:textColor="@color/captial_stock_black" android:gravity="center" android:id="@id/tv_cgts" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="64646" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

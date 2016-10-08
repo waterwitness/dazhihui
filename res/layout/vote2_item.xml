@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/darkgray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_order_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1.000" android:layout_weight="1.2" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关于。。。。。" android:layout_weight="0.8" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_vote_rule" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip8" android:text="2\n2000" />
+            <EditText android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/et_vote" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip8" android:text="" android:numeric="integer" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

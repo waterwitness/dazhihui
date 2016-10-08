@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip80"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/v0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+    <include android:id="@id/v7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/gift_item" />
+</LinearLayout>

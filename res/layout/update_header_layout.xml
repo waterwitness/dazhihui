@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_update" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="@dimen/cheader_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_updating" android:background="#ffeeeeee" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.adv.GifView android:layout_gravity="center" android:id="@id/gifview" android:layout_width="@dimen/dip80" android:layout_height="@dimen/dip10" android:layout_marginTop="@dimen/dip5" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="正在更新数据" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_updated" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="更新成功" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/gray" android:gravity="center" android:id="@id/tv_updatetime" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="当前数据同步于。。。" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

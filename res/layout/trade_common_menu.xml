@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainmenu_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/common_chicang_advertview_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.delegate.view.TradeAccountSwitchView android:id="@id/rasv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/common_chicang_advertview_id" />
+    <View android:id="@id/line" android:background="#ffebebeb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/rasv" />
+    <GridView android:id="@id/mainmenu_gridall" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchMode="columnWidth" android:layout_below="@id/line" />
+</RelativeLayout>

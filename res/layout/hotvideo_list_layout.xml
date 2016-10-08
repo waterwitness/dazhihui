@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/theme_white_19_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhMainHeader android:id="@id/dzhMainHeader_live" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView android:id="@id/hotlist_refersh_id" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dzhMainHeader_live">
+        <com.android.dazhihui.ui.widget.ScrollPeakRelativeLayout android:id="@id/scrollPeakRelativeLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/adv_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/top_advert147" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wo_top_adv_none" android:scaleType="center" />
+                <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advert147" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="35.0dip">
+                    <ImageView android:id="@id/hongbao" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="34.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/buttom_icon_hongbao" android:scaleType="fitXY" />
+                    <com.tencent.avsdk.widget.MyGallery android:id="@id/hot_gallery_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="35.0dip" android:overScrollMode="never" />
+                </LinearLayout>
+                <View android:id="@id/div" android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/tab_button" />
+                <android.support.v4.view.ViewPager android:id="@id/mVp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/div" />
+            </RelativeLayout>
+        </com.android.dazhihui.ui.widget.ScrollPeakRelativeLayout>
+    </com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView>
+    <RelativeLayout android:id="@id/zhezhao" android:background="#e0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advert137" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/adv_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/adv_close" android:layout_above="@id/advert137" android:layout_alignRight="@id/advert137" />
+    </RelativeLayout>
+    <ImageView android:id="@id/woyaobo_iv" android:paddingRight="5.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,100 @@
+﻿{
+    "data": {
+        "config": [
+            {
+                "nodelist": [
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/kh.png",
+                        "menuname": "投顾送金股",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://tg.gw.com.cn/qudaotb.php?type=389&&DZHSPECIAL=61",
+                        "countid": 41303
+                    },
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/kh.png",
+                        "menuname": "万2.5佣金",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://tg.gw.com.cn/qudaotb.php?type=390&&DZHSPECIAL=61",
+                        "countid": 41304
+                    },
+                    {
+                        "calltype": 1,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/msg.png",
+                        "menuname": "消息",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "123",
+                        "countid": 41299
+                    },
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/qb.png",
+                        "menuname": "钱包",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://ads.gw.com.cn/adsFrontv/adsMoney.php?service=coinrecord&DZHSPECIAL=285",
+                        "countid": 41300
+                    },
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/ds.png",
+                        "menuname": "选导师",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://htg.yundzh.com/star/index?DZHSPECIAL=285",
+                        "countid": 41302
+                    },
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/gyq.png",
+                        "menuname": "股友圈",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://htg.yundzh.com/friend/dynamicInfo?DZHSPECIAL=285",
+                        "countid": 41309
+                    },
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/ht.png",
+                        "menuname": "兑奖",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://shop.yundzh.com/exchange?DZHSPECIAL=253",
+                        "countid": 20022
+                    },
+                    {
+                        "calltype": 2,
+                        "imagepath": "http://mnews.gw.com.cn/wap/style/tn/images/menu/yjfk.png",
+                        "menuname": "客服",
+                        "apppackage": "",
+                        "menuflag": 1,
+                        "callurl": "http://120.26.113.153/client/embed.php?&backURL=1&DZHSPECIAL=253",
+                        "countid": 41305
+                    }
+                ],
+                "nodename": ""
+            },
+            {
+                "nodelist": [],
+                "nodename": "频道"
+            }
+        ]
+    },
+    "header": {
+        "Url_Link": "http://tg.gw.com.cn/qudaotb.php?type=335&DZHSPECIAL=61",
+        "vs": "201507242222",
+        "period": 3600,
+        "IsExistence": 2,
+        "page_Url": "http://htg.yundzh.com/wo/index_1.html",
+        "indexApp": [
+            {
+                "starTime": "06:00",
+                "endTime": "20:00"
+            }
+        ]
+    }
+}

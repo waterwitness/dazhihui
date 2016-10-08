@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tab_text" android:text="@string/stockchart_trade_tab" style="@style/main_tab_menu_text" />
+    <ImageView android:id="@id/tab_image" android:src="@drawable/theme_black_tab_icon_fund" android:layout_above="@id/tab_text" style="@style/main_tab_menu_image" />
+</merge>

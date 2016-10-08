@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_normal" />
+    <RelativeLayout android:id="@id/userInfoView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dip10">
+        <LinearLayout android:orientation="vertical" android:id="@id/userView" android:background="@drawable/add_warn_fra_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mUserName" />
+                <ImageView android:id="@id/nameArrow" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:src="@drawable/ldb_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/nameArrow" />
+            </RelativeLayout>
+            <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/nickView" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/nickArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:src="@drawable/ldb_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_nichen" />
+                <TextView android:id="@id/nickTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:layout_toLeftOf="@id/nickArrow" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/bindPhoneView" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cellphone" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/dip5" android:src="@drawable/ldb_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textColor="@color/black" android:id="@id/verify" android:background="#ffffaf00" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="@dimen/dip5" android:text="验证" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+                <TextView android:id="@id/isBind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@id/verify" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/integral" />
+                <TextView android:id="@id/integral" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@drawable/list_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/grade" />
+                <ImageView android:id="@id/grade5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grade_unchecked" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/grade4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grade_unchecked" android:layout_toLeftOf="@id/grade5" />
+                <ImageView android:id="@id/grade3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grade_unchecked" android:layout_toLeftOf="@id/grade4" />
+                <ImageView android:id="@id/grade2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grade_unchecked" android:layout_toLeftOf="@id/grade3" />
+                <ImageView android:id="@id/grade1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/grade_unchecked" android:layout_toLeftOf="@id/grade2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:text="@string/userLimit" android:layout_below="@id/userView" />
+    </RelativeLayout>
+    <ListView android:id="@id/settingManagerList" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip15" android:listSelector="@drawable/item_bg" android:cacheColorHint="@android:color/transparent" android:divider="@color/wo_item_line" android:dividerHeight="1.0px" />
+</LinearLayout>

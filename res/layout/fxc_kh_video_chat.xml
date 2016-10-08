@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#ff101318" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:background="#ff1d2228" android:layout_width="fill_parent" android:layout_height="43.0dip" android:text="视频见证" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <SurfaceView android:id="@id/sv_remote" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/tv_custId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客服号:" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/tv_occupationNumber" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="职业编号:" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/userup_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上行：0KB/S" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:id="@id/userdown_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="下行：0KB/S" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/tv_text_msg" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="您好，见证开始了，请不要随意挂断或者离开" android:maxLines="2" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <SurfaceView android:id="@id/sv_local" android:layout_width="176.0dip" android:layout_height="185.0dip" android:layout_marginTop="5.0dip" />
+    <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_leave" android:background="#ff009be7" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="挂断" />
+</LinearLayout>

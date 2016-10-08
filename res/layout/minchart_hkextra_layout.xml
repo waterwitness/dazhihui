@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/fuse_contain_id" android:background="#fffff9de" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/dip30"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:src="@drawable/home_advert_1" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="#fff85800" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hkstock_fuse_details_tips" android:singleLine="true" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:src="@drawable/home_advert_2" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

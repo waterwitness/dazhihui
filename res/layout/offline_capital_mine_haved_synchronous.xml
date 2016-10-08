@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/wholeLayout" android:background="@color/asedittext_btn_text_color" android:layout_width="fill_parent" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/tongbuhad_linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="14.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/back_color" android:id="@id/entrustName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="爱建证券" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/back_color" android:id="@id/entrustLoginAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="****6625" />
+            </LinearLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#ffc2c2c5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="当日盈亏" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip">
+                <TextView android:textSize="24.0sp" android:textColor="@color/red" android:id="@id/number1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/red" android:id="@id/number2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+                <ImageView android:id="@id/gotoImage" android:background="@drawable/icon_plate_more" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textColor="#ffc2c2c5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总资产" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:id="@id/numbertotalcapitcal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+                <View android:layout_gravity="center_horizontal" android:background="#ffd6d6d6" android:layout_width="0.5dip" android:layout_height="40.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                    <TextView android:textColor="#ffc2c2c5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="仓位" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff222222" android:id="@id/shippingPositionText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

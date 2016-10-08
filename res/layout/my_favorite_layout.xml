@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView android:id="@id/refresh_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mainmenu_upbar">
+        <ListView android:id="@id/my_favorite_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffe8e8e8" android:dividerHeight="@dimen/dip1" />
+    </com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView>
+    <RelativeLayout android:id="@id/favorite_none_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mainmenu_upbar">
+        <ImageView android:id="@id/favorite_none" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="100.0dip" android:src="@drawable/favorite_none" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/font16" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip15" android:text="现在可以收藏资讯咯~" android:layout_below="@id/favorite_none" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

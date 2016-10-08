@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/ilvb_loading_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频正在连接中..." android:layout_centerInParent="true" />
+    <ImageView android:id="@id/loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/ilvb_loading_video_icon" android:scaleType="centerInside" android:layout_above="@id/loading_text" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:layout_marginRight="@dimen/dip5" android:layout_alignParentBottom="true">
+        <View android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/dip40" android:layout_weight="6.0" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/loading_close" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_room_btn_top_close2" android:scaleType="centerInside" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.tencent.avsdk.widget.GameOverView android:id="@id/ilvb_game_over_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

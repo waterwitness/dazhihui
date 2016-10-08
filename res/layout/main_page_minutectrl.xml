@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/minuteCtl_fl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_alignParentLeft="true">
+        <com.android.dazhihui.ui.widget.MinuteParentView android:orientation="vertical" android:id="@id/minuteGraph_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.android.dazhihui.ui.widget.MinutePriceView android:id="@id/minute_price" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.android.dazhihui.ui.widget.MinuteTradeVolumeView android:id="@id/minute_deals" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="2.0" />
+        </com.android.dazhihui.ui.widget.MinuteParentView>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:stretchColumns="1">
+        <TableRow android:orientation="horizontal" android:id="@id/tableRow1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip20">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="客户号" />
+            <EditText android:id="@id/editText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </TableRow>
+        <TableRow android:orientation="horizontal" android:id="@id/tableRow2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dip20">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="普通交易密码" />
+            <EditText android:id="@id/editText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true" android:singleLine="true" />
+        </TableRow>
+    </TableLayout>
+    <Button android:textSize="@dimen/font_medium" android:textColor="@color/white_color" android:id="@id/button1" android:background="@drawable/btn_blue_blue" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:text="确定" />
+</LinearLayout>

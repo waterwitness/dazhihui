@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dip10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+        <Button android:textSize="@dimen/font_medium" android:textColor="@drawable/fund_button_text_color_reverse" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/btn_exit" android:background="@drawable/fund_button_hot_guide" android:layout_width="fill_parent" android:layout_height="@dimen/dip40" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip30" android:minWidth="75.0dip" android:minHeight="30.0dip" android:text="退出委托" />
+    </LinearLayout>
+</LinearLayout>

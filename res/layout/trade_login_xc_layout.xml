@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.delegate.view.TradeHeader android:id="@id/trade_header" android:background="#ff2e3036" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <FrameLayout android:id="@id/trade_main_page" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/trade_header" />
+</RelativeLayout>

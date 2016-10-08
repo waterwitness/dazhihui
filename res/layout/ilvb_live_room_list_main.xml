@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/room_list_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:tag="sticky" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dip45">
+            <com.android.dazhihui.ui.widget.IlvbTabPageIndicator android:id="@id/roomTabPageIndicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <View android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_alignParentBottom="true" />
+            <RelativeLayout android:gravity="center" android:background="@drawable/ilvb_room_list_top_left_bg" android:paddingLeft="@dimen/dip2" android:paddingRight="@dimen/dip3" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="#ff75758a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="视吧" android:maxEms="1" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.android.dazhihui.ui.widget.WrapContentHeightViewPager android:id="@id/room_pager" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" />
+    </LinearLayout>
+    <View android:id="@id/gap_view" android:tag="sticky" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" />
+    <com.android.dazhihui.ui.widget.MyWebView android:id="@id/room_webview" android:background="@color/wo_news_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip1" />
+</LinearLayout>

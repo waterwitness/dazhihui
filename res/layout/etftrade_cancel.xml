@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" />
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/ll_old_table" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="false" dzh:title="@string/gpmc" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_table" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/img_buyorsell" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wt_buy_small" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="left" android:id="@id/tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="委托时间" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="价格/状态" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="委托/成交" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="center" android:id="@id/tv_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="操作" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_nothing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:layout_marginTop="@dimen/dip40" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip40" android:src="@drawable/norecord" />
+            <ListView android:id="@id/lv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

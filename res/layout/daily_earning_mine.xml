@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/hui_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/daily_earning_buzu" />
+    <TextView android:textSize="25.0sp" android:textColor="@color/back_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="余额不足" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff808080" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="余额不足，无法自动参与天天盈" />
+    <TextView android:textSize="18.0sp" android:textColor="#fff26c4f" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="74.0dip" android:text="首次参与需5万1千元，之后不限金额" />
+</LinearLayout>

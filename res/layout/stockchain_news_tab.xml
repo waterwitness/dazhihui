@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/zixun_tab_ll_out" android:background="#fff3f3f7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/zixun_tab_ll_in" android:background="@drawable/news_stock_tab_white_bg" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/left_btn" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="全部" android:layout_weight="1.0" />
+        <View android:layout_gravity="center" android:id="@id/div_line1" android:background="#ffd6d6d6" android:layout_width="1.0sp" android:layout_height="25.0dip" />
+        <TextView android:textSize="17.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/middle_btn" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="公告" android:layout_weight="1.0" />
+        <View android:layout_gravity="center" android:id="@id/div_line2" android:background="#ffd6d6d6" android:layout_width="1.0sp" android:layout_height="25.0dip" />
+        <TextView android:textSize="17.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/right_btn" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="研报" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

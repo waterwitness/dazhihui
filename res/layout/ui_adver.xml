@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/advContent" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.flip.ViewFlow android:id="@id/vf_ad" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageButton android:layout_gravity="center|right" android:id="@id/adv_btn_close" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="35.0dip" android:contentDescription="@string/app_name" />
+    <com.android.dazhihui.ui.widget.flip.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/vf_indic_advert" android:padding="@dimen/dip2" android:layout_width="wrap_content" android:layout_height="wrap_content" dzh:activeColor="#ff3399ff" dzh:inactiveColor="#ff808080" dzh:radius="2.399994dip" dzh:inactiveType="fill" dzh:activeType="fill" dzh:circleSeparation="@dimen/dip15" />
+</FrameLayout>

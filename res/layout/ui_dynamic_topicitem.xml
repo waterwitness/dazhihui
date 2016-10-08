@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/topic_layout" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#fff3f3f3" android:gravity="left" android:id="@id/topic_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/my_gray2" android:id="@id/topic_user" android:visibility="gone" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/topic_title" />
+    <TextView android:textSize="14.0sp" android:textColor="#fff3f3f3" android:id="@id/topic_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_content_to_title" android:layout_below="@id/topic_user" android:lineSpacingMultiplier="1.1" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_time_to_content" android:layout_below="@id/topic_content">
+        <TextView android:textSize="12.0sp" android:textColor="#ffaeb3b8" android:gravity="right" android:id="@id/topic_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:layout_alignParentRight="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaeb3b8" android:gravity="center_horizontal" android:id="@id/topic_viewnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaeb3b8" android:gravity="left" android:id="@id/topic_replynum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+</RelativeLayout>

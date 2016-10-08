@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_self_stock_layout" android:background="@drawable/theme_black_selfstock_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/hq_list_item_h"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:id="@id/topView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_alignParentLeft="true">
+                <com.android.dazhihui.ui.widget.BgTextView android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/loanTv" android:background="#ffd48700" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" dzh:borderColor="#ffd48700" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/theme_black_stock_name" android:layout_gravity="center_vertical" android:id="@id/tv_name" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:singleLine="true" />
+                <com.android.dazhihui.ui.widget.BgTextView android:textSize="18.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/starMark" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" dzh:borderColor="#00000000" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/code_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_below="@id/topView" android:layout_alignParentLeft="true">
+                <com.android.dazhihui.ui.widget.BgTextView android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center_vertical" android:background="#ffd48700" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" dzh:borderColor="#ffd48700" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/theme_black_stock_code" android:layout_gravity="center_vertical" android:id="@id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginBottom="0.0dip" />
+                <com.android.dazhihui.ui.widget.BorderedTextView android:textSize="12.0sp" android:textColor="#ffff9c00" android:layout_gravity="center_vertical" android:id="@id/ping_top" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="顶" dzh:borderColor="#ff9c00" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="#ffd48700" android:id="@id/try_long_click" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="请长按试试" android:singleLine="true" android:drawableLeft="@drawable/alert_home" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center|right" android:id="@id/tv_zxj" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center|right" android:id="@id/zfView" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_zf" android:background="@color/theme_black_selfstock_zhang" android:layout_width="90.0dip" android:layout_height="40.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/divide_line" android:background="@color/theme_black_self_stock_second_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

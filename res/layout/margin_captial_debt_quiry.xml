@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/TopFrame" android:background="#dddddddd" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/ListView" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

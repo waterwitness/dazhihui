@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/kline_tec_title1" android:paddingLeft="@dimen/dip3" android:layout_width="fill_parent" android:layout_height="@dimen/dip34" android:text="1.日分析" style="@style/kline_tec_layout" />
+    <TextView android:id="@id/kline_tec_11" android:paddingLeft="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="@dimen/dip34" android:text="资金流入：" style="@style/kline_tec_layout_text" />
+    <View android:id="@id/tview0" android:background="@color/kline_tech_view_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@id/kline_tec_12" android:paddingLeft="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="@dimen/dip34" android:text="BS提示：" style="@style/kline_tec_layout_text" />
+    <View android:id="@id/tview1" android:background="@color/kline_tech_view_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:id="@id/kline_tec_13" android:paddingLeft="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="@dimen/dip34" android:text="短线：" style="@style/kline_tec_layout_text" />
+    <TextView android:id="@id/kline_tec_title_2" android:paddingLeft="@dimen/dip3" android:layout_width="fill_parent" android:layout_height="@dimen/dip34" android:text="2.周分析" style="@style/kline_tec_layout" />
+    <LinearLayout android:id="@id/kline_five_day" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip34">
+        <TextView android:id="@id/kline_tec_21" android:paddingLeft="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="@dimen/dip34" android:text="5日涨幅：" style="@style/kline_tec_layout_text" />
+        <TextView android:layout_gravity="right" android:id="@id/kline_tec_22" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:text="5日资金流入：" style="@style/kline_tec_layout_text" />
+    </LinearLayout>
+    <View android:id="@id/tview2" android:background="@color/kline_tech_view_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip34">
+        <TextView android:id="@id/kline_tec_31" android:paddingLeft="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="@dimen/dip34" android:text="5日最高：" style="@style/kline_tec_layout_text" />
+        <TextView android:layout_gravity="right" android:id="@id/kline_tec_32" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:text="5日最低：" style="@style/kline_tec_layout_text" />
+    </LinearLayout>
+    <View android:id="@id/tview3" android:background="@color/kline_tech_view_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip34">
+        <TextView android:id="@id/kline_tec_41" android:paddingLeft="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="@dimen/dip34" android:text="5日均价：" style="@style/kline_tec_layout_text" />
+        <TextView android:id="@id/kline_tec_42" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:text="5日换手：" style="@style/kline_tec_layout_text" />
+    </LinearLayout>
+    <TextView android:id="@id/kline_tec_title_3" android:paddingLeft="@dimen/dip3" android:layout_width="fill_parent" android:layout_height="@dimen/dip34" android:text="3.月分析" style="@style/kline_tec_layout" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip34">
+        <TextView android:id="@id/kline_tec_51" android:paddingLeft="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="@dimen/dip34" android:text="30日涨幅:" style="@style/kline_tec_layout_text" />
+        <TextView android:textSize="@dimen/dip16" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/kline_tec_52" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:text="30日资金流入：" />
+    </LinearLayout>
+    <View android:id="@id/tview4" android:background="@color/kline_tech_view_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip34">
+        <TextView android:id="@id/kline_tec_61" android:paddingLeft="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="@dimen/dip34" android:text="30日最高：" style="@style/kline_tec_layout_text" />
+        <TextView android:id="@id/kline_tec_62" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:text="30日最低：" style="@style/kline_tec_layout_text" />
+    </LinearLayout>
+    <View android:id="@id/tview5" android:background="@color/kline_tech_view_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip34">
+        <TextView android:id="@id/kline_tec_71" android:paddingLeft="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="@dimen/dip34" android:text="30日均价：" style="@style/kline_tec_layout_text" />
+        <TextView android:id="@id/kline_tec_72" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:text="30日换手：" style="@style/kline_tec_layout_text" />
+    </LinearLayout>
+</LinearLayout>

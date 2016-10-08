@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="10.0dip">
+        <TableRow>
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股东帐号：" />
+            <Spinner android:layout_gravity="center" android:id="@id/accountSpinner" android:padding="5.0sp" android:layout_width="0.0dip" android:layout_height="45.0dip" android:drawSelectorOnTop="true" android:text="" android:layout_weight="1.0" style="@style/trade_spinner_style_bk" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/codeText" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ETF代码：" />
+            <EditText android:id="@id/codeEdit" android:padding="5.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLength="6" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/codeNameText" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\u0009\u0009\u0009\u0009" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/MoneyFund_canTextView" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用资金：" />
+            <EditText android:id="@id/canEdit" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:id="@id/limitRow">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/limitText" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赎回上限：" />
+            <EditText android:id="@id/limitEidt" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow>
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/operateText" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赎回份额：" />
+            <EditText android:id="@id/operateEidt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:inputType="numberDecimal" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <Button android:textSize="@dimen/font_medium" android:textColor="@color/white_color" android:id="@id/confrimBtn" android:background="@drawable/btn_blue_blue" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="赎回" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/ETFFund_ClearButton" android:background="@drawable/btn_white_white" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/qinkong" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

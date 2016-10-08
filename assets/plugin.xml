@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin-features  
+	Bundle-Name="手机开户"
+	Bundle-SymbolicName="com.cairh.app.sjkh"	
+	Bundle-Version="1.0.0"
+	date="2013.10.223"
+	provider-name="" 
+	provider-url="" 
+	Bundle-Activator="com.cairh.app.sjkh.osgi.SimpleBundle"
+	Bundle-Activity="com.cairh.app.sjkh.MainActivity"
+	>
+</plugin-features>

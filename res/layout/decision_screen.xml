@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/decistion_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="14.0sp" android:textColor="#ff5e5e5e" android:gravity="center|left" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="推荐工具" />
+            <View android:background="#ffcfcfcf" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item1" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image1" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_dde_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:text="DDE决策" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="#ffcfcfcf" android:layout_width="1.0px" android:layout_height="65.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item2" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image2" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_ggzj_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="个股资金" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="#ffcfcfcf" android:layout_width="1.0px" android:layout_height="65.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item3" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image3" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_bkzj_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="板块资金" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffcfcfcf" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item4" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image4" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_zhangfu_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="5分钟涨幅" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="#ffcfcfcf" android:layout_width="1.0px" android:layout_height="65.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item5" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image5" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_ylyc_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="盈利预期" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="#ffcfcfcf" android:layout_width="1.0px" android:layout_height="65.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item6" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image6" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_gjyj_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="股价预警" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffcfcfcf" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="65.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item7" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image7" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_jdtj_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="阶段统计" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="#ffcfcfcf" android:layout_width="1.0px" android:layout_height="65.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item8" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image8" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_dzlh_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="龙虎榜" />
+                </LinearLayout>
+                <View android:layout_gravity="center_vertical" android:background="#ffcfcfcf" android:layout_width="1.0px" android:layout_height="65.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/item9" android:background="@drawable/decision_grid_bg" android:paddingTop="0.0dip" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/image9" android:layout_width="30.0dip" android:layout_height="31.0dip" android:src="@drawable/decision_ydzt_icon" android:scaleType="centerInside" />
+                    <TextView android:textSize="14.0sp" android:textColor="#ff9195a2" android:id="@id/text9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="异动主题" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffcfcfcf" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.android.dazhihui.ui.widget.MyWebView android:id="@id/market_menu_webview" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.dazhihui.richscan.view.ViewfinderView android:id="@id/viewfinder_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/richscan_header" android:background="@drawable/head_bg" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/head_back" android:paddingLeft="3.0dip" android:paddingTop="7.0dip" android:paddingRight="1.0dip" android:paddingBottom="7.0dip" android:layout_width="40.0dip" android:layout_height="34.0dip" android:layout_marginLeft="2.0dip" android:src="@drawable/back_bt" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="二维码" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

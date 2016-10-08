@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_setting_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:id="@id/rlQuoteColor" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="涨跌颜色风格" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/iv_setting_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_plate_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:id="@id/tvQuoteColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="红涨绿跌" android:layout_toLeftOf="@id/iv_setting_1" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_setting_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="下单、撤单确认" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/tbTradeColor" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" />
+            <RelativeLayout android:background="@drawable/item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="下单显示交易费用" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ToggleButton android:id="@id/tbTradeCost" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_setting_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="登入后显示免责声明" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ToggleButton android:id="@id/tbShowTip" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:textOn="" android:textOff="" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_setting_4" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rlOvertime" android:background="@drawable/item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="超时保护" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_plate_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffe5e5e5" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" />
+            <RelativeLayout android:id="@id/rlChangeAccount" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="@dimen/font_small" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="更换账号" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/icon_plate_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

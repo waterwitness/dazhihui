@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" dzh:setType="centerMessage" />
+    <com.android.dazhihui.ui.widget.MessageListView android:id="@id/message_list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:divider="@color/transparent" android:dividerHeight="@dimen/dip0" android:layout_below="@id/title" />
+    <ImageView android:id="@id/msg_empty_img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/msg_empty_bg" android:scaleType="center" android:layout_below="@id/title" />
+</RelativeLayout>

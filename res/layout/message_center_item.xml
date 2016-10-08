@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/textColor" android:id="@id/yyyymmdd_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip15" android:text="51分钟前" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip10" android:layout_below="@id/yyyymmdd_view">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/img_view" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="center" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/textColor" android:gravity="center" android:id="@id/mmss_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/message_RelativeLayoutt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/left_layout">
+            <TextView android:textSize="13.0sp" android:textColor="@color/text_color" android:id="@id/message_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:id="@id/gujiayujing_LinearLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/gujiaguanli_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/set" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/gujiaguanli_text" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="管理" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/message_layout" android:background="@drawable/push_message_bg_gray" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minHeight="@dimen/dip60" android:layout_toRightOf="@id/left_layout" android:layout_below="@id/message_RelativeLayoutt">
+            <TextView android:textSize="15.0sp" android:textColor="@color/text_color" android:id="@id/message_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/goto_url_view" android:layout_width="wrap_content" android:layout_height="@dimen/dip32" android:layout_marginTop="@dimen/dip5">
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:gravity="center|left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message_center_watch" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/minute_index_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/goto_min_chat_layout" android:layout_width="wrap_content" android:layout_height="@dimen/dip32" android:layout_marginTop="@dimen/dip5">
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5">
+                    <TextView android:textSize="12.0sp" android:textColor="@color/textColor" android:gravity="center|left" android:id="@id/goto_min_chat_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/message_center_min_chat" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/minute_index_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

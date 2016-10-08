@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/tablelayout_title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" dzh:midText="大智慧" dzh:midTextColor="#ffaaaaaa" dzh:leftDrawable="@drawable/icon_menu" dzh:rightDrawable="@drawable/icon_search" dzh:menuDrawable="@drawable/icon_operation" />
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/table_tableLayout" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/tablelayout_title" />
+</RelativeLayout>

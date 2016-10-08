@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height">
+            <ImageView android:id="@id/backBtn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow" android:contentDescription="@null" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:singleLine="true" />
+        </LinearLayout>
+        <ScrollView android:id="@id/scrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/topImg" android:visibility="gone" layout="@layout/hj_ui_ads" />
+                <TextView android:textSize="15.0sp" android:textColor="#ff757575" android:id="@id/jiexi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="" android:lineSpacingExtra="3.0dip" />
+                <ImageView android:id="@id/xggg_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/shap_line" />
+                <com.android.dazhihui.ui.widget.NoScrollGridView android:id="@id/xggg" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="5.0dip" android:verticalSpacing="7.0dip" android:numColumns="4" />
+                <TextView android:textSize="16.0sp" android:textColor="#ff757575" android:gravity="center|left" android:background="#ffe3e3e3" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="专题动态" />
+                <com.android.dazhihui.ui.widget.NoScrollListView android:id="@id/listView" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="@android:color/transparent" android:divider="#ffcfcfcf" android:dividerHeight="1.0px" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.PageLoadTip android:id="@id/pageloadTip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" />
+</FrameLayout>

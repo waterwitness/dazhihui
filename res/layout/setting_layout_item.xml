@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/leftImg" android:layout_width="47.0dip" android:layout_height="47.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/wo_text_color" android:ellipsize="end" android:layout_gravity="center" android:id="@id/settingName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="预警" android:singleLine="true" android:drawablePadding="15.0dip" android:layout_below="@id/leftImg" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/itemRed" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_toRightOf="@id/leftImg" />
+</RelativeLayout>

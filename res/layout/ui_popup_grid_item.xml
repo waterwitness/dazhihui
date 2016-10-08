@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="64.0dip" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/icon_main_page" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        <TextView android:textSize="10.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/count" android:background="#ffff0000" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16.0dip" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/home_page" style="@style/tab_menu_text" />
+</LinearLayout>

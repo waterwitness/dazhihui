@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="crh_rec_start">false</item>
+    <item type="drawable" name="crh_restart">false</item>
+    <item type="drawable" name="crh_use">false</item>
+    <item type="drawable" name="crh_video_left">false</item>
+    <item type="drawable" name="crh_video_play">false</item>
+    <item type="drawable" name="crh_video_rigth">false</item>
+    <item type="drawable" name="gerenzhongxin_mengban_one">false</item>
+    <item type="drawable" name="gerenzhongxin_mengban_two">false</item>
+    <item type="drawable" name="help_search_people">false</item>
+    <item type="drawable" name="kwl_titlebar_refresh">false</item>
+    <item type="drawable" name="kwlopen_record_back_nor">false</item>
+    <item type="drawable" name="kwlopen_record_back_press">false</item>
+    <item type="drawable" name="kwlopen_record_start_nor">false</item>
+    <item type="drawable" name="kwlopen_record_start_press">false</item>
+    <item type="drawable" name="kwlopen_record_stop_nor">false</item>
+    <item type="drawable" name="kwlopen_record_stop_press">false</item>
+    <item type="drawable" name="kwlopen_shot1">false</item>
+    <item type="drawable" name="kwlopen_shot2">false</item>
+    <item type="drawable" name="kwlopen_stock_open_switchvideo">false</item>
+    <item type="drawable" name="kwlopen_switchvideo">false</item>
+    <item type="drawable" name="mbg_corner">false</item>
+</resources>

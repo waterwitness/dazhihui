@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/head_ll" android:background="@color/theme_black_market_list_label_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ff666666" android:gravity="center|left" android:id="@id/tuijian_tv" android:layout_width="wrap_content" android:layout_height="@dimen/dip35" android:layout_marginLeft="10.0dip" android:text="向您推荐" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_zx" android:layout_weight="1.0" style="@style/item_menustyle" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_zjl" android:layout_weight="1.0" style="@style/item_menustyle" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_zxll" android:layout_weight="1.0" style="@style/item_menustyle" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+    </LinearLayout>
+    <TextView android:id="@id/menu_ty4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_qqsc" android:layout_weight="1.0" style="@style/item_menustyle" />
+</merge>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/main_header" android:background="@drawable/title_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <ScrollView android:id="@id/myscrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_top" android:background="@color/captial_analysis_header_red" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:layout_marginBottom="@dimen/dip5">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/tv_start_date" android:background="@drawable/captial_anal_trade_detial_date_frame_style" android:padding="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-05-04" />
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip30" android:text="至" />
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/tv_end_date" android:background="@drawable/captial_anal_trade_detial_date_frame_style" android:padding="@dimen/dip5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-05-04" />
+                </LinearLayout>
+                <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip60">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/tv_qjyk_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+                        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/tv_qjsy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:text="--" />
+                    </LinearLayout>
+                    <View android:background="@color/captial_analysis_divider" android:layout_width="2.0px" android:layout_height="fill_parent" />
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股票区间涨跌幅" />
+                        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/tv_gpqjzdf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:text="--" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cgmm" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:text="持股--天，买入--次，卖出--次" />
+                <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:id="@id/frame_middle" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" />
+                <FrameLayout android:id="@id/frame_kline" android:layout_width="fill_parent" android:layout_height="@dimen/dip210" />
+            </LinearLayout>
+            <com.android.dazhihui.ui.delegate.newtrade.widge.TableView android:id="@id/tableview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

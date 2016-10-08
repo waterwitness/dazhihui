@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.delegate.newtrade.widge.UpdateHeaderView android:id="@id/update_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.android.dazhihui.ui.delegate.newtrade.widge.CaptialPeriodSelector android:id="@id/period_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip40" app:period_selector_type="1" />
+    <com.android.dazhihui.ui.delegate.newtrade.widge.NormalScrollView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip5">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <com.android.dazhihui.ui.delegate.newtrade.widge.CaptialAnalPeriodTrend android:id="@id/periodtrend" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <com.android.dazhihui.ui.delegate.newtrade.widge.CaptialAnalPeriodStock android:id="@id/periodstock" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+            <com.android.dazhihui.ui.delegate.newtrade.widge.CaptialAnalPeriodOperation android:id="@id/periodoperation" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.android.dazhihui.ui.delegate.newtrade.widge.NormalScrollView>
+</LinearLayout>

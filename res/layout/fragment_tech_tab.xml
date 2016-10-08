@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0f1317" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.PartScrollView android:id="@id/kling_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/klinelay_layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.android.dazhihui.ui.widget.KlineTechnicalLay android:id="@id/klineTechTab" android:layout_width="fill_parent" android:layout_height="530.0dip" />
+                <com.android.dazhihui.ui.widget.PageLoadTip android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/klineloading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.android.dazhihui.ui.widget.PartScrollView>
+</RelativeLayout>

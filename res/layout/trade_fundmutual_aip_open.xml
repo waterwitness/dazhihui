@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.haitong">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/shape08" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+        <TableRow>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/codeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金代码" />
+                <EditText android:id="@id/codeEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLength="6" android:layout_weight="1.0" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:id="@id/infoText" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="详细信息" />
+                <EditText android:id="@id/infoEdit" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/companyText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金公司" />
+                <EditText android:textSize="14.0sp" android:id="@id/companyEdit" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/nameText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金名称" />
+                <EditText android:textSize="14.0sp" android:id="@id/nameEdit" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/typeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定投方式" />
+                <Spinner android:textSize="14.0sp" android:id="@id/typeSpinner" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/cycleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="扣款日" />
+                <Spinner android:textSize="14.0sp" android:id="@id/daySpinner" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/startText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始日期" />
+                <EditText android:textSize="14.0sp" android:id="@id/startEdit" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/endText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结束日期" />
+                <EditText android:textSize="14.0sp" android:id="@id/endEdit" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:id="@id/operateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="定投金额" />
+                <EditText android:id="@id/operateEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="15.0sp" android:id="@id/canText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用资金" />
+                <TextView android:textSize="14.0sp" android:id="@id/can" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <Button android:id="@id/confrimBtn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.0dip" android:layout_marginRight="37.0dip" android:text="开通" />
+    <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提示：实际扣款日如遇节假日顺延，该月无该扣款日时 该月不扣款。" />
+</LinearLayout>

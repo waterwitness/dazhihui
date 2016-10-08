@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <View android:background="#ffe0e1e6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_marginTop="@dimen/dip20" />
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tx2" android:layout_width="@dimen/dip80" android:layout_height="wrap_content" android:text="旧密码" android:layout_centerVertical="true" />
+        <EditText android:id="@id/et2" android:background="@color/white" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:password="true" android:singleLine="true" android:layout_toRightOf="@id/tx2" />
+    </RelativeLayout>
+    <View android:background="#ffe0e1e6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" />
+    <View android:background="#ffe0e1e6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_marginTop="@dimen/dip20" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingLeft="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tx3" android:layout_width="@dimen/dip80" android:layout_height="wrap_content" android:text="新密码" android:layout_centerVertical="true" />
+            <EditText android:id="@id/et3" android:background="@color/white" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:password="true" android:singleLine="true" android:layout_toRightOf="@id/tx3" />
+        </RelativeLayout>
+        <View android:background="#ffe0e1e6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_marginLeft="@dimen/dip10" />
+        <RelativeLayout android:paddingLeft="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tx4" android:layout_width="@dimen/dip80" android:layout_height="wrap_content" android:text="确认密码" android:layout_centerVertical="true" />
+            <EditText android:id="@id/et4" android:background="@color/white" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:password="true" android:singleLine="true" android:layout_toRightOf="@id/tx4" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#ffe0e1e6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" />
+    <TextView android:textSize="@dimen/font_smaller" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip10" android:text="密码由6-20位英文字母、数字或符号组成" />
+    <Button android:textSize="@dimen/font_small" android:textColor="@color/white_color" android:id="@id/btn" android:background="@drawable/btn_blue_blue" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:text="确认" />
+</LinearLayout>

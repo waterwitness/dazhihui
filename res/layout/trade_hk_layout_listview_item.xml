@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/xc_list_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white_color" android:id="@id/tvCurrency" android:background="@color/back_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="HK" />
+        <ImageView android:id="@id/img_buyorsell" android:background="@drawable/wt_buy_small" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/xcData0" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_gravity="left" android:id="@id/xcData0name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="浦发银行" />
+            <TextView android:layout_gravity="left" android:id="@id/xcData0value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100965.00" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/xcData1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_gravity="right" android:id="@id/xcData1value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5567.08" />
+            <TextView android:layout_gravity="right" android:id="@id/xcData1value2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7.86%" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/xcData2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_gravity="right" android:id="@id/xcData2value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5567.08" />
+            <TextView android:layout_gravity="right" android:id="@id/xcData2value2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="567.08" />
+        </LinearLayout>
+        <Button android:gravity="center" android:id="@id/cancelxc" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="撤单" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/xcData3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:layout_gravity="right" android:id="@id/xcData3value1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5567.08" />
+            <TextView android:layout_gravity="right" android:id="@id/xcData3value2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="7.86%" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_festmenu" android:background="#ffefeef4" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/tv_festbuy" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="买入" android:drawableLeft="@drawable/wt_buy" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/tv_festsell" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="卖出" android:drawableLeft="@drawable/wt_sell" android:layout_weight="1.0" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/tv_hq" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="行情" android:drawableLeft="@drawable/wt_hq" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

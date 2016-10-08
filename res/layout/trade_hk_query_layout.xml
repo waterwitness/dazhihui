@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.delegate.screen.hk.DropDownTextView android:id="@id/order_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_date" android:background="@color/white" android:paddingLeft="@dimen/dip10" android:paddingTop="@dimen/dip20" android:paddingRight="@dimen/dip10" android:paddingBottom="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/ll_start_date" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/query_start_date" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/tv_start_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-05-04" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wt_query_icon" android:layout_toLeftOf="@id/ll_end_date" android:layout_toRightOf="@id/ll_start_date" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_end_date" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/query_end_date" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/tv_end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-05-04" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20">
+            <com.android.dazhihui.ui.delegate.screen.hk.DropDownTextView android:id="@id/order_data" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/dip50" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/font_small" android:textColor="@color/white" android:id="@id/btn_query" android:background="@drawable/wt_button" android:layout_width="0.0dip" android:layout_height="@dimen/dip50" android:text="@string/new_stock_query1" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/ll_old_table" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="false" dzh:title="@string/gpmc" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip11" android:paddingTop="@dimen/font10" android:paddingRight="@dimen/dip7" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_buyorsell" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wt_buy_small" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="left" android:id="@id/tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="名称/市值" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="盈亏/收益率" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="持仓/可用" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="成本/现价" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_nothing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:layout_marginTop="@dimen/dip30" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip30" android:src="@drawable/norecord" />
+        <ListView android:id="@id/lv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-1.0dip" android:divider="#ffe5e5e5" android:dividerHeight="1.0dip" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</LinearLayout>

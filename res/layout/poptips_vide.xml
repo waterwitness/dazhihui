@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/top_view" android:background="@color/transparent_half" android:layout_width="fill_parent" android:layout_height="@dimen/dip48" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/img_top_id" android:background="@color/transparent_half" android:layout_width="250.0dip" android:layout_height="@dimen/dip65" android:layout_below="@id/top_view">
+        <ImageView android:id="@id/vidio_tips_img" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/thetips_stock_show" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom_vide_id" android:background="@color/transparent_half" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/img_top_id">
+        <ImageView android:id="@id/vidio_tips_img_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:src="@drawable/thetips_stock_hide" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

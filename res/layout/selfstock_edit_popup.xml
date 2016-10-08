@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/kuang" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffe63737" android:gravity="center" android:id="@id/trade_buy_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="买" android:layout_weight="1.0" />
+    <View android:id="@id/divide_line1" android:background="#ff4c4c4c" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10" />
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff4ca92a" android:gravity="center" android:id="@id/trade_sell_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="卖" android:layout_weight="1.0" />
+    <View android:id="@id/divide_line2" android:background="#ff4c4c4c" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10" />
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:gravity="center" android:id="@id/del_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+    <View android:id="@id/divide_line3" android:background="#ff4c4c4c" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10" />
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:gravity="center" android:id="@id/move_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="置顶" android:layout_weight="1.0" />
+</LinearLayout>

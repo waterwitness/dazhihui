@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="1.0px" android:insetRight="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item android:state_pressed="true">
+            <shape>
+                <solid android:color="@color/kwl_light_white" />
+                <corners android:radius="2.0dip" android:topLeftRadius="3.0dip" android:topRightRadius="3.0dip" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <solid android:color="@color/kwlopen_bg_color" />
+                <corners android:radius="2.0dip" android:topLeftRadius="3.0dip" android:topRightRadius="3.0dip" android:bottomLeftRadius="0.0dip" android:bottomRightRadius="0.0dip" />
+            </shape>
+        </item>
+    </selector>
+</inset>

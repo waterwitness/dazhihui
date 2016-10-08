@@ -1,0 +1,23 @@
+package com.android.dazhihui.ui.screen.stock.offlinecapital;
+
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+
+class am
+  implements DialogInterface.OnClickListener
+{
+  am(ah paramah) {}
+  
+  public void onClick(DialogInterface paramDialogInterface, int paramInt)
+  {
+    ah.a(this.a, "0");
+    ah.b(this.a, "1");
+    this.a.k();
+  }
+}
+
+
+/* Location:              E:\apk\dazhihui2\classes-dex2jar.jar!\com\android\dazhihui\ui\screen\stock\offlinecapital\am.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

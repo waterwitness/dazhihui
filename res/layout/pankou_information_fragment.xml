@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff202225" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/pankou_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.dazhihui.ui.widget.PankouInformationView android:id="@id/pankou_information_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/previous_page_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/previouspage" android:layout_weight="1.0" />
+                <Button android:id="@id/next_page_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nextpage" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

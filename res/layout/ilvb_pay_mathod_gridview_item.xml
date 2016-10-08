@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/ilvb_account_list_selector" android:padding="@dimen/dip11" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ilvb_pay_mathod_img" android:layout_width="@dimen/dip24" android:layout_height="@dimen/dip18" android:src="@drawable/livb_pay_mathod_alipay" android:scaleType="fitXY" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/font15" android:textColor="#ff222222" android:id="@id/ilvb_pay_mathod_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:text="支付宝" android:layout_toRightOf="@id/ilvb_pay_mathod_img" android:layout_centerVertical="true" />
+</RelativeLayout>

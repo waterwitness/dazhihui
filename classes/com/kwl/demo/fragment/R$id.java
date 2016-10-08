@@ -1,0 +1,110 @@
+package com.kwl.demo.fragment;
+
+public final class R$id
+{
+  public static final int arc_hf_video_start = 2131559595;
+  public static final int arc_hf_video_stop = 2131559596;
+  public static final int arc_hf_video_timer = 2131559589;
+  public static final int arc_hf_video_timer_tv = 2131559590;
+  public static final int back_btn = 2131558850;
+  public static final int btn_cancel = 2131559608;
+  public static final int btn_capture = 2131559606;
+  public static final int btn_ok = 2131559610;
+  public static final int btn_pick_photo = 2131559613;
+  public static final int btn_recapture = 2131559609;
+  public static final int btn_shutter_camera = 2131559582;
+  public static final int btn_take_photo = 2131559612;
+  public static final int camera_text_view = 2131559615;
+  public static final int close_btn = 2131559583;
+  public static final int container = 2131558526;
+  public static final int cordovaWebView = 2131559604;
+  public static final int focusImageView = 2131559584;
+  public static final int imageView1 = 2131558881;
+  public static final int image_view = 2131559607;
+  public static final int kuangkuang = 2131559597;
+  public static final int kwlopen_arc_hf_video_start = 2131558412;
+  public static final int kwlopen_arc_hf_video_stop = 2131558413;
+  public static final int kwlopen_arc_hf_video_timer = 2131558414;
+  public static final int kwlopen_arc_hf_video_timer_tv = 2131558415;
+  public static final int kwlopen_back_btn = 2131558416;
+  public static final int kwlopen_btn_cancel = 2131558417;
+  public static final int kwlopen_btn_endsession = 2131558418;
+  public static final int kwlopen_btn_flash_mode = 2131558419;
+  public static final int kwlopen_btn_pick_photo = 2131558420;
+  public static final int kwlopen_btn_shutter_camera = 2131558421;
+  public static final int kwlopen_btn_switch = 2131558422;
+  public static final int kwlopen_btn_switch_camera = 2131558423;
+  public static final int kwlopen_btn_take_photo = 2131558424;
+  public static final int kwlopen_cameraView = 2131558425;
+  public static final int kwlopen_camera_text_view = 2131558426;
+  public static final int kwlopen_container = 2131558427;
+  public static final int kwlopen_focusImageView = 2131558428;
+  public static final int kwlopen_frame_local_area = 2131558429;
+  public static final int kwlopen_imageView1 = 2131558430;
+  public static final int kwlopen_img_switch = 2131558431;
+  public static final int kwlopen_kuangkuang = 2131558432;
+  public static final int kwlopen_mProgressNotice = 2131558433;
+  public static final int kwlopen_pop_layout = 2131558434;
+  public static final int kwlopen_progressBar = 2131558435;
+  public static final int kwlopen_progressBar2 = 2131558436;
+  public static final int kwlopen_progress_local = 2131558437;
+  public static final int kwlopen_progress_remote = 2131558438;
+  public static final int kwlopen_record_btn_layout = 2131558439;
+  public static final int kwlopen_repeat_record_layout = 2131558440;
+  public static final int kwlopen_show_imageview = 2131558441;
+  public static final int kwlopen_start_play_btn = 2131558442;
+  public static final int kwlopen_surfaceView = 2131558443;
+  public static final int kwlopen_surface_local = 2131558444;
+  public static final int kwlopen_surface_remote = 2131558445;
+  public static final int kwlopen_take_video_layout = 2131558446;
+  public static final int kwlopen_textView1 = 2131558447;
+  public static final int kwlopen_textView2 = 2131558448;
+  public static final int kwlopen_textView4 = 2131558449;
+  public static final int kwlopen_top_headline = 2131558450;
+  public static final int kwlopen_txt_time = 2131558451;
+  public static final int kwlopen_upload_record_layout = 2131558452;
+  public static final int kwlopen_upload_text_view = 2131558453;
+  public static final int kwlopen_upload_video_layout = 2131558454;
+  public static final int kwlopen_user_read_layout = 2131558455;
+  public static final int kwlopen_user_read_textview = 2131558456;
+  public static final int kwlopen_video_logic_framelayout = 2131558457;
+  public static final int kwlopen_video_play_framelayout = 2131558458;
+  public static final int kwlopen_video_session = 2131558459;
+  public static final int kwlopen_zoomSeekBar = 2131558460;
+  public static final int pb_title_refresh = 2131559602;
+  public static final int pop_layout = 2131559611;
+  public static final int progressBar = 2131559618;
+  public static final int progressBar1 = 2131559603;
+  public static final int record_btn_layout = 2131559594;
+  public static final int repeat_record_layout = 2131559620;
+  public static final int rlLayout = 2131559680;
+  public static final int show_imageview = 2131559614;
+  public static final int start_play_btn = 2131559623;
+  public static final int surfaceView = 2131559617;
+  public static final int surface_view = 2131559605;
+  public static final int take_video_layout = 2131559585;
+  public static final int textView1 = 2131558819;
+  public static final int textView2 = 2131559592;
+  public static final int textView4 = 2131559621;
+  public static final int title = 2131558567;
+  public static final int titleBar = 2131559598;
+  public static final int title_back = 2131560627;
+  public static final int title_refresh = 2131559601;
+  public static final int titlebar_ibtn_left = 2131559599;
+  public static final int titlebar_tv_title = 2131559600;
+  public static final int top_headline = 2131559588;
+  public static final int tvDelete = 2131559681;
+  public static final int upload_record_layout = 2131559622;
+  public static final int upload_text_view = 2131559616;
+  public static final int upload_video_layout = 2131559619;
+  public static final int user_read_layout = 2131559591;
+  public static final int user_read_textview = 2131559593;
+  public static final int video_logic_framelayout = 2131559587;
+  public static final int video_play_framelayout = 2131559586;
+}
+
+
+/* Location:              E:\apk\dazhihui2\classes-dex2jar.jar!\com\kwl\demo\fragment\R$id.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

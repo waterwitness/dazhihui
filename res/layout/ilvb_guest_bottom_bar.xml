@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ilvb_guest_bottom_group" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ilvb_guest_bottom_menu_bar" android:padding="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:layout_marginRight="@dimen/dip5" android:layout_alignParentBottom="true">
+        <View android:id="@id/empty_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/dip40" android:layout_weight="7.0" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.android.dazhihui.ui.widget.flip.ViewFlow android:layout_gravity="center" android:id="@id/ilvb_room_viewflow" android:visibility="invisible" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_bg_btn_room_chat" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_bg_btn_room_chat2" android:scaleType="centerInside" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_bg_btn_room_landspace" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_bg_btn_room_landscape" android:scaleType="centerInside" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_bg_btn_room_gift" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_bg_btn_room_gift2" android:scaleType="centerInside" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_bg_btn_room_share" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_bg_btn_room_share2" android:scaleType="centerInside" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_bg_btn_room_audio" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_bg_btn_room_audio2" android:scaleType="centerInside" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_bg_btn_room_close" android:visibility="invisible" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_room_btn_top_close2" android:scaleType="centerInside" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ilvb_guest_im_msg_group" android:layout_width="fill_parent" android:layout_height="235.0dip" android:layout_above="@id/ilvb_guest_bottom_menu_bar">
+        <RelativeLayout android:id="@id/ilvb_msg_layout" android:layout_width="@dimen/dip0" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginBottom="12.0dip" android:layout_weight="0.8" android:layout_alignParentLeft="true">
+            <FrameLayout android:id="@id/zhubo_msg_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip56">
+                <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/zhubo_msg_text" android:background="@drawable/ilvb_notice_bg" android:paddingLeft="@dimen/dip40" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip10" />
+                <com.tencent.avsdk.CircularImageButton android:id="@id/zhubo_msg_userimage" android:background="@drawable/ilvb_circle_button_bg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ilvb_user_img" android:scaleType="centerCrop" />
+            </FrameLayout>
+            <RelativeLayout android:id="@id/unread_chat_group" android:background="@drawable/ilvb_guest_bottom_unread_bg" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/unread_chat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="dfdfdf" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/unread_chat_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/theme_white_dp_arrow_down" android:scaleType="centerInside" android:layout_toRightOf="@id/unread_chat_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.tencent.avsdk.widget.ChatListView android:id="@id/ilvb_guest_im_msg_items" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip5" android:listSelector="#00000000" android:transcriptMode="normal" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" android:layout_above="@id/unread_chat_group" android:layout_below="@id/zhubo_msg_layout" />
+        </RelativeLayout>
+        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.2" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/gonggao_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="235.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_above="@id/ilvb_guest_bottom_menu_bar">
+        <TextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/gonggao_text" android:background="@drawable/ilvb_notice_bg" android:paddingLeft="@dimen/dip30" android:paddingTop="@dimen/dip34" android:paddingRight="@dimen/dip30" android:paddingBottom="@dimen/dip26" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip10" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_gravity="bottom|center|right" android:id="@id/gonggao_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip5" />
+        <com.tencent.avsdk.CircularImageButton android:id="@id/gonggao_userimage" android:background="@drawable/ilvb_circle_button_bg" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ilvb_user_img" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/gonggao_close" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:src="@drawable/ilvb_close" />
+    </FrameLayout>
+    <com.tencent.avsdk.widget.DanMuContainView android:id="@id/ilvb_guest_dan_mu_group" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ilvb_guest_im_msg_group" />
+    <com.android.dazhihui.ui.widget.ThumbUpAnimationView android:id="@id/thumb_up_anima_view" android:layout_width="@dimen/dip150" android:layout_height="@dimen/dip200" android:layout_above="@id/ilvb_guest_bottom_menu_bar" android:layout_alignParentRight="true" />
+    <com.tencent.avsdk.widget.TwoFlowerView android:id="@id/flowerView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <com.tencent.avsdk.widget.IlvbGifView android:id="@id/ilvbGifView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" />
+    <com.tencent.avsdk.widget.FireworksAnimation android:id="@id/fireworksAnimation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.tencent.avsdk.widget.CarAnimation android:id="@id/carAnimation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" />
+    <com.tencent.avsdk.widget.YachtAnimation android:id="@id/yachtAnimation" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true" />
+</RelativeLayout>

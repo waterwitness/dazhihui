@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subplate_father_layout" android:background="@color/theme_black_market_plate_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/market_top_advert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/tablelayout" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/market_top_advert" />
+</RelativeLayout>

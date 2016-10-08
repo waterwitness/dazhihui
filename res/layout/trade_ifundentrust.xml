@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="10.0dip">
+        <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/if_name1" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股东帐号" />
+                <Spinner android:layout_gravity="center" android:id="@id/if_spinner1" android:padding="5.0sp" android:layout_width="0.0dip" android:layout_height="45.0dip" android:drawSelectorOnTop="true" android:text="" android:layout_weight="1.0" style="@style/trade_spinner_style_bk" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/if_name2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金代码" />
+                <EditText android:id="@id/if_tx2" android:padding="5.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:password="false" android:autoText="false" android:layout_weight="1.0" android:inputType="number" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/if_name3" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="购买金额" />
+                <EditText android:id="@id/if_tx3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:password="false" android:numeric="decimal" android:autoText="false" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/if_name4" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用资金" />
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/if_tx4" android:padding="5.0sp" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:password="false" android:numeric="decimal" android:capitalize="none" android:autoText="false" android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/if_name5" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="基金名称" />
+                <EditText android:textAppearance="?android:textAppearanceMedium" android:id="@id/if_tx5" android:padding="5.0sp" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+            </TableRow>
+        </TableLayout>
+        <Button android:textColor="@color/white" android:id="@id/if_btn" android:background="@drawable/btn_blue_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="5.0dip" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

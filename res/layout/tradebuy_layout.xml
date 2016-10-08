@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <ScrollView android:id="@id/scrollview" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:layout_below="@id/addTitle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/tradebuy_layout01" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:layout_marginBottom="@dimen/dip5">
+                <LinearLayout android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|left" android:id="@id/tradebuy_tv1" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股东账号" />
+                    <Spinner android:textSize="@dimen/font_medium" android:layout_gravity="center|left" android:id="@id/entrust_spinner1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="" style="@style/trade_spinner_style_bk" />
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|left" android:id="@id/tradebuy_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证券代码" />
+                    <EditText android:textSize="@dimen/font_medium" android:layout_gravity="center|left" android:id="@id/entrust_et1" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:numeric="integer" />
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|right" android:id="@id/entrust_symbol_name_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证券名称" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|left" android:id="@id/entrust_tx3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="委托价格" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <EditText android:textSize="@dimen/font_medium" android:gravity="center" android:layout_gravity="center|left" android:id="@id/entrust_et2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:numeric="decimal" style="@style/trade_edittext_style_bk" />
+                        <ImageView android:id="@id/entrust_price_btn_plus" android:background="@drawable/del_button_state" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_alignLeft="@id/entrust_et2" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/entrust_price_btn_add" android:background="@drawable/add_button_state" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignRight="@id/entrust_et2" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|left" android:id="@id/tradebuy_tv4" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可买资金" />
+                    <TextView android:textSize="@dimen/font_medium" android:layout_gravity="center|left" android:id="@id/entrust_own_money_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|right" android:id="@id/entrust_num_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可买数量" />
+                    <TextView android:textSize="@dimen/font_medium" android:layout_gravity="center|left" android:id="@id/entrust_num_value_txt" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:paddingBottom="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:layout_gravity="center|left" android:id="@id/entrust_tx4" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买入数量" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip">
+                        <EditText android:textSize="@dimen/font_medium" android:gravity="center" android:layout_gravity="center|left" android:id="@id/entrust_et3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:numeric="decimal" style="@style/trade_edittext_style_bk" />
+                        <ImageView android:id="@id/entrust_num_btn_plus" android:background="@drawable/del_button_state" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_alignLeft="@id/entrust_et3" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/entrust_num_btn_add" android:background="@drawable/add_button_state" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignRight="@id/entrust_et3" android:layout_centerVertical="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_horizontal" android:paddingBottom="@dimen/dip25" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <Button android:textSize="@dimen/font_medium" android:textColor="@color/white_color" android:id="@id/entrust_btn" android:background="@drawable/btn_blue_blue" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="@string/mairu" android:layout_weight="1.0" />
+                    <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/entrust_btndrop" android:background="@drawable/btn_white_white" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/qinkong" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/tradebuy_layout02" android:background="#ffeeeeee" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+                <LinearLayout android:id="@id/zuixin_1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                    <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv7" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最新:" />
+                    <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/price_now_value_txt" android:paddingLeft="3.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/zuoshou_1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                    <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv8" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昨收:" />
+                    <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_tx12_1" android:paddingLeft="3.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/zhangting_1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                    <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv9" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="涨停:" />
+                    <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_tx12" android:paddingLeft="3.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/dieting_1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                    <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv10" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跌停:" />
+                    <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_tx14" android:paddingLeft="3.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="#ffe0e1e6" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/tradebuy_layout03" android:background="#ffeeeeee" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <LinearLayout android:id="@id/buy_1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv11" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买一:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_tx16" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_buy_num_one" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e1e6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:id="@id/sall_1" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv12" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卖一:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_tx18" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_sell_num_one" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <LinearLayout android:id="@id/buy_2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv13" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买二:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_buy_two_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_buy_num_two" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e1e6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:id="@id/sall_2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv14" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卖二:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_sell_two_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_sell_num_two" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <LinearLayout android:id="@id/buy_3" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv15" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买三:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_buy_three_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_buy_num_three" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e1e6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:id="@id/sall_3" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv16" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卖三:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_sell_three_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_sell_num_three" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <LinearLayout android:id="@id/buy_4" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv17" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买四:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_buy_four_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_buy_num_four" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e1e6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:id="@id/sall_4" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv18" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卖四:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_sell_four_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_sell_num_four" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+                    <LinearLayout android:id="@id/buy_5" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv19" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买五:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_buy_five_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_buy_num_five" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <View android:background="#ffe0e1e6" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+                    <LinearLayout android:id="@id/sall_5" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/buysall_btn">
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/tradebuy_tv20" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卖五:" />
+                        <TextView android:textSize="@dimen/font_smaller" android:layout_gravity="center|left" android:id="@id/entrust_sell_five_value_txt" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffa0a0a0" android:layout_gravity="center|left" android:id="@id/entrust_tx_sell_num_five" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/capital_tableLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/scrollview" dzh:headdrawable="@android:color/white" dzh:scroll="false" dzh:selectdrawable="@color/lightblue" dzh:title="@string/gpmc" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/head_height">
+        <TextView android:textSize="14.0dip" android:id="@id/tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/arrow" android:scaleType="centerInside" android:layout_toLeftOf="@id/tv_notice" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/pb" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/tv_notice" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Large" />
+    </RelativeLayout>
+</LinearLayout>

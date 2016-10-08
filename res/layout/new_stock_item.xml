@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/itemView" android:background="@drawable/item_news_bg" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/zixun_title" android:gravity="center" android:id="@id/stockName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/zixun_title" android:gravity="center" android:id="@id/sgr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/zixun_title" android:gravity="center" android:id="@id/ssr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

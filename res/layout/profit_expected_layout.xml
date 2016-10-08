@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/table_layout" android:background="@color/theme_black_market_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/profit_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.DoubleDragTitle android:id="@id/drag_title" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+        <com.android.dazhihui.ui.widget.PullDownView android:id="@id/pd_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/ui_head" />
+            <com.android.dazhihui.ui.widget.VHDragListView android:id="@id/drag_lv" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:cacheColorHint="@android:color/transparent" android:divider="@color/theme_black_market_list_head_divider" android:dividerHeight="1.0px" android:fastScrollEnabled="true" />
+            <include android:layout_width="fill_parent" android:layout_height="50.0dip" layout="@layout/ui_foot" />
+        </com.android.dazhihui.ui.widget.PullDownView>
+    </LinearLayout>
+</LinearLayout>

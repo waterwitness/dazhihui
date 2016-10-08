@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/grid_container" style="@style/style_other_market_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/grid_title" android:text="@string/market_hushen" style="@style/style_other_markets_label" />
+    <com.android.dazhihui.ui.widget.NoScrollGridView android:id="@id/grid" style="@style/style_other_market_grid" />
+</LinearLayout>

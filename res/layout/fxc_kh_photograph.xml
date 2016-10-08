@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cs="http://schemas.android.com/apk/res-auto">
+    <com.thinkive.mobile.account.tools.EditPhotoView android:id="@id/pv_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/linear" />
+    <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/rela_top" android:background="@drawable/fxc_kh_black_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/tv" android:background="@drawable/fxc_kh_iv_alert" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/image_zs" android:background="@drawable/fxc_kh_zs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/image_zx" android:layout_alignTop="@id/image_ys" />
+    <ImageView android:id="@id/image_ys" android:background="@drawable/fxc_kh_ys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_below="@id/rela_top" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/image_zx" android:background="@drawable/fxc_kh_zx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="30.0dip" android:layout_above="@id/linear" />
+    <ImageView android:id="@id/image_yx" android:background="@drawable/fxc_kh_yx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:layout_above="@id/linear" android:layout_alignParentRight="true" />
+    <LinearLayout android:id="@id/linear" android:background="@drawable/fxc_kh_black_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_get_photo" android:background="@drawable/fxc_kh_take_photo_draw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:onClick="getPhoto" />
+            <Button android:id="@id/btn_photo_ok" android:background="@drawable/fxc_kh_ok_draw" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Button android:id="@id/btn_photo_cancel" android:background="@drawable/fxc_kh_cancel_draw" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

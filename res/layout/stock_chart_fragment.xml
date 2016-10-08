@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff0f1317" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/stock_chart_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.android.dazhihui.ui.widget.stockchart.StockChartHeader android:id="@id/stock_chart_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip50" android:layout_alignParentTop="true" />
+        <include android:id="@id/titleLayout" layout="@layout/stockchart_title" />
+        <com.android.dazhihui.ui.widget.StockLandTitle android:id="@id/stock_land_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip45" android:layout_alignParentTop="true" />
+        <com.android.dazhihui.ui.widget.stockchart.MinChartDetailView android:layout_gravity="bottom|center" android:id="@id/stock_land_details" android:background="#ff2e3036" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip45" />
+        <com.android.dazhihui.ui.widget.stockchart.KChartDetailView android:layout_gravity="bottom|center" android:id="@id/stock_kchart_land_details" android:background="#ff2e3036" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip45" />
+    </FrameLayout>
+    <include android:id="@id/hk_fuse_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/stock_chart_top" layout="@layout/minchart_hkextra_layout" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.UpPullAdvertView android:id="@id/loadAndRefreshView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/hk_fuse_id">
+        <com.android.dazhihui.ui.widget.stockchart.StockChartPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.android.dazhihui.ui.widget.dzhrefresh.UpPullAdvertView>
+    <com.android.dazhihui.ui.widget.IndexStockChartBottomWidget android:id="@id/dp_index_view_minute" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.PopupMenu android:gravity="bottom" android:orientation="vertical" android:id="@id/stock_delstock_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/stock_adddel_bg" android:paddingLeft="20.0dip" android:paddingTop="15.0dip" android:paddingRight="20.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/stock_del_btn_id" android:background="#ffdd0000" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="删除自选" />
+            <Button android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/stock_cancel_btn_id" android:background="#ffc8c8c8" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="取消" />
+        </LinearLayout>
+    </com.android.dazhihui.ui.widget.PopupMenu>
+    <com.android.dazhihui.ui.widget.stockchart.FastDealMenu android:id="@id/fastdeal_menu_view" android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.stockchart.FastDealsView android:id="@id/fastdeals_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.EmojiInputView android:id="@id/emoji_input_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.StockLandView android:id="@id/stock_land_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

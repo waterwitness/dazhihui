@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip10">
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@drawable/theme_black_selfstock_edit_button_text_color" android:gravity="center" android:id="@id/self_btn" android:background="@drawable/theme_black_selfstock_edit_left_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="@string/self_stock_edit" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@drawable/theme_black_selfstock_edit_button_text_color" android:gravity="center" android:id="@id/browse_btn" android:background="@drawable/theme_black_selfstock_edit_right_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="@string/browse_stock_edit" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/switch_latest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/switch_latest_ll" android:background="@drawable/theme_black_selfstock_edit_label_bg" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/theme_black_12_color" android:layout_gravity="center_vertical" android:id="@id/switch_latest_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="自选页面显示最新浏览" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/switch_latest_checkbox" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:button="@null" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/theme_black_14_color" android:id="@id/switch_latest_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:text="关闭后您将无法查看最新浏览的股票" android:drawablePadding="15.0dip" android:layout_below="@id/switch_latest_ll" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.DragListView android:id="@id/edit_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/theme_white_market_list_head_divider" android:dividerHeight="1.0px" />
+</LinearLayout>

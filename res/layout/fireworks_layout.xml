@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.adv.GifView android:layout_gravity="center_horizontal" android:id="@id/imageView1" android:background="@drawable/fireworks_anim1" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" />
+    <com.android.dazhihui.ui.widget.adv.GifView android:layout_gravity="center_horizontal" android:id="@id/imageView2" android:background="@drawable/fireworks_anim2" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <com.android.dazhihui.ui.widget.adv.GifView android:layout_gravity="center_horizontal" android:id="@id/imageView3" android:background="@drawable/fireworks_anim3" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/lihuaText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="290.0dip" android:text="xx送了一个礼花" />
+</FrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="@color/hh_stk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间  " style="@style/hh_stk_text" />
+        <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -" style="@style/hh_stk_text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/hh_stk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="买入价(汇率) " style="@style/hh_stk_text" />
+            <TextView android:id="@id/buy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -" style="@style/hh_stk_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/hh_stk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卖出价(汇率) " style="@style/hh_stk_text" />
+            <TextView android:id="@id/sell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -" style="@style/hh_stk_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/hh_stk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="初始化额度 " style="@style/hh_stk_text" />
+            <TextView android:id="@id/initVol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -" style="@style/hh_stk_text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/hh_stk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当前额度 " style="@style/hh_stk_text" />
+            <TextView android:id="@id/curVol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -" style="@style/hh_stk_text" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

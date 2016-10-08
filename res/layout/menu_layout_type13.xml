@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty131" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zixun" android:layout_centerInParent="true" style="@style/item_menustyle_new" />
+        <ImageView android:id="@id/image_dilei" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:src="@drawable/minute_landmine" android:layout_toRightOf="@id/menu_ty131" android:layout_centerInParent="true" android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty132" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dadan" android:layout_weight="1.0" style="@style/item_menustyle_new" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty133" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/hudong" android:layout_weight="1.0" style="@style/item_menustyle_new" />
+</merge>

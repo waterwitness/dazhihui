@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/faterview" android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#ff2e3137" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true">
+        <com.android.dazhihui.ui.widget.WriteableImageView android:id="@id/head_menu_left" android:paddingLeft="3.0dip" android:paddingTop="7.0dip" android:paddingRight="1.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="@dimen/cheader_item_height" android:layout_marginLeft="2.0dip" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="我的发言" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip10" android:layout_marginBottom="@dimen/dip5">
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@drawable/my_talk_button_text_color" android:gravity="center" android:id="@id/left_btn" android:background="@drawable/my_talk_left_button_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="我发表的" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@drawable/my_talk_button_text_color" android:gravity="center" android:id="@id/right_btn" android:background="@drawable/my_talk_right_button_bg" android:layout_width="0.0dip" android:layout_height="@dimen/dip35" android:text="回复我的" android:layout_weight="1.0" />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@id/slidingtab_viewpager" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

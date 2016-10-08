@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:layout_marginTop="@dimen/dip5" android:layout_marginBottom="@dimen/dip5">
+        <LinearLayout android:id="@id/message_warn_list_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/message_warnlist_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_plate_more" android:contentDescription="@string/app_name" />
+            <Button android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:id="@id/message_warnlist_btn" android:background="@drawable/add_del_warning_state" android:padding="@dimen/dip15" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shanchu" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/message_warn_list_layout" android:layout_centerVertical="true">
+            <LinearLayout android:id="@id/message_warn_listitem_ll1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_alignParentTop="true">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/message_warn_listitem_tv0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/message_warn_listitem_ll2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/message_warn_listitem_ll1">
+                <TextView android:textSize="@dimen/font10" android:textColor="@color/addWarnWhiteColor" android:id="@id/message_warn_listitem_tv1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font10" android:textColor="@color/addWarnWhiteColor" android:id="@id/message_warn_listitem_tv2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/message_warn_listitem_ll3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0" android:layout_below="@id/message_warn_listitem_ll2">
+                <TextView android:textSize="@dimen/font10" android:textColor="@color/addWarnWhiteColor" android:id="@id/message_warn_listitem_tv3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font10" android:textColor="@color/addWarnWhiteColor" android:id="@id/message_warn_listitem_tv4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/message_warn_listitem_ll4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/message_warn_listitem_ll3">
+                <TextView android:textSize="@dimen/font10" android:textColor="@color/addWarnWhiteColor" android:id="@id/message_warn_listitem_tv5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font10" android:textColor="@color/addWarnWhiteColor" android:id="@id/message_warn_listitem_tv6" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

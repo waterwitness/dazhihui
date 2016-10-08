@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/guh_fragment_layout" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView android:id="@id/guh_refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.CommentListView android:id="@id/commentlist" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+    </com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView>
+    <ImageView android:id="@id/go_top" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/gotop" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.PageLoadTip android:id="@id/pageloadTip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip45" android:minHeight="120.0dip" />
+    <TextView android:id="@id/failText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nocontent" android:layout_centerInParent="true" />
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/hotComment_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="0.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

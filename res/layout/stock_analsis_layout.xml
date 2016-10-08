@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/dip3" android:layout_width="fill_parent" android:layout_height="@dimen/dip40" android:weightSum="2.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_zyk" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/captial_stock_blue" android:gravity="center" android:id="@id/tv_zyk" android:background="@drawable/blue_frame_bottom_line_shape" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="总盈亏" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_sxyk" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textColor="@color/captial_stock_gray" android:gravity="center" android:id="@id/tv_sxyk" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="实现盈亏" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip10" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/captial_stock_gray" android:id="@id/tv_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/stock_analysis_zyk_tip" />
+        <com.android.dazhihui.ui.delegate.newtrade.widge.CaptialPeriodSelector android:id="@id/period_selector" android:layout_width="fill_parent" android:layout_height="@dimen/dip40" android:layout_marginTop="@dimen/dip10" app:period_selector_type="0" />
+    </LinearLayout>
+    <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip40" android:weightSum="4.0">
+        <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/captial_stock_black" android:gravity="center" android:id="@id/tv_ykje" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="盈亏金额" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/captial_stock_black" android:gravity="center" android:id="@id/tv_jyfy" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="交易费用" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/captial_stock_black" android:gravity="center" android:id="@id/tv_cgts" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="持股天数" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:background="@color/captial_analysis_divider" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    <ListView android:id="@id/listview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/captial_analysis_divider" android:dividerHeight="2.0px" />
+</LinearLayout>

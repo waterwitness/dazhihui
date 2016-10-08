@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/minute_ff_id" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.MinuteTradeCtrl android:id="@id/minuteTradectrl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/minute_index_ll" android:background="@drawable/minute_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center|left" android:id="@id/minute_index_up_tips" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="上涨" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/red" android:gravity="center" android:layout_gravity="center|right" android:id="@id/minute_index_up_id" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="--" />
+        </LinearLayout>
+        <View android:background="#ff3a3a3b" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center|left" android:id="@id/minute_index_fair_tips" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="平盘" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center|right" android:id="@id/minute_index_fair_id" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="--" />
+        </LinearLayout>
+        <View android:background="#ff3a3a3b" android:layout_width="0.100000024dip" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center|left" android:id="@id/minute_index_down_tips" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="下跌" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/green" android:gravity="center" android:layout_gravity="center|right" android:id="@id/minute_index_down_id" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:text="--" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/minute_flow_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/minute_index_flow_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="资金净流入：" />
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/minute_index_flow_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.stockchart.MinDealDetailsView android:id="@id/minute_deals_id" android:background="@drawable/minute_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginTop="@dimen/dip10" />
+    <com.android.dazhihui.ui.widget.stockchart.MinChartListView android:id="@id/minute_list" android:background="@drawable/minute_gap" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginTop="@dimen/dip10" />
+    <com.android.dazhihui.ui.widget.stockchart.MinListTabView android:id="@id/minute_table" android:background="@color/kline_tech_text_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+</LinearLayout>

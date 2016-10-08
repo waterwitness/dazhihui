@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/message_warn_fatherlayout" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <include layout="@layout/title_normal" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/add_warn_set" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/warning_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/add_warn_setting" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_medium" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="添加预警" android:layout_toRightOf="@id/warning_icon_bg" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:src="@drawable/icon_plate_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/notaCont" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notbg" android:scaleType="fitCenter" />
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/showNodata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:id="@id/waring_divider_view" android:background="@color/wo_lines" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_below="@id/notaCont" />
+        <ListView android:id="@id/message_warn_listview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip15" android:listSelector="#00000000" android:scrollingCache="false" android:cacheColorHint="@color/transparent" android:divider="@color/wo_lines" android:dividerHeight="1.0dip" android:layout_above="@id/add_warn_set" android:layout_below="@id/waring_divider_view" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

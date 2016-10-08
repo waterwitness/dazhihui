@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="25.0%p" android:keyHeight="@dimen/key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Row>
+        <Key android:codes="49" android:keyLabel="1" />
+        <Key android:codes="50" android:keyLabel="2" />
+        <Key android:codes="51" android:keyLabel="3" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/sym_keyboard_delete" />
+    </Row>
+    <Row>
+        <Key android:codes="52" android:keyLabel="4" />
+        <Key android:codes="53" android:keyLabel="5" />
+        <Key android:codes="54" android:keyLabel="6" />
+        <Key android:codes="-3" android:keyEdgeFlags="right" android:keyLabel="关闭" />
+    </Row>
+    <Row>
+        <Key android:codes="55" android:keyLabel="7" />
+        <Key android:codes="56" android:keyLabel="8" />
+        <Key android:codes="57" android:keyLabel="9" />
+        <Key android:keyHeight="100.0dip" android:codes="-4" android:keyEdgeFlags="right" android:keyLabel="确定" />
+    </Row>
+    <Row>
+        <Key android:codes="10000" android:keyLabel="系统键" />
+        <Key android:codes="48" android:keyLabel="0" />
+        <Key android:codes="-2" android:keyLabel="字母" />
+    </Row>
+</Keyboard>

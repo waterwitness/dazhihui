@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip45">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="信用股东" />
+                <com.android.dazhihui.ui.widget.DropDownEditTextView android:textSize="@dimen/font_medium" android:textColor="@color/gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sp_xygd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:drawSelectorOnTop="true" />
+            </LinearLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_ptaccount" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip45">
+                    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="普通股东" />
+                    <com.android.dazhihui.ui.widget.DropDownEditTextView android:textSize="@dimen/font_medium" android:textColor="@color/gray" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/sp_ptgd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:drawSelectorOnTop="true" />
+                </LinearLayout>
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            </LinearLayout>
+            <RelativeLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="@dimen/dip45">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/tv_codehz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证券代码" android:layout_alignParentTop="true" />
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:gravity="right" android:id="@id/tv_name" android:background="@null" android:layout_width="@dimen/dip100" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:singleLine="true" android:layout_alignParentRight="true" />
+                <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_code" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:hint="请输入证券代码" android:singleLine="true" android:maxLength="6" android:layout_toLeftOf="@id/tv_name" android:layout_toRightOf="@id/tv_codehz" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="@dimen/dip45" android:layout_marginTop="@dimen/dip10">
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="划转数量" />
+            <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_count" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:numeric="integer" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_gravity="right" android:id="@id/tv_ava_count" android:layout_width="wrap_content" android:layout_height="@dimen/dip20" android:layout_marginTop="@dimen/dip5" android:layout_marginRight="@dimen/dip20" />
+        <Button android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:id="@id/btn" android:background="@drawable/wt_button" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:text="划转" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/table" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" dzh:scroll="false" dzh:selectdrawable="@color/lightblue" dzh:headdrawable="@android:color/white" />
+</LinearLayout>

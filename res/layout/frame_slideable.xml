@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/left_stub" android:background="#ff2d2d2d" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="left" android:id="@id/right_stub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.dazhihui.ui.widget.CustomViewPager android:id="@id/front_curtain" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

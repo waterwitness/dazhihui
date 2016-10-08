@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="提示信息" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/transfer_banker_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="银行名称" android:lineSpacingMultiplier="1.2" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/transfer_banker_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="转账金额：1000" android:lineSpacingMultiplier="1.2" />
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/transfer_banker_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="是否确认转账？" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+    <View android:background="#ffd0d0d0" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <Button android:textColor="#ff3d77f0" android:gravity="center" android:id="@id/transfer_negativeButton" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="#ffd0d0d0" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textColor="#ff3d77f0" android:gravity="center" android:id="@id/transfer_positiveButton" android:background="@color/white" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

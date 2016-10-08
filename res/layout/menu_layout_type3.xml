@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty31" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_pzjk" android:layout_weight="1.0" style="@style/item_menustyle" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty32" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_rmgp" android:layout_weight="1.0" style="@style/item_menustyle" />
+        <ImageView android:layout_width="1.0dip" android:layout_height="@dimen/dip25" android:src="@drawable/table_divide" />
+    </LinearLayout>
+    <TextView android:id="@id/menu_ty33" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_jryw" android:layout_weight="1.0" style="@style/item_menustyle" />
+</merge>

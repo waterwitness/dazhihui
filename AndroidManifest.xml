@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.android.dazhihui" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false" android:icon="@drawable/icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.android.dazhihui.DzhApplication" android:theme="@android:style/Theme">
+        <meta-data android:name="channel_id" android:value="4204"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.android.dazhihui.dzh.dzh" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.dazhihui.android.ACTION_VIEW_STOCK"/>
+                <action android:name="com.dazhihui.android.START_FINANCIAL"/>
+                <action android:name="com.dazhihui.android.ACTION_TRADE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="droidcenter" android:path="/dzh/call.html" android:port="8080" android:scheme="quickstarter"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.InitScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.AppRestoreAdvertScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.StockAllNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.PDFActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.BulletScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.LeadScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.MainScreen" android:screenOrientation="portrait" android:theme="@style/Theme.PageIndicatorDefaults" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.DzhMessageCenter" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.MessageCenterList" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.MessageCenterSettingScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.CrashErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.BrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateUnspecified"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:name="com.android.dazhihui.ui.screen.stock.LoginScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.LoginMainScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.FingerprintLoginScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.MobileVerifyScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.SystemSetingScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.AboutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.TemplateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="" android:name="com.android.dazhihui.ui.screen.stock.NormalRegisterScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="" android:name="com.android.dazhihui.ui.screen.stock.GetAddressBookActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.android.dazhihui.ui.screen.stock.NewsSpecialReportScreen" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.RegisterSuccessScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.MessageWarnScreen"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent101007105"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="" android:name="com.android.dazhihui.ui.screen.stock.SettingThirdScreen" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.android.dazhihui.ui.screen.stock.SetPwdScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.StockChartScreen" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.CorrelationStockScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.NewsDetailInfo" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.ZoomImageScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.NewsXgfxDetailScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.offlinecapital.OfflineCapitalMine" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.offlinecapital.OfflineCapitalInitActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.offlinecapital.OfflineCapitalSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.offlinecapital.OfflineCapitalDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.AddWarningScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.AddWarningActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.TipActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.NotificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.PublicMessageDialog" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.BBSCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.GUHDetailBZTJ" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.BBSMyStatementActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.BBSMoreListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:launchMode="singleInstance" android:name="com.android.dazhihui.ui.screen.ShareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:label="" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.screen.stock.SearchStockScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.DynamicDetailScreen" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.SelfStockMoreListScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.SelfStockLandScapeScreen"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.RecentBrowseStockScreen" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.MarketListScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.PlateListScreen" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.MarketListScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.PlateLinkageActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.DecisionScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.MorningPostScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.ProfitExpectedScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.FundStockChartScreen" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.OptionListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.tencent.avsdk.activity.MyFavoriteActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:hardwareAccelerated="false" android:label="" android:name="com.android.dazhihui.ui.screen.stock.MarketFocusScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.stock.MoreNewsListScreen" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:launchMode="singleInstance" android:name="com.android.dazhihui.ui.screen.stock.DialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Holo.Light.Dialog"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.android.dazhihui.wxapi.WXEntryActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.android.dazhihui.wxapi.WXPayEntryActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.moneybox.FundHome" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.moneybox.FundDetail" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.moneybox.FundRedemption" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.screen.moneybox.FundSubscription" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.trade.AccountPass" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.TradeOutsideScreen" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.MobileVerifed" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.InitVerifedChuanCai" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.InitVerifedDongHai" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.MobileLogin" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.MobileLoginHS" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.SelfStockEditScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.RegionTable" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.CapitalandHoldingTable" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.TradeText" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.EntrustNew" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.RemoveAccount" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.EntrustSettingScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.CancelTable" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.BargainAndEntrust_today" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.TradeChecklistMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.EntrustTable_history" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.ProtectorForm" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.BargainTable_history" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.LuckyTable_history" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.TransferMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.TransferMenuNew" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.Transfer" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.TransferTable" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.Transfertable_select" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.hk.HKTradeMenu" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.delegate.screen.hk.HKCaptialHolding" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.delegate.screen.hk.HKTradeCommon" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.android.dazhihui.ui.delegate.screen.hk.HKQuery" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.delegate.screen.hk.HKSetting" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.delegate.screen.hk.HKEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.newstock.NewStockMainActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.newstock.NewStockBatchEntrust" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="" android:name="com.android.dazhihui.ui.screen.stock.MaxNineScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.trade.VoteShareholderMeeting" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.trade.VoteScreen" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.electronsign.CashBaoElectronSign" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.FundActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.ETFFundMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.ETFFundEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.ETFFundCancel" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundListViewPublic" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundDividend" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundTransfer" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundCancelTable" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundCompanyTable" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundOpenForm" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundAtone" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundMutualAIPMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundMutualAIPOpen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.FundMutualAIPQuirys" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.otc.OtcCaptialShare" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.otc.OtcMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.otc.OtcQuery" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.otc.OtcEntrust" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.setplan.SetPlanMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.setplan.SetPlanQuery" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.setplan.SetPlanCaptialShare" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.setplan.SetPlanEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.otc.TradeBrowser" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.IFundMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.IFundEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.fund.IFundAtone" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.offerrepurchase.OfferRepurchaseMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.offerrepurchase.OfferRepurchaseEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.offerrepurchase.OfferRepurchaseQuirys" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.ggt.GgtQuiry" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.ggt.GgtTradeMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.ggt.GgtCaptialHolding" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.ggt.GgtEntrust" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.structuredfund.StructuredFundSplitOrMerge" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.structuredfund.StructuredFundShengouOrShuhui" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.xc.trade.TradeQuery" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.xc.trade.TradeCommonStock" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.xc.trade.DailyEarningDetail" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.xc.trade.DailyEarning" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.xc.trade.DailyEarningsCanYu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.xc.trade.MyDailyEarning" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarginCommonScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarginCommonScreen2" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarginQuery" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarginDebtQueryMenu" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarginCaptialDebtQuiry" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarginColScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.screen.margin.MarColVerify" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.newtrade.CaptialAnalMainScreen" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.android.dazhihui.ui.delegate.newtrade.TradeDetialScreen" android:screenOrientation="portrait"/>
+        <service android:name="com.android.dazhihui.service.DzhService"/>
+        <receiver android:enabled="true" android:name="com.android.dazhihui.receiver.NetworkConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.dazhihui.receiver.WakeUpServiceReciver">
+            <intent-filter>
+                <action android:name="com.android.dazhihui"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.android.dazhihui.receiver.HeartPkgReceiver">
+            <intent-filter>
+                <action android:name="com.android.dazhihui"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.example.cairh_sjkh_it.MainActivity"/>
+        <activity android:name="com.cairh.app.sjkh.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.VideoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.CameraMainActivity" android:screenOrientation="landscape"/>
+        <activity android:name="com.cairh.app.sjkh.SchemeActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="CRHSJKH"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="CRHSJKH"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.avsdkhost.activity.AvHostActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.tencent.avsdk.activity.AvGuestActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.tencent.avsdk.activity.IlvbRedEnvelope" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.tencent.avsdkhost.activity.IlvbRedEnvelopeHost" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.avsdk.activity.IlvbAccountRechargeScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.avsdk.activity.IlvbTopicRoomListScreen" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.avsdk.activity.IlvbMoreTopicActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <service android:exported="false" android:name="com.tencent.qalsdk.service.QalService" android:process=":QALSERVICE"/>
+        <service android:exported="false" android:name="com.tencent.qalsdk.service.QalAssistService" android:process=":QALSERVICE"/>
+        <receiver android:exported="false" android:name="com.tencent.qalsdk.QALBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.qalsdk.broadcast.qal"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.qalsdk.core.NetConnInfoCenter" android:process=":QALSERVICE">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.android.dazhihui.service.DownloadService" android:process="com.android.dazhihui.network.DownloadService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.android.dazhihui.network.DownloadService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.android.dazhihui.service.DzhPushService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.android.dazhihui.service.DzhPushService"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.kwlopen.sdk.activity.CaptureVideo" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.VideoPlayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.kwlopen.sdk.activity.VideoVitness" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.kwlopen.sdk.activity.SelectPicActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyleBottom"/>
+        <activity android:name="com.kwlopen.sdk.activity.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.ImageShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.KwlOpenActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.android.dazhihui.richscan.DzhRichScanActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.AdvertSearchActivity"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.thinkive.android.ui.OpenMainActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.android.dazhihui.ui.widget.WebViewJsAndAndroid" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.thinkive.mobile.account.activitys.CameraActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.thinkive.mobile.account.activitys.PhotographActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.thinkive.mobile.video.activities.VideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.thinkive.mobile.video.activities.ApplyVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.thinkive.mobile.video.activities.OfflineVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.thinkive.mobile.account.activitys.FacePhotographActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingKlineIndicator" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingVol" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingMacd" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingKdj" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingRsi" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingBias" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingCci" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingWr" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingBoll" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingDma" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingMa" android:screenOrientation="portrait"/>
+        <activity android:name="com.android.dazhihui.ui.screen.stock.klineindicator.SettingGap" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.SingleVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.cairh.app.sjkh.ui.SingleVideoActivityAnychat" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.VideoPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.FaceCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.SVideoVerifyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.cairh.app.sjkh.ui.BlockSVideoVerifyActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="false" android:name="com.cairh.app.sjkh.service.BlockUploadService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.baidu.location.f" android:process=":remote"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="ljeTCCsVh1rap0tutGgG29Up"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <meta-data android:name="IFLYTEK_APPKEY" android:value="'5710831d'"/>
+        <meta-data android:name="IFLYTEK_CHANNEL" android:value="Android_Demo"/>
+    </application>
+</manifest>

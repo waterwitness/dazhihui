@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/tv_content" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+    </ScrollView>
+    <Button android:textSize="@dimen/font_large" android:textColor="@color/white_color" android:id="@id/btn" android:background="@drawable/captial_analysis_agreement_btn" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="@dimen/cheader_height" android:layout_marginLeft="@dimen/dip20" android:layout_marginTop="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:text="同意协议" android:layout_alignParentBottom="true" />
+</RelativeLayout>

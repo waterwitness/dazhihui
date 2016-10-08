@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/show" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+    </ScrollView>
+</LinearLayout>

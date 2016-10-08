@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/guh_fragment_layout" android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/customHeader" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView android:id="@id/guh_refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="55.0dip" android:layout_below="@id/customHeader">
+        <com.android.dazhihui.ui.widget.CommentListView android:id="@id/commentlist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0px" />
+    </com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView>
+    <TextView android:textSize="16.0sp" android:id="@id/failText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nocontent" android:layout_centerInParent="true" />
+    <View android:id="@id/shade" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/commentContent" android:background="#fff7f9fb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="#ffc3c3c5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/biaoqing" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/biaoqing" />
+            <EditText android:textSize="15.0sp" android:textColorHint="#ffbbbbbb" android:id="@id/write_comment_edt" android:background="@drawable/write_comment_edt_bg" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:hint="发表评论" android:layout_weight="1.0" />
+            <Button android:textColor="@android:color/white" android:id="@id/write_comment_btn" android:background="@drawable/write_comment_btn" android:layout_width="75.0dip" android:layout_height="35.0dip" android:text="发表" />
+        </LinearLayout>
+        <CheckBox android:textSize="15.0sp" android:textColor="#ff555555" android:id="@id/comment_to_stock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:checked="true" android:button="@drawable/news_comment_checkbox" android:text="同时转发到我的股友圈" />
+        <include android:id="@id/biaoQingTool" layout="@layout/send_msg_tool" />
+    </LinearLayout>
+    <ImageView android:id="@id/go_top" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/gotop" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <com.android.dazhihui.ui.widget.PageLoadTip android:id="@id/pageloadTip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dip45" android:minHeight="120.0dip" />
+    <TextView android:gravity="center" android:id="@id/hotComment_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="0.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

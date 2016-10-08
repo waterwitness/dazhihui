@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="@dimen/dip105" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/entrust_layout" android:layout_width="fill_parent" android:layout_height="@dimen/item_height">
+        <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/entrust_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/entrust_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/entrust_set" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/item_height" android:singleLine="true" android:layout_alignParentLeft="true" />
+</RelativeLayout>

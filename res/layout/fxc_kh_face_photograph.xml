@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.thinkive.mobile.account.tools.FaceEditPhotoView android:id="@id/pv_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/picture_scan_line" android:background="@drawable/fxc_kh_kakalib_scan_ray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="扫描动画" />
+    <ImageView android:id="@id/assist" android:background="@drawable/fxc_kh_assist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/text_notice" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="尽可能的把脸放进辅助框里\n脸部保持放松" android:maxLines="2" android:layout_above="@id/linear" android:layout_below="@id/assist" />
+    <LinearLayout android:id="@id/linear" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btn_get_photo" android:background="@drawable/fxc_kh_take_photo_draw" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_photo_ok" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="使用照片" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="22.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_photo_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="取消" android:layout_centerVertical="true" />
+            <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/sign_notice" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="90.0dip" android:text="这些年整没整，验明正身中..." />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

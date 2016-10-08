@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/theme_black_stock_name" android:gravity="center" android:id="@id/name" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <TextView android:textSize="@dimen/font_smaller" android:gravity="center" android:id="@id/current_price_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_smaller" android:gravity="center" android:id="@id/price_detal_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/font_smaller" android:gravity="center" android:id="@id/price_percent_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/index_img" android:layout_width="60.0dip" android:layout_height="wrap_content" android:src="@drawable/theme_black_dp_arrow_up" android:scaleType="center" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+ [
+    {
+	"header":
+		  {
+			"dzhcg":" 大智慧手机炒股"
+		  },
+	"data": [
+			{
+			     "dzhcg":[
+				      {
+				      "pi":"640*960",
+				      "vs":"2",
+				      "url":"http://mnews.gw.com.cn/wap/data/mobile/images/640-960.jpg",
+				      "plat":[1,2,3,4]
+				      },
+				      {
+				      "pi":"480*800",
+				      "vs":"2",
+				      "url":"http://mnews.gw.com.cn/wap/data/mobile/images/480-800.jpg",
+				      "plat":[1,2,3,4]
+				      },
+				      {
+				      "pi":"320*480",
+				      "vs":"2",
+				      "url":"http://mnews.gw.com.cn/wap/data/mobile/images/320-480.jpg",
+				      "plat":[1,2,3,4]
+				      }
+				]
+			} 
+		]
+    }
+] 

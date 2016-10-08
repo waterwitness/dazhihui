@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/fastmenu_line" android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="0.20000005dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <RelativeLayout android:id="@id/fastmenu_buy" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_alignParentLeft="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fastmenu_buy_img" android:background="@drawable/fastdeal_menu_circle_redbg" android:layout_width="35.0dip" android:layout_height="35.0dip" android:text="买" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastmenu_buy_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="闪电买入" android:layout_below="@id/fastmenu_buy_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fastmenu_sell" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fastmenu_sell_img" android:background="@drawable/fastdeal_menu_circle_bluebg" android:layout_width="35.0dip" android:layout_height="35.0dip" android:text="卖" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastmenu_sell_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="闪电卖出" android:layout_below="@id/fastmenu_sell_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/fastmenu_cancel" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fastmenu_cancel_img" android:background="@drawable/fastdeal_menu_circle_blackbg" android:layout_width="35.0dip" android:layout_height="35.0dip" android:text="撤" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastmenu_cancel_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="撤单/查询" android:layout_below="@id/fastmenu_cancel_img" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff4691ee" android:gravity="center" android:id="@id/fast_gototrade_id" android:background="@drawable/fastdeal_rectangle_blue_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="去交易下单" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fast_menu_cancel" android:background="@drawable/fastdeal_rectangle_black_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="取消" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

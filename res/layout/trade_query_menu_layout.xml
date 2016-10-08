@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/wo_item_border" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_drcj" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="当日成交" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_drwt" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="当日委托" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/history_qery" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_lscj" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="历史成交" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_lswt" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="历史委托" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/third_layout" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_xgph" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="配号" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+        <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_xgzq" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="中签" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/forth_layout" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_jgd" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/tv6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="交割单" android:drawablePadding="15.0dip" />
+            <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

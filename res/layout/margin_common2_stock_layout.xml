@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/trade_header" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_festmenu" android:background="#dddddddd" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0" android:layout_below="@id/addTitle">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_trade" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="融资买入" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="撤单" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_biao" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="融资标的" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_search" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="查询" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/trade_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/trade_header" />
+</LinearLayout>

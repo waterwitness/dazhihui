@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="barcolor">false</item>
+    <item type="drawable" name="bg">false</item>
+    <item type="drawable" name="wodeshiba_white">false</item>
+</resources>

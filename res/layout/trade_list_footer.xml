@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mainmenu_layout" android:background="@color/white" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:layout_marginRight="@dimen/dip10" />
+    <TextView android:textColor="#ffaaaaaa" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="数据加载中" android:singleLine="true" android:layout_centerInParent="true" />
+</LinearLayout>

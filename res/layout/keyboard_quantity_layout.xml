@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/keyboard_quantity_hide" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/keyboard_hide" android:layout_above="@id/keyboard_ll" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/keyboard_ll" android:background="@color/grey" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/keyboard_left_ll" android:background="@drawable/normal_quantity_key_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip4" android:layout_marginTop="@dimen/dip4" android:layout_marginRight="@dimen/dip2" android:layout_marginBottom="@dimen/dip4" android:layout_weight="4.0" android:layout_alignParentBottom="true">
+                <Button android:textColor="@color/black" android:id="@id/keyboard_left_button_1" android:background="@drawable/btn_keyboard_quantity_left_key" android:layout_width="fill_parent" android:layout_height="@dimen/key_quantity_height" android:text="@string/quancang" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" android:layout_marginLeft="@dimen/dip4" android:layout_marginRight="@dimen/dip4" android:layout_marginBottom="@dimen/dip1" />
+                <Button android:textColor="@color/black" android:id="@id/keyboard_left_button_2" android:background="@drawable/btn_keyboard_quantity_left_key" android:layout_width="fill_parent" android:layout_height="@dimen/key_quantity_height" android:text="@string/bancang" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" android:layout_marginLeft="@dimen/dip4" android:layout_marginRight="@dimen/dip4" android:layout_marginBottom="@dimen/dip1" />
+                <Button android:textColor="@color/black" android:id="@id/keyboard_left_button_3" android:background="@drawable/btn_keyboard_quantity_left_key" android:layout_width="fill_parent" android:layout_height="@dimen/key_quantity_height" android:text="@string/sanfenzhiyicang" />
+                <View android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" android:layout_marginLeft="@dimen/dip4" android:layout_marginRight="@dimen/dip4" android:layout_marginBottom="@dimen/dip1" />
+                <Button android:textColor="@color/black" android:id="@id/keyboard_left_button_4" android:background="@drawable/btn_keyboard_quantity_left_key" android:layout_width="fill_parent" android:layout_height="@dimen/key_quantity_height" android:text="@string/sifenzhiyicang" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/keyboard_right_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip2" android:layout_marginTop="@dimen/dip4" android:layout_marginRight="@dimen/dip4" android:layout_marginBottom="@dimen/dip4" android:layout_weight="1.0">
+                <android.inputmethodservice.KeyboardView android:id="@id/keyboard_quantity_view" android:background="@color/grey" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="@color/white" android:layout_alignParentBottom="true" android:keyBackground="@drawable/btn_keyboard_quantity_key" android:keyTextColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

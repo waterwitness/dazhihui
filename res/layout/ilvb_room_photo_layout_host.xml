@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#32ffffff" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/noVoice" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/no_voice_image" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ilvb_room_pop_up_lamp_host" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/voiceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="静音" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/reversal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ilvb_room_pop_up_camera_host" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="翻转" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/beauty" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ilvb_meiyan_host" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开美颜" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ilvb_record_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ilvb_record_menu_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ilvb_room_pop_up_lamp_host" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/ilvb_record_menu_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="启动录制" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ilvb_push_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ilvb_push_menu_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ilvb_room_pop_up_lamp_host" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_vertical" android:id="@id/ilvb_push_menu_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开启推流" />
+    </LinearLayout>
+</LinearLayout>

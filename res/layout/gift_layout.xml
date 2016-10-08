@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#88000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <LinearLayout android:orientation="vertical" android:background="#b3121a2a" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.android.dazhihui.ui.widget.flip.ViewFlow android:id="@id/viewFlow" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="5.0dip" />
+            <com.android.dazhihui.ui.widget.flip.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/gift_indic" android:padding="@dimen/dip2" android:layout_width="wrap_content" android:layout_height="wrap_content" dzh:activeColor="#ff3399ff" dzh:inactiveColor="#ff808080" dzh:radius="2.399994dip" dzh:inactiveType="fill" dzh:activeType="fill" dzh:circleSeparation="@dimen/dip15" />
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="25.0dip">
+            <View android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textColor="#fff3675e" android:layout_gravity="center_vertical" android:id="@id/noSelectTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="还没选择礼物哦~" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="#ff077df3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="余额:" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffdbe8f6" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="-- 慧币" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/ilvb_gift_congzhi_selector_color" android:id="@id/recharge_layout" android:background="@drawable/gift_congzhi_bg" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:paddingRight="10.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="充值" />
+            </LinearLayout>
+            <View android:background="#ff535252" android:layout_width="1.0px" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/commit" android:background="#ffb8b8b8" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="发送" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/zhezhao" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/continuousBtn" android:background="@drawable/ilvb_continuous_commit_bg" android:visibility="visible" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="连发\n30" />
+    </FrameLayout>
+</FrameLayout>

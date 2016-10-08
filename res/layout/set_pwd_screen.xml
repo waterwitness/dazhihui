@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/registerView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" dzh:midText="密码重置" dzh:leftDrawable="@drawable/back_arrow" style="@style/lottery_title" />
+    <ScrollView android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textColor="#ff2b7cce" android:id="@id/setWarn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/setPwdWarn" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/defPassView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="恭喜你注册成功" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您的默认密码为" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/red" android:id="@id/defPassTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="10.0dip">
+                <ImageView android:id="@id/pwdImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dip5" android:src="@drawable/password_bg" android:layout_centerVertical="true" />
+                <CheckBox android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/showPwd" android:layout_width="40.0dip" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/register_pwd_checked" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <EditText android:textSize="@dimen/font14" android:textColorHint="@color/darkgray" android:id="@id/pwdEt" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dip5" android:hint="@string/pwdLogin" android:singleLine="true" android:layout_toLeftOf="@id/showPwd" android:layout_toRightOf="@id/pwdImg" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="#ff008bda" android:id="@id/registerAgree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="《用户协议》" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <CheckBox android:textSize="14.0sp" android:textColor="@color/gray" android:id="@id/agreeCheck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/register_check_bg" android:text="同意" android:layout_toLeftOf="@id/registerAgree" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:textSize="@dimen/font16" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/confrim" android:background="@drawable/login_submit_bg" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip50" android:layout_margin="20.0dip" android:text="@string/submit" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

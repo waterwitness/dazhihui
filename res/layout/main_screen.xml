@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.SlideableFrame android:id="@id/main_slideable_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.android.dazhihui.ui.widget.stockchart.FastDealsView android:id="@id/fastdeals_id" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/keyboard_login_hide" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/keyboard_hide" android:layout_above="@id/keyboard_view" android:layout_alignParentRight="true" />
+        <android.inputmethodservice.KeyboardView android:id="@id/keyboard_view" android:background="#ff76808d" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="@color/white" android:shadowRadius="0.0" android:layout_alignParentBottom="true" android:keyBackground="@drawable/btn_keyboard_key" android:keyTextColor="@color/black" />
+    </LinearLayout>
+</RelativeLayout>

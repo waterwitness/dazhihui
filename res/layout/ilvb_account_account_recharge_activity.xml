@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff0f0f5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/top_title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:background="#fff0f0f5" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/dip19" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                <TextView android:textSize="@dimen/font18" android:textColor="#ff333333" android:id="@id/txt_balance_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ilvb_charge_balance" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/font15" android:textColor="#ff4d76ca" android:id="@id/txt_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip12" android:text="--" android:layout_toRightOf="@id/txt_balance_tip" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/img_balance_icon" android:layout_width="@dimen/dip20" android:layout_height="@dimen/dip15" android:layout_marginLeft="5.0dip" android:src="@drawable/ilvb_me_myaccount_reddiamond" android:scaleType="fitXY" android:layout_toRightOf="@id/txt_balance" android:layout_centerVertical="true" android:contentDescription="@string/app_name" />
+            </RelativeLayout>
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" />
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_marginTop="@dimen/dip10" />
+            <com.android.dazhihui.ui.widget.NoScrollGridView android:gravity="center" android:id="@id/paymethod_gridview" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="2" />
+            <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" />
+            <com.android.dazhihui.ui.widget.MyWebView android:id="@id/ilvb_account_webview" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/ll" android:background="@drawable/captial_analysis_red_gradient" android:paddingLeft="@dimen/dip30" android:layout_width="fill_parent" android:layout_height="@dimen/dip120">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/tv_yktitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="本月盈亏（元）" />
+        <TextView android:textSize="50.0sp" android:textColor="@color/white" android:id="@id/tv_yk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:text="46464" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="@dimen/dip40" android:layout_marginTop="@dimen/dip20">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/captial_analysis_bg" android:paddingLeft="@dimen/dip20" android:paddingBottom="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_account" android:visibility="visible" android:layout_width="@dimen/dip10" android:layout_height="@dimen/dip10" android:src="@drawable/red_point_shape" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/captial_stock_black" android:gravity="top" android:id="@id/tv_qsname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="湘财证券-" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/captial_stock_black" android:gravity="top" android:id="@id/tv_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*643:" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/captial_stock_black" android:gravity="top" android:id="@id/tv_account_yk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15.12%" />
+            <ImageView android:id="@id/img_sz" android:visibility="visible" android:layout_width="@dimen/dip10" android:layout_height="@dimen/dip10" android:layout_marginLeft="@dimen/dip10" android:src="@drawable/blue_point_shape" android:scaleType="fitCenter" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/captial_stock_black" android:gravity="top" android:id="@id/tv_szname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上证指数:  " />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/captial_stock_black" android:gravity="top" android:id="@id/tv_sz_yk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="15.12%" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.android.dazhihui.ui.delegate.newtrade.widge.CaptialTrendChart android:id="@id/trend" android:padding="@dimen/dip15" android:layout_width="fill_parent" android:layout_height="@dimen/dip250" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip30" android:layout_marginBottom="@dimen/dip20">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/captial_stock_black" android:gravity="center" android:id="@id/tv_comparewithdp_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="近半年跑赢大盘" />
+        <TextView android:textSize="@dimen/font_largest" android:textColor="@color/captial_stock_black" android:gravity="center" android:id="@id/tv_comparewithdp_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:text="100%" />
+    </LinearLayout>
+</LinearLayout>

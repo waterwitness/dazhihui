@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/historysearch_layout01" android:background="@android:color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10" android:layout_below="@id/mainmenu_upbar">
+        <RelativeLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dip10">
+            <EditText android:textSize="@dimen/font_medium" android:id="@id/historysearch_et1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="" android:layout_toLeftOf="@id/imageView1" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/divider" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <EditText android:textSize="@dimen/font_medium" android:id="@id/historysearch_et2" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:ems="10" android:layout_toRightOf="@id/imageView1" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+        <LinearLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+            <Button android:textSize="@dimen/font_medium" android:textColor="@color/white_color" android:layout_gravity="center|right" android:id="@id/historysearch_button1" android:background="@drawable/btn_blue_blue" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查询" style="@style/title_button_normal" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/entrustable_tableLayout_h" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/historysearch_layout01" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="true" dzh:title="@string/gpmc" />
+</RelativeLayout>

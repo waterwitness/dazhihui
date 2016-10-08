@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/kline_pop_period" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/up_arrow" android:layout_width="18.0dip" android:layout_height="15.0dip" android:layout_marginBottom="-3.0dip" android:src="@drawable/icon_min_popup_arrow" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip">
+        <com.android.dazhihui.ui.widget.PopGridView android:gravity="center" android:layout_gravity="center" android:id="@id/kline_popup" android:background="@drawable/minute_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/gridview_selected_bg" android:stretchMode="columnWidth" android:numColumns="1" />
+    </FrameLayout>
+    <ImageView android:id="@id/down_arrow" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="15.0dip" android:layout_marginTop="-3.0dip" android:src="@drawable/icon_min_popdown_arrow" />
+</LinearLayout>

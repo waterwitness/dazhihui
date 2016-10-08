@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.dazhihui.ui.widget.PopupMenu android:gravity="bottom" android:id="@id/ilvb_host_photo_menupop_id" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/more_text_color" android:gravity="center" android:id="@id/open_camera" android:background="@drawable/browser_list_item_select_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="拍照" android:drawableBottom="@drawable/browser_list_divider" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/more_text_color" android:gravity="center" android:id="@id/select_gallery" android:background="@drawable/browser_list_item_select_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="从手机相册选取" android:drawableBottom="@drawable/browser_list_divider" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/more_text_color" android:gravity="center" android:id="@id/cancel_action" android:background="@drawable/browser_list_item_select_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="0.0dip" android:text="取消" />
+</com.android.dazhihui.ui.widget.PopupMenu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/red" android:layout_width="fill_parent" android:layout_height="@dimen/dip25"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/stockchart_tab1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="分时" android:layout_weight="1.0" />
+    <View android:id="@id/stockchart_devider1" android:background="#ff3a3a3b" android:layout_width="@dimen/dip1" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/stockchart_tab2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="K线" android:layout_weight="1.0" />
+    <View android:id="@id/stockchart_devider2" android:background="#ff3a3a3b" android:layout_width="@dimen/dip1" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/stockchart_tab3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="资讯" android:layout_weight="1.0" />
+    <View android:id="@id/stockchart_devider3" android:background="#ff3a3a3b" android:layout_width="@dimen/dip1" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/stockchart_tab4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="股吧" android:layout_weight="1.0" />
+    <View android:id="@id/stockchart_devider4" android:background="#ff3a3a3b" android:layout_width="@dimen/dip1" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/stockchart_tab5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="F10" android:layout_weight="1.0" />
+    <View android:id="@id/stockchart_devider5" android:background="#ff3a3a3b" android:layout_width="@dimen/dip1" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:id="@id/stockchart_tab6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="更多" android:layout_weight="1.0" />
+</LinearLayout>

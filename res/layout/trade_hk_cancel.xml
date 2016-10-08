@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.delegate.screen.hk.DropDownTextView android:id="@id/order_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_buyorsell" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wt_buy_small" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="left" android:id="@id/tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="代码/时间" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="价格/状态" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="委托/成交" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="center" android:id="@id/tv_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="操作" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_nothing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/norecord" />
+        <ListView android:id="@id/lv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-1.0dip" android:divider="#ffe5e5e5" android:dividerHeight="1.0dip" android:footerDividersEnabled="false" />
+    </RelativeLayout>
+</LinearLayout>

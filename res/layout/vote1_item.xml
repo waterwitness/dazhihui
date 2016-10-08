@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/darkgray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="5.0">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_order_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:layout_weight="2.0" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="关于。。。。。" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:gravity="center" android:id="@id/btn_vote" android:background="@drawable/btn_white_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip8" android:text="未表决" android:layout_weight="2.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_vote" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0">
+        <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/btn_agree" android:background="@drawable/btn_white_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="同意" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/btn_disagree" android:background="@drawable/btn_white_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="对反" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/btn_waiver" android:background="@drawable/btn_white_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="放弃" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

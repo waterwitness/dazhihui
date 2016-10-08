@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="5.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/menu_ty211" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分时" android:layout_weight="1.0" style="@style/item_menustyle_kline_tab" />
+    <View android:id="@id/menu_view_gap0" android:background="#ff3a3a3b" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/menu_ty212" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="K线" android:layout_weight="1.0" style="@style/item_menustyle_kline_tab" />
+    <View android:id="@id/menu_view_gap1" android:background="#ff3a3a3b" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/menu_ll_213" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty213" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="资讯" style="@style/item_menustyle_kline_tab" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img213" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/red_item_normal" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <View android:id="@id/menu_view_gap2" android:background="#ff3a3a3b" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/menu_ll_214" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty214" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="股友会" style="@style/item_menustyle_kline_tab" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img214" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/red_item_normal" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <View android:id="@id/menu_view_gap3" android:background="#ff3a3a3b" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/menu_ty215" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="F10" android:layout_weight="1.0" style="@style/item_menustyle_kline_tab" />
+    <View android:id="@id/menu_view_gap4" android:background="#ff3a3a3b" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/menu_ty216" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="更多" android:layout_weight="1.0" style="@style/item_menustyle_kline_tab" />
+</merge>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="true"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_1" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_2" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_3" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_4" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_5" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_6" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_7" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_8" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_9" />
+    <item apk:duration="150" apk:drawable="@drawable/gift_heart_10" />
+</animation-list>

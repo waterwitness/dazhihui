@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pop_wisdom_message" android:background="@drawable/top_menu_bg" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip48"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pop_arrow_id" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/left_message_arrow" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/aboutWap" />
+    <com.android.dazhihui.ui.widget.MarqueeTextView android:textSize="18.0sp" android:textColor="@color/white_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/pop_tv_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="20.0dip" android:text="--------------------------" android:singleLine="true" android:layout_toLeftOf="@id/pop_arrow_id" android:layout_alignParentLeft="true" android:marqueeRepeatLimit="3" />
+</RelativeLayout>

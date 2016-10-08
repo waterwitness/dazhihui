@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:gravity="left" android:background="#ffcccccc" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="        您目前查看的是港股 BMP行情，根据港交所规定，查看 BMP港股实时行情需要手动刷新。\n        投资者忠告讯息：港股 BMP行情仅提供基本市场报价，投资者应考虑是否需要更详细的市场数据信息以协助投资决策。\n        免责声明：上海大智慧股份有限公司、香港交易所资讯服务有限公司、其控股公司及 / 或该等控股公司的任何附属公司均竭力确保所提供资讯的准确和可靠度，但不能保证其绝对准确和可靠，且亦不会承担因任何不准确或遗漏而引起的任何损失或损害的责任（不管是否侵权法下的责任或合约责任又或其他责任）。" />
+    <Button android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/exitBtn" android:background="@drawable/hh_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="确   定" />
+</LinearLayout>

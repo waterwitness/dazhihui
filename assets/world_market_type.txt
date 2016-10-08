@@ -1,0 +1,522 @@
+[
+    {
+        "header": [
+            {
+                "cyzs": "常用指数",
+                "ytzs": "亚太指数",
+                "omzs": "欧美指数",
+                "qqzs": "全球指数",
+                "gj": "国际",
+                "gn": "国内"
+            }
+        ],
+        "data": 
+            {
+                "cyzs": [
+                    {
+                        "name": "IF当月连续",
+                        "type": "IF0001",
+                        "state": "0",
+                        "vs": "1"
+                    },
+                    {
+                        "name": "道琼斯",
+                        "type": "DJIA",
+                        "state": "0",
+                        "vs": "2"
+                    },
+                    {
+                        "name": "纳斯达克",
+                        "type": "NDX",
+                        "state": "0",
+                        "vs": "3"
+                    },
+                    {
+                        "name": "标普500",
+                        "type": "SPX",
+                        "state": "0",
+                        "vs": "4"
+                    },
+                    {
+                        "name": "恒生指数",
+                        "type": "HSI",
+                        "state": "0",
+                        "vs": "5"
+                    },
+                    {
+                        "name": "日经225",
+                        "type": "N225",
+                        "state": "0",
+                        "vs": "6"
+                    },
+                    {
+                        "name": "富士海峡",
+                        "type": "FTSTI",
+                        "state": "0",
+                        "vs": "7"
+                    },
+                    {
+                        "name": "韩国kospi200指数",
+                        "type": "KSP2",
+                        "state": "0",
+                        "vs": "8"
+                    },
+                    {
+                        "name": "英国富时",
+                        "type": "FTSE",
+                        "state": "0",
+                        "vs": "9"
+                    },
+                    {
+                        "name": "法国CAC",
+                        "type": "FCHI",
+                        "state": "0",
+                        "vs": "10"
+                    },
+                    {
+                        "name": "德国DAX",
+                        "type": "GDAXI",
+                        "state": "0",
+                        "vs": "11"
+                    },
+                    {
+                        "name": "COMEX黄金连续",
+                        "type": "GCY0",
+                        "state": "0",
+                        "vs": "12"
+                    },
+                    {
+                        "name": "沪金连续",
+                        "type": "AU0001",
+                        "state": "0",
+                        "vs": "18"
+                    },
+                    {
+                        "name": "COMEX白银连续",
+                        "type": "SIY0",
+                        "state": "0",
+                        "vs": "17"
+                    },
+                    {
+                        "name": "美原油连续",
+                        "type": "CLY0",
+                        "state": "0",
+                        "vs": "19"
+                    },
+                    {
+                        "name": "美元指数",
+                        "type": "UDI",
+                        "state": "0",
+                        "vs": "13"
+                    }
+                ],
+                "ytzs": [
+                    {
+                        "name": "恒生指数",
+                        "type": "HSI",
+                        "state": "1",
+                        "vs": "20"
+                    },
+                    {
+                        "name": "日经225指数",
+                        "type": "N225",
+                        "state": "0",
+                        "vs": "21"
+                    },
+                    {
+                        "name": "韩国KOSPI200指数",
+                        "type": "KSP2",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "富时海峡",
+                        "type": "FTSTI",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "印度孟买SENSEX30指数",
+                        "type": "SENSEX",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "富时马来西亚KLCI指数",
+                        "type": "KLSE",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "标普/澳证200指数",
+                        "type": "XJO",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "台湾加权指数",
+                        "type": "TWII",
+                        "state": "0",
+                        "vs": "22"
+                    }
+                ],
+                "omzs": [
+                    {
+                        "name": "标普500",
+                        "type": "SPX",
+                        "state": "1",
+                        "vs": "23"
+                    },
+                    {
+                        "name": "道琼斯",
+                        "type": "DJIA",
+                        "state": "0",
+                        "vs": "24"
+                    },
+                    {
+                        "name": "纳斯达克",
+                        "type": "NDX",
+                        "state": "0",
+                        "vs": "25"
+                    },
+                    {
+                        "name": "英国富时",
+                        "type": "FTSE",
+                        "state": "0",
+                        "vs": "26"
+                    },
+                    {
+                        "name": "欧洲斯托克50指数",
+                        "type": "SX5E",
+                        "state": "0",
+                        "vs": "27"
+                    },
+                    {
+                        "name": "德国DAX",
+                        "type": "GDAXI",
+                        "state": "0",
+                        "vs": "28"
+                    },
+                    {
+                        "name": "法国CAC",
+                        "type": "FCHI",
+                        "state": "0",
+                        "vs": "29"
+                    },
+                    {
+                        "name": "荷兰阿姆斯特丹指数",
+                        "type": "AEX",
+                        "state": "0",
+                        "vs": "30"
+                    },
+                    {
+                        "name": "西班牙IBEX35指数",
+                        "type": "IBEX",
+                        "state": "0",
+                        "vs": "31"
+                    },
+                    {
+                        "name": "瑞典斯德哥尔摩30指数",
+                        "type": "S30",
+                        "state": "0",
+                        "vs": "31"
+                    },
+                    {
+                        "name": "俄罗斯RTS指数",
+                        "type": "RTS",
+                        "state": "0",
+                        "vs": "31"
+                    }
+                ],
+                "qqzs": [
+                	{
+                        "name": "恒生指数",
+                        "type": "HSI",
+                        "state": "1",
+                        "vs": "20"
+                    },
+                    {
+                        "name": "日经225指数",
+                        "type": "N225",
+                        "state": "0",
+                        "vs": "21"
+                    },
+                    {
+                        "name": "韩国KOSPI200指数",
+                        "type": "KSP2",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "富时海峡",
+                        "type": "FTSTI",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "印度孟买SENSEX30指数",
+                        "type": "SENSEX",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "富时马来西亚KLCI指数",
+                        "type": "KLSE",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "标普/澳证200指数",
+                        "type": "XJO",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "台湾加权指数",
+                        "type": "TWII",
+                        "state": "0",
+                        "vs": "22"
+                    },
+                    {
+                        "name": "标普500",
+                        "type": "SPX",
+                        "state": "1",
+                        "vs": "23"
+                    },
+                    {
+                        "name": "道琼斯",
+                        "type": "DJIA",
+                        "state": "0",
+                        "vs": "24"
+                    },
+                    {
+                        "name": "纳斯达克",
+                        "type": "NDX",
+                        "state": "0",
+                        "vs": "25"
+                    },
+                    {
+                        "name": "英国富时",
+                        "type": "FTSE",
+                        "state": "0",
+                        "vs": "26"
+                    },
+                    {
+                        "name": "欧洲斯托克50指数",
+                        "type": "SX5E",
+                        "state": "0",
+                        "vs": "27"
+                    },
+                    {
+                        "name": "德国DAX",
+                        "type": "GDAXI",
+                        "state": "0",
+                        "vs": "28"
+                    },
+                    {
+                        "name": "法国CAC",
+                        "type": "FCHI",
+                        "state": "0",
+                        "vs": "29"
+                    },
+                    {
+                        "name": "荷兰阿姆斯特丹指数",
+                        "type": "AEX",
+                        "state": "0",
+                        "vs": "30"
+                    },
+                    {
+                        "name": "西班牙IBEX35指数",
+                        "type": "IBEX",
+                        "state": "0",
+                        "vs": "31"
+                    },
+                    {
+                        "name": "瑞典斯德哥尔摩30指数",
+                        "type": "S30",
+                        "state": "0",
+                        "vs": "31"
+                    },
+                    {
+                        "name": "俄罗斯RTS指数",
+                        "type": "RTS",
+                        "state": "0",
+                        "vs": "31"
+                    }
+                ],
+                "gn": [
+                    {
+                        "name": "沪金连续",
+                        "type": "au0001",
+                        "state": "1",
+                        "vs": "32"
+                    },
+                    {
+                        "name": "沪银连续",
+                        "type": "ag0001",
+                        "state": "0",
+                        "vs": "33"
+                    },
+                    {
+                        "name": "沪铜连续",
+                        "type": "cu0001",
+                        "state": "0",
+                        "vs": "34"
+                    },
+                    {
+                        "name": "沪铝连续",
+                        "type": "al0001",
+                        "state": "0",
+                        "vs": "35"
+                    },
+                    {
+                        "name": "沪锌连续",
+                        "type": "zn0001",
+                        "state": "0",
+                        "vs": "36"
+                    },
+                    {
+                        "name": "沪铅连续",
+                        "type": "pb0001",
+                        "state": "0",
+                        "vs": "37"
+                    },
+                    {
+                        "name": "螺纹连续",
+                        "type": "rb0001",
+                        "state": "0",
+                        "vs": "38"
+                    },
+                    {
+                        "name": "白糖连续",
+                        "type": "sr0001",
+                        "state": "0",
+                        "vs": "39"
+                    },
+                    {
+                        "name": "玉米连续",
+                        "type": "c0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "郑棉连续",
+                        "type": "cf0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "豆油连续",
+                        "type": "y0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "橡胶连续",
+                        "type": "ru0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "强麦连续",
+                        "type": "ws0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "玻璃连续",
+                        "type": "fg0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "聚乙烯连续",
+                        "type": "i0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "焦煤连续",
+                        "type": "jm0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "甲醇连续",
+                        "type": "me0001",
+                        "state": "0",
+                        "vs": "40"
+                    },
+                    {
+                        "name": "燃油连续",
+                        "type": "fu0001",
+                        "state": "0",
+                        "vs": "40"
+                    }
+                ],
+                "gj": [
+                    {
+                        "name": "COMEX黄金连续",
+                        "type": "GCY0",
+                        "state": "1",
+                        "vs": "41"
+                    },
+                    {
+                        "name": "COMEX白银连续",
+                        "type": "SIY0",
+                        "state": "0",
+                        "vs": "42"
+                    },
+                    {
+                        "name": "美原油连续",
+                        "type": "CLY0",
+                        "state": "0",
+                        "vs": "43"
+                    },
+                    {
+                        "name": "美元指数",
+                        "type": "UDI",
+                        "state": "0",
+                        "vs": "44"
+                    },
+                    {
+                        "name": "美豆粕连续",
+                        "type": "ZMY0",
+                        "state": "0",
+                        "vs": "45"
+                    },
+                    {
+                        "name": "美豆油连续",
+                        "type": "ZLY0",
+                        "state": "0",
+                        "vs": "46"
+                    },
+                    {
+                        "name": "美玉米连续",
+                        "type": "ZCY0",
+                        "state": "0",
+                        "vs": "46"
+                    },
+                    {
+                        "name": "SGX棕榈油连续",
+                        "type": "POY0",
+                        "state": "0",
+                        "vs": "46"
+                    },
+                    {
+                        "name": "#11国际糖连续",
+                        "type": "SBY0",
+                        "state": "0",
+                        "vs": "46"
+                    },
+                    {
+                        "name": "美棉花2号连续",
+                        "type": "CTY0",
+                        "state": "0",
+                        "vs": "46"
+                    }
+                ]
+            }
+        
+    }
+]

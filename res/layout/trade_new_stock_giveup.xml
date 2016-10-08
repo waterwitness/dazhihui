@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="@dimen/dip35">
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/tv_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_stock_apply_stock" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:gravity="right" android:id="@id/tv_name" android:background="@null" android:layout_width="@dimen/dip100" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:singleLine="true" android:layout_alignParentRight="true" />
+            <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_code" android:background="@null" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:hint="点击选择下方中签股票" android:singleLine="true" android:layout_toLeftOf="@id/tv_name" android:layout_toRightOf="@id/tv_code" />
+        </RelativeLayout>
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip35">
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中签股量" />
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/tv_zqsl" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip10" android:numeric="integer" />
+        </LinearLayout>
+        <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip35">
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="放弃股数" />
+            <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_fqsl" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip10" android:hint="请输入放弃的股数" android:numeric="integer" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:id="@id/btn" android:background="@drawable/wt_button" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:layout_marginLeft="@dimen/dip10" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip10" android:text="放弃" />
+        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginRight="@dimen/dip10" android:text="@string/new_stock_giveup_hint" android:singleLine="false" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/ll_old_table" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="false" dzh:title="@string/gpmc" />
+</LinearLayout>

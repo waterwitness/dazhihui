@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/huaIco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/hua" android:layout_width="72.0dip" android:layout_height="45.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/about_icon" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/continueIco" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="-15.0dip" android:src="@drawable/ilvb_continue_gift" android:layout_toRightOf="@id/hua" />
+        <ImageView android:id="@id/checkedIco" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="-15.0dip" android:src="@drawable/ilvb_checked" android:layout_toRightOf="@id/hua" />
+    </RelativeLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffd3d3d3" android:id="@id/name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="金玫瑰" android:layout_below="@id/huaIco" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff077df3" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="10 慧币" android:layout_below="@id/huaIco" android:layout_centerHorizontal="true" />
+</RelativeLayout>

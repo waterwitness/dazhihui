@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/dip1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font16" android:textColor="@color/theme_black_market_list_item_stock_name" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/market_label_title" android:padding="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="--" android:singleLine="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/indexPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/hideView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:layout_marginBottom="@dimen/dip5">
+        <TextView android:textSize="11.0sp" android:gravity="center|right" android:id="@id/indexZd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="--" android:layout_weight="1.0" />
+        <TextView android:textSize="11.0sp" android:gravity="center|left" android:id="@id/indexZf" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="--" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

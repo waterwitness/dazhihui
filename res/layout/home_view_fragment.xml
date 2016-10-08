@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/theme_black_market_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhMainHeader android:id="@id/dzhMainHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/adver_149" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/dzhMainHeader" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.HomeViewRefreshLayout android:id="@id/home_view_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/adver_149" />
+    <com.android.dazhihui.ui.widget.HotVideoViewFlow android:id="@id/hotvideo_flowbottom" android:background="@color/yellow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/bank_left_bt" android:paddingTop="@dimen/dip5" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip5" android:layout_width="35.0dip" android:layout_height="45.0dip" android:layout_marginBottom="30.0dip" android:src="@drawable/bank_hide_bt" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/back_to_bank_bt" android:background="@drawable/bank_button_bg" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginBottom="35.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/image" android:layout_width="@dimen/dip20" android:layout_height="@dimen/dip20" android:src="@drawable/bank_button_left_image" android:scaleType="fitXY" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:text="返回手机银行" android:layout_toRightOf="@id/image" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

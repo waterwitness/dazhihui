@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#e0000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/gold_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/gold2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:src="@drawable/gold3" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/gold1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gold1" android:layout_toLeftOf="@id/gold2" android:contentDescription="@null" />
+        <ImageView android:id="@id/gold3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gold2" android:layout_toRightOf="@id/gold2" android:contentDescription="@null" />
+        <ImageView android:id="@id/login_sucess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gold_sucess" android:scaleType="fitStart" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <Button android:textSize="18.0sp" android:textColor="#ff853b00" android:id="@id/gold_btn" android:background="@drawable/gold_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="花智慧币买L2" android:layout_centerInParent="true" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffedb429" android:gravity="center" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="少数&quot;慧登录&quot;用户的账号数据可能不稳定。\n请你到&quot;个人中心&quot;绑定手机，提升账号安全" android:layout_below="@id/gold_btn" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_above="@id/gold_btn" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="#fff7bf0d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你已获得" />
+            <TextView android:textSize="30.0sp" android:textColor="@color/white" android:id="@id/dzh_gold" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            <TextView android:textSize="18.0sp" android:textColor="#fff7bf0d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="币" />
+        </LinearLayout>
+        <ImageView android:id="@id/gold_full" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gold_full" android:scaleType="fitEnd" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

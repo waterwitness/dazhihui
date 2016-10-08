@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />   
+	<script type="text/javascript" src="js/cordova-3.5.0.js"></script>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	
+</head>
+<body>
+<!--<button onclick="test()">登录</button>-->
+<!--<button onclick="refresh()">刷新</button>-->
+<!--<button onclick="getSession()">获取session</button>-->
+<button onclick="uploadImage()">图片</button>
+<button onclick="capture()">录像</button>
+<button onclick="post()">接口测试</button>
+<button onclick="captureAnychatVideo()">anychatVideo</button>
+<button onclick="openAccountFinish()">openAccountFinish</button>
+<button onclick="openAccountSafeExit()">openAccountSafeExit</button>
+<a href="http://172.16.30.28:8080/WebContent/#/page/editSelectStock">editSelectStock</a>
+<a href="http://172.16.30.28:8080/WebContent/#/page/mySelectStock">mySelectStock</a>
+<a href="http://172.16.30.28:8080/WebContent/#/page/selfSelectStock">selfSelectStock</a>
+<a href="http://172.16.30.28:8080/WebContent/#/page/searchStock">searchStock</a>
+<!--<button onclick="diyCamera()">自定义照相</button>-->
+<video id="playArea" src="" controls="controls" style="width:100%;height:300px;">
+您的浏览器不支持 video 标签。
+</video>
+<!--<img id = "imgShow" src="" width="640" height="480">-->
+<!--
+	理想情况下我们应该先判断你的设备上是否
+	有摄像头或相机，但简单起见，我们在这里直接
+	写出了HTML标记，而不是用JavaScript先判断
+	然后动态生成这些标记
+-->
+<!--
+<video id="video" width="640" height="480" autoplay></video>
+<button id="snap">Snap Photo</button>
+<canvas id="canvas" width="640" height="480"></canvas>
+-->
+<script type="text/javascript">
+
+	// 等待加载PhoneGap
+	document.addEventListener("deviceready", onDeviceReady, false);
+
+	// PhoneGap加载完毕
+	function onDeviceReady() {
+		//按钮事件
+		document.addEventListener("backbutton", eventBackButton, false); //返回键
+	}
+
+	//返回键
+	function eventBackButton(){
+		var params={};
+		params['action'] = "showToast";
+		cordova.exec(function(args){
+			alert(args);
+
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+	}
+
+
+
+	function test(){
+		var params={};
+		params['action'] = "Login";
+		cordova.exec(function(args){
+
+
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+	};
+
+	function refresh(){
+		var params={};
+		params['action'] = "refresh";
+		cordova.exec(function(args){
+
+
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	};
+
+	function getSession(){
+
+		var params={};
+		params['action'] = "getSession";
+		cordova.exec(function(args){
+			alert(args);
+
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	};
+
+
+	function capture(){
+		var params={};
+		params['action'] = "capture";
+		cordova.exec(function(args){
+			var kk = args;
+			 alert(kk.substring(0,6));
+			 document.getElementById("playArea").src=args;
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	};
+
+	function diyCamera(){
+		var params={};
+		params['action'] = "DIYCamera";
+		cordova.exec(function(args){
+			var kk = args;
+			 alert(kk.substring(0,6));
+			 document.getElementById("playArea").src=args;
+			imgShow.src=args;
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	}
+
+	function uploadImage(){
+		var params={};
+		params['action'] = "uploadImage";
+		cordova.exec(function(args){
+			var kk = args;
+			 alert(kk.substring(0,6));
+			// alert(args);
+			// document.getElementById("imgShow").src=args;
+			imgShow.src=args;
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	};
+	
+	
+	function post(){
+		var params={};
+		params['action'] = "post";
+		
+		var param ={};
+		param['SERVICE_ID'] = '20010';
+		param['HELP_TYPE'] = '0';
+		
+		params['param'] = param;
+		
+		cordova.exec(function(args){
+			var kk = args;
+			 alert(kk['total']);
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	};
+
+	
+	function captureAnychatVideo(){
+		 var params={};
+         params['action'] = "captureAnychatVideo";
+         params['anychatServerAddr'] = "218.17.116.133";  //anychat服务器地址
+         params['anychatServerPort'] = 4112;  //anychat服务器端口
+         params['anychatRemoteUserId'] = "111";//排队获取到的坐席ID
+         params['mobileTel'] = "13787654321";          //用户手机号
+              
+         cordova.exec(function(args){
+              var kk = args;
+              alert(kk.substring(0,6));
+                           
+         },function(e){
+                           
+                           
+         }, "webInterface", params['action'], [params]);
+
+	};
+	
+	function openAccountFinish(){
+              var params={};
+              params['action'] = "openAccountFinish";
+              params['company'] = "10100";  //给券商代码
+              cordova.exec(null,null, "webInterface", params['action'], [params]);
+                           
+          };
+          
+	function openAccountSafeExit(){
+				var params={};
+              params['action'] = "openAccountSafeExit";
+              cordova.exec(null,null, "webInterface", params['action'], [params]);    
+          };
+	
+	function  callBackResult(args){
+		alert(args.substr(100,6));
+
+	};
+/*
+	function uploadVideo(){
+		var  xmlPara = "<requests><global/><request><funcId><![CDATA[koq_videoUp]]></funcId><url><![CDATA[http://192.168.14.50:8089/kow/qwopenacct.do]]></url><MOBILE_TEL><![CDATA[13263097265]]></MOBILE_TEL><FILENAME><![CDATA[132433]]></FILENAME><CUST_ID><![CDATA[37460]]></CUST_ID><COMPANY_ID><![CDATA[10100]]></COMPANY_ID><INT_ORG><![CDATA[102]]></INT_ORG><FILE_BASE64><![CDATA[safjdsffjdsfjhdsjfhjdsh]]></FILE_BASE64></request></requests>";
+
+  		$.ajax({
+  			type: 'POST',
+  			url: "http://192.168.14.50:8089/kow/qwopenacct.do",
+  			data: xmlPara,
+  			success: function(data){
+
+  				alert(data);
+  			},
+  			dataType: "xml"
+		});														
+							
+
+	}
+
+	// Put event listeners into place
+window.addEventListener("DOMContentLoaded", function() {
+	// Grab elements, create settings, etc.
+	var canvas = document.getElementById("canvas"),
+		context = canvas.getContext("2d"),
+		video = document.getElementById("video"),
+		videoObj = { "video": true },
+		errBack = function(error) {
+			console.log("Video capture error: ", error.code); 
+		};
+
+alert(navigator.getUserMedia+" "+navigator.webkitGetUserMedia+" "+navigator.mozGetUserMedia);
+	// Put video listeners into place
+	if(navigator.getUserMedia) { // Standard
+		navigator.getUserMedia(videoObj, function(stream) {
+			video.src = stream;
+			video.play();
+		}, errBack);
+	} else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+		navigator.webkitGetUserMedia(videoObj, function(stream){
+			video.src = window.webkitURL.createObjectURL(stream);
+			video.play();
+		}, errBack);
+	}
+	else if(navigator.mozGetUserMedia) { // Firefox-prefixed
+		navigator.mozGetUserMedia(videoObj, function(stream){
+			video.src = window.URL.createObjectURL(stream);
+			video.play();
+		}, errBack);
+	}
+}, false);
+
+
+// 触发拍照动作
+document.getElementById("snap")
+       .addEventListener("click", function() {
+		canvas.getContext("2d").drawImage(video, 0, 0, 640, 480);
+});
+*/
+</script>
+
+</body>
+</html>

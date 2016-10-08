@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="手机开户" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7a7a7a" android:id="@id/introduce" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="智能化一键申购" android:layout_below="@id/tv" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/red" android:id="@id/newsTip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip20" android:text="今日有新股" android:layout_toLeftOf="@id/img_red" />
+                <ImageView android:gravity="center_vertical" android:id="@id/img_red" android:visibility="visible" android:layout_width="@dimen/dip8" android:layout_height="@dimen/dip8" android:layout_marginRight="@dimen/dip10" android:src="@drawable/red_item_normal" android:scaleType="fitCenter" android:layout_toLeftOf="@id/img" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <ImageView android:gravity="center_vertical" android:id="@id/img" android:layout_width="@dimen/dip20" android:layout_height="@dimen/dip20" android:src="@drawable/icon_plate_more" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

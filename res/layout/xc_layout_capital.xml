@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="9.0dip" android:layout_marginRight="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/capital_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/bule_color" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="资产" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/back_color" android:layout_gravity="right" android:id="@id/capital_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/transfer_button" android:background="@drawable/wt_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:text="银证转账" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/wo_lines" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="3.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/bule_color" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="市值" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/back_color" android:layout_gravity="right" android:id="@id/value_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/bule_color" android:layout_gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="盈亏" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/back_color" android:layout_gravity="right" android:id="@id/profit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:layout_weight="2.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/wo_lines" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="3.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="14.0sp" android:textColor="@color/bule_color" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="可用" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/back_color" android:layout_gravity="right" android:id="@id/avaliable_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:layout_weight="2.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textColor="@color/bule_color" android:layout_gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="可取" android:layout_weight="1.0" />
+                <TextView android:textColor="@color/back_color" android:layout_gravity="right" android:id="@id/take_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="--" android:layout_weight="2.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

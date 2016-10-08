@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbarfund" android:background="@drawable/title_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fund_total" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/dip40" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="基金市值" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/total_fund" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="--" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="总盈亏" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/total_balance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="--" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/dip40" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可用资金" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/can_used_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="--" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff7f7f7f" android:gravity="left" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="可取资金" />
+                <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/can_get_money" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="--" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/fund_trade_menu" android:background="#ffffffff" android:paddingTop="@dimen/dip7" android:paddingBottom="@dimen/dip7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fund_total">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fund_menu_mairu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_buy" android:scaleType="centerInside" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_buy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="申购" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fund_menu_maichu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_sell" android:scaleType="centerInside" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_sell" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="赎回" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fund_menu_chedan" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_chedan" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="撤单" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fund_menu_chicang" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_search" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_search" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="查询" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fund_menu_more" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="50.0dip" android:layout_weight="1.0">
+                <ImageView android:gravity="center" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/wt_more" />
+                <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="更多" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_nothing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip10" android:src="@drawable/norecord" />
+            <ListView android:id="@id/my_fund_list" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#ffe5e5e5" android:dividerHeight="1.0px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

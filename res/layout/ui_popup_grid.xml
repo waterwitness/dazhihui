@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gv_arrow" android:layout_width="12.0dip" android:layout_height="10.0dip" android:layout_marginBottom="-2.0dip" android:src="@drawable/icon_popup_arrow" />
+    <com.android.dazhihui.ui.widget.PopGridView android:id="@id/gv_popup" android:background="@drawable/minute_tab_bg" android:layout_width="256.0dip" android:layout_height="wrap_content" android:listSelector="@drawable/gridview_selected_bg" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:columnWidth="64.0dip" android:numColumns="2" />
+</LinearLayout>

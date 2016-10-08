@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="8.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/message_item_img" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:scaleType="fitXY" android:layout_below="@id/mess_item_number" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/mess_item_number" android:background="@drawable/menu_redpoint_bg" android:focusable="false" android:clickable="false" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginLeft="-8.0dip" android:layout_marginRight="5.0dip" android:text="2" android:layout_toRightOf="@id/message_item_img" />
+    <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/mess_item_name" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_toRightOf="@id/message_item_img" android:layout_centerVertical="true" />
+</RelativeLayout>

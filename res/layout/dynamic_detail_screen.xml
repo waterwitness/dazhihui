@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/theme_black_main_screen_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/comment_title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/comment_edit" android:background="@drawable/search_backgroud" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/comment_voice" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_micro" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/comment_sep" android:background="@drawable/search_drivid" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/comment_voice" android:layout_centerVertical="true" />
+        <TextView android:id="@id/comment_send" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/submit" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/comment_sep1" android:background="@drawable/search_drivid" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_marginLeft="3.0dip" android:layout_toLeftOf="@id/comment_send" android:layout_centerVertical="true" />
+        <EditText android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/comment_content" android:background="@drawable/input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:hint="@string/topic_hint" android:layout_toLeftOf="@id/comment_sep1" android:layout_toRightOf="@id/comment_sep" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.AppendList android:id="@id/comment_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/comment_edit" android:layout_below="@id/comment_title" dzh:appBottom="@layout/hj_ui_bottom" dzh:appTop="@layout/hj_ui_top" />
+</RelativeLayout>

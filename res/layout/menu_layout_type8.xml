@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty81" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_technical_lay" android:layout_weight="1.0" style="@style/item_menustyle_new" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty82" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_basic_lay" android:layout_weight="1.0" style="@style/item_menustyle_new" />
+    </LinearLayout>
+    <TextView android:id="@id/menu_ty83" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/item_data_lay" android:layout_weight="1.0" style="@style/item_menustyle_new" />
+</merge>

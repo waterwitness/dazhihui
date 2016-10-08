@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/table_line_1" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/table_tips_1" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="当前时间" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_2" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/cost_time_id" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="--" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_3" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/table_tips_2" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="当日获利比例" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_4" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <LinearLayout android:id="@id/cost_rate_id" android:paddingLeft="@dimen/dip10" android:paddingTop="@dimen/dip2" android:paddingRight="@dimen/dip10" android:paddingBottom="@dimen/dip2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.android.dazhihui.ui.widget.stockchart.CustomProgressBar android:gravity="center|left" android:id="@id/cost_profit_pb" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/table_line_5" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/table_tips_3" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="当日平均成本" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_6" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/cost_average_id" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="--" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_7" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/table_tips_4" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="当日大单成本" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_8" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/cost_big_id" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="--" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_9" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/table_tips_5" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="90%成本集中于" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_10" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/cost_nine_id" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="--" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_11" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/table_tips_6" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="70%成本集中于" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_12" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+    <TextView android:textSize="8.0sp" android:textColor="@color/black" android:gravity="center|left" android:id="@id/cost_senven_id" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip0" android:text="--" android:singleLine="true" android:layout_weight="1.0" />
+    <View android:id="@id/table_line_13" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="@dimen/dipHalf" />
+</LinearLayout>

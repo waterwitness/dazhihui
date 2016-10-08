@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.7" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <VideoView android:id="@id/videoView_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="100.0dip" android:layout_above="@id/videoView_preview" />
+        <ImageView android:id="@id/recordPlayIv" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crh_vdieo_bj" android:onClick="playVideo" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="20.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/imageView_back" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="27.0dip" android:src="@drawable/crh_video_goback" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/imageView_use" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/crh_upload" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

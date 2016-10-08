@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/attention_login_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_empty" android:layout_width="200.0dip" android:layout_height="150.0dip" android:layout_marginTop="@dimen/dip25" android:src="@drawable/empty_contet_bg" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+        <Button android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/attention_login_id" android:background="@drawable/livebar_room_item" android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip15" android:text="立即登录" android:layout_below="@id/img_empty" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/attention_content_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

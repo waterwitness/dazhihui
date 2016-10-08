@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/moveinto_or_out" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/moveinto_or_out" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="#ff0b0c0f" android:id="@id/move_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自动转入" />
+            <TextView android:textSize="11.0sp" android:textColor="#ffacacac" android:id="@id/move_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-08-01 14:22:36" />
+        </LinearLayout>
+        <TextView android:textSize="15.0sp" android:textColor="#ffff2323" android:id="@id/move_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="2000.00" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

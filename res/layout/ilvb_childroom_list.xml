@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#fff1f0f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.NoScrollGridView android:id="@id/tag_gridview" android:background="@drawable/ilvb_topic_griditem_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:listSelector="@color/transparent" android:stretchMode="columnWidth" android:numColumns="3" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/list_none_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dip150" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:src="@drawable/no_content" android:layout_below="@id/tag_gridview" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/attention_none_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:layout_below="@id/tag_gridview" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/attention_none_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ilvb_attention_none" />
+        <TextView android:textSize="@dimen/font16" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip15" android:text="您的关注静悄悄" />
+        <TextView android:textSize="@dimen/font16" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快去看直播!" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/room_gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/dip5" android:layout_below="@id/tag_gridview" />
+</RelativeLayout>

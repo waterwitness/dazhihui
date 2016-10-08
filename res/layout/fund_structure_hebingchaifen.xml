@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/whole" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addtitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/addtitle">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/mother_code_amount_LinearLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <RelativeLayout android:id="@id/mother_code_Layout" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginLeft="15.0dip">
+                    <EditText android:id="@id/input_mother_code" android:background="@null" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="44.0dip" android:minWidth="60.0dip" android:hint="请输入合并的母基金代码" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/mother_codeL" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip">
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black_color" android:layout_gravity="center" android:id="@id/mother_code_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/black_color" android:layout_gravity="center" android:id="@id/mother_code_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+                        <com.android.dazhihui.ui.widget.BorderedTextView android:textColor="#fff9c201" android:layout_gravity="center" android:id="@id/market_type" android:layout_width="wrap_content" android:layout_height="15.0dip" android:layout_marginLeft="20.0dip" dzh:borderColor="#f9c201" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/cancel" android:background="@drawable/fund_cancle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/mother_amount_L" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/mother_code_amount_LinearLayout">
+                <EditText android:layout_gravity="center" android:id="@id/input_amount" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:hint="请输入数量" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/hebing_l1" android:layout_width="fill_parent" android:layout_height="61.0dip" android:layout_below="@id/mother_amount_L">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:id="@id/split_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="可分拆数量：" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/hebing_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/split_text" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff595959" android:id="@id/chaifen_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:text="(不包括预估可能分拆数量)" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/hebing_l2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="前日净值：   " />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/hebing_jingzhi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/calculation_buy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/hebing_l1">
+                <View android:background="#ffb5b5b5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/calculation_buy_moneyl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申购金额：" />
+                    <TextView android:textSize="12.0sp" android:id="@id/shengou_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/calculation_buy_moneyl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申购费率：" />
+                    <EditText android:textSize="15.0sp" android:id="@id/shengou_rate" android:background="@drawable/fund_input" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="1.2" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/shengou_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" />
+                </LinearLayout>
+                <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/predict_amountl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:layout_gravity="center" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预估可分拆数量：" />
+                    <TextView android:textSize="12.0sp" android:layout_gravity="center" android:id="@id/predict_amounttext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/text2" />
+                    <Button android:textSize="12.0sp" android:textColor="@drawable/fund_button_text_color_reverse" android:gravity="center" android:layout_gravity="center" android:id="@id/predict_amount_btn" android:background="@drawable/fund_button_hot_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="计算一下" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:background="#ffb5b5b5" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ff000000" android:gravity="bottom" android:id="@id/zijinjin_info" android:layout_width="wrap_content" android:layout_height="37.0dip" android:layout_marginLeft="15.0dip" android:text="子基金相关信息" android:layout_below="@id/calculation_buy" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/fene_l" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/zijinjin_info">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A份额 " />
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/nameA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/codeA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+                <View android:layout_gravity="center" android:background="#ffe5e5e5" android:layout_width="1.0dip" android:layout_height="60.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="12.0sp" android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B份额 " />
+                    <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:id="@id/nameB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff000000" android:id="@id/codeB" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/amount_l1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/fene_l">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A数量：   " />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/amountA" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="B数量：" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/amountB" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/amount_l2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/amount_l1">
+                <TextView android:textColor="#ff595959" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:text="AB份额比例：   " />
+                <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/amountABproportion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+            <Button android:textSize="16.0sp" android:textColor="@drawable/wt_button_buy_text_color" android:id="@id/chaifen_confirm_btn" android:background="@drawable/wt_button_sell" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="确定" android:layout_below="@id/amount_l2" style="@style/title_button_normal" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

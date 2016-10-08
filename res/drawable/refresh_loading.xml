@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="ring" android:innerRadiusRatio="4.0" android:thicknessRatio="8.0" android:useLevel="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="25.0dip" android:width="25.0dip" />
+    <gradient android:startColor="@color/refresh_loading_start" android:endColor="@color/refresh_loading_end" android:useLevel="false" android:type="sweep" android:centerY="0.5" android:centerColor="@color/refresh_loading_center" />
+</shape>

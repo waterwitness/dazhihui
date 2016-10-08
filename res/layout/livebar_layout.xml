@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/theme_white_19_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhMainHeader android:id="@id/dzhMainHeader_live" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.MyViewPager android:id="@id/mVp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dzhMainHeader_live" />
+    <RelativeLayout android:id="@id/zhezhao" android:background="#e0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advert137" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/adv_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/adv_close" android:layout_above="@id/advert137" android:layout_alignRight="@id/advert137" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.CircleImageView android:id="@id/live_zb_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip40" android:layout_marginBottom="@dimen/dip30" android:src="@drawable/icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

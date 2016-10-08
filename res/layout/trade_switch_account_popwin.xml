@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="#3fb3b3b3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/margin_main_menu_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="#ff222222" android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dip50" android:text="切换账号" />
+        <View android:background="@color/margin_main_menu_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ListView android:id="@id/lv_account" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/margin_main_menu_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@drawable/fund_button_text_color_reverse" android:gravity="center" android:id="@id/tv_addaccount" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/dip50" android:text="添加账号" />
+        <View android:background="@color/margin_main_menu_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

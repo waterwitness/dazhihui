@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:background="@drawable/moneybox_dialog_title_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="28.0sp" android:textColor="@color/white_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Title" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="#fffff4d7" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="120.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="#ff3b3b3b" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="This is a custom dialogcustomcustomcustomcustomcustomcus" />
+    </LinearLayout>
+    <LinearLayout android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingTop="15.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@id/button_ok" android:background="@drawable/moneybox_entrust_button" android:padding="0.0dip" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="确  定" android:layout_weight="2.0" />
+        <Button android:textSize="22.0sp" android:textColor="@color/white" android:id="@id/button_cancel" android:background="@drawable/moneybox_entrust_button" android:padding="0.0dip" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="取  消" android:layout_weight="2.0" />
+        <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/moneybox_dialog_bottom_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

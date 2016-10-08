@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/browserview_relativelayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/browsertitle" layout="@layout/browser_title" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.DzhRefreshWebView android:id="@id/browser_webview" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/browsertitle" />
+    <FrameLayout android:id="@id/browser_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/browsertitle" />
+</RelativeLayout>

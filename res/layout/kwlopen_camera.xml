@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kwlopen.sdk.camera.MaskSurfaceView android:id="@id/container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/imageView1" android:layout_width="360.0dip" android:layout_height="96.69998dip" android:layout_marginTop="85.0dip" android:src="@drawable/kwlopen_take_photo_pro" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/btn_shutter_camera" android:background="@drawable/kwlopen_start_recodr_btn_style" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/close_btn" android:background="@drawable/kwlopen_close_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

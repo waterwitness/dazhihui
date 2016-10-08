@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/kwlopen_light_black_text_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/take_video_layout" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/video_play_framelayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/video_logic_framelayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/top_headline" android:background="@color/kwlopen_camera_bg_color" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <ImageView android:id="@id/back_btn" android:background="@drawable/kwlopen_back_btn_bg" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/arc_hf_video_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                        <RelativeLayout android:background="@drawable/kwlopen_point_red_bg" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/kwl_white" android:id="@id/arc_hf_video_timer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="00:00" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <View android:background="@color/kwl_black" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/top_headline" />
+                <RelativeLayout android:id="@id/user_read_layout" android:background="@color/kwlopen_camera_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/kwl_white" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="【温馨提示】" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/kwl_white" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频录制过程中请注意保持周围环境安静、光线良好,并在30秒内用普通话大声朗诵以下内容:" />
+                        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/kwlopen_capture_videwo_read_text" android:layout_gravity="center_horizontal" android:id="@id/user_read_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="TextView" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/record_btn_layout" android:background="@color/kwlopen_camera_bg_color" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <Button android:id="@id/arc_hf_video_start" android:background="@drawable/kwlopen_start_recodr_btn_style" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                <Button android:id="@id/arc_hf_video_stop" android:background="@drawable/kwlopen_stop_recodr_btn_style" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/kuangkuang" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/kwlopen_kuangkuang" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

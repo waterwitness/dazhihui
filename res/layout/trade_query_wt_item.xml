@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_vertical" android:background="@android:color/white" android:paddingLeft="@dimen/dip7" android:paddingTop="@dimen/dip10" android:paddingRight="@dimen/dip7" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_buyorsell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/img_buyorsell" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center|left" android:id="@id/tv_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="浦发银行" />
+            <TextView android:gravity="center|left" android:id="@id/tv_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="浦发银行" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center|right" android:id="@id/tv_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5567.08" />
+            <TextView android:gravity="center|right" android:id="@id/tv_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5567.08" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center|right" android:id="@id/tv_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="51.3" />
+            <TextView android:gravity="center|right" android:id="@id/tv_6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="51.3" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:gravity="center|right" android:id="@id/tv_7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="51.3" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

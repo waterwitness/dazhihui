@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/theme_black_market_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:gravity="center" android:id="@id/sz_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上涨" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffc21925" android:gravity="center" android:id="@id/sz" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0家" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:gravity="center" android:id="@id/pp_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="平盘" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:gravity="center" android:id="@id/pp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0家" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:gravity="center" android:id="@id/xd_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下跌" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff469b28" android:gravity="center" android:id="@id/xd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0家" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

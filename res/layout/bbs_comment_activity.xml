@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/faterview" android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#ff2e3137" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true">
+        <com.android.dazhihui.ui.widget.WriteableImageView android:id="@id/head_menu_left" android:paddingLeft="3.0dip" android:paddingTop="7.0dip" android:paddingRight="1.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="@dimen/cheader_item_height" android:layout_marginLeft="2.0dip" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="发表观点" android:layout_toRightOf="@id/head_menu_left" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/send" android:background="@drawable/shape_rectangle" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="提交" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <EditText android:gravity="top" android:id="@id/comment_edittext" android:background="@null" android:paddingBottom="45.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="请输入内容（140字）" android:maxLength="140" android:layout_below="@id/header" android:textCursorDrawable="@drawable/color_cursor" />
+    <RelativeLayout android:id="@id/comment_menu_rl" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/comment_edittext" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/comment_menu_ll" android:background="#fff7f9fb" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/menu_biaoqing_iv" android:layout_width="wrap_content" android:layout_height="34.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/biaoqing" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/jianpan_and_add_menu_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip">
+                <ImageView android:id="@id/menu_jianpan_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34.0dip" android:src="@drawable/bbs_jianpan" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/menu_add_iv" android:layout_width="wrap_content" android:layout_height="34.0dip" android:src="@drawable/guh_add_menu_more" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@id/comment_menu_contents_rl" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/comment_menu_ll" android:layout_alignParentLeft="true">
+            <include layout="@layout/bbs_phrase_list" />
+            <include layout="@layout/send_msg_tool" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

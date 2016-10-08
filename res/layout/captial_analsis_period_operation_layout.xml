@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip5" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip5" android:layout_marginBottom="@dimen/dip10"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.android.dazhihui.ui.delegate.newtrade.widge.RingView android:id="@id/ringview_zjlyl" android:layout_width="fill_parent" android:layout_height="@dimen/dip80" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:paddingTop="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="资金利用率" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.android.dazhihui.ui.delegate.newtrade.widge.RingView android:id="@id/ringview_pjcw" android:layout_width="fill_parent" android:layout_height="@dimen/dip80" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:paddingTop="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="平均仓位" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.android.dazhihui.ui.delegate.newtrade.widge.RingView android:id="@id/ringview_pjcgts" android:layout_width="fill_parent" android:layout_height="@dimen/dip80" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:paddingTop="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="交易持股天数" />
+    </LinearLayout>
+</LinearLayout>

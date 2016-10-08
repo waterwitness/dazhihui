@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_style" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/ilvb_share_title" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="19.0dip" android:text="视吧口令" />
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/ilvb_share_message" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="19.0dip" android:text="口令复制好啦! 快去分享给小伙伴吧!" />
+    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_style" android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <Button android:textSize="@dimen/text_size" android:textColor="#ff000000" android:id="@id/ilvb_share_weixin_action" android:background="@drawable/dialog_btn_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="去微信粘贴" android:layout_weight="1.0" />
+        <View android:background="#ffd1d1d1" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/text_size" android:textColor="#ff000000" android:id="@id/ilvb_share_weibo_action" android:background="@drawable/dialog_btn_style" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="去微博粘贴" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

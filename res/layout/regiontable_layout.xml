@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffd0d0d0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <Button android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/confirm_button" android:background="@drawable/btn_gray_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/dip20" android:text="确定" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/RegionTable_List" android:background="#ffd0d0d0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/confirm_button" android:layout_below="@id/addTitle">
+        <ListView android:id="@id/RegionTable_ListView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#ffe0e1e6" android:dividerHeight="1.0px" android:layout_weight="2.0" android:layout_toLeftOf="@id/iv_gap" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/iv_gap" android:background="#ffd0d0d0" android:layout_width="@dimen/dip5" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+        <ListView android:id="@id/RegionTable_detailView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#ffe0e1e6" android:dividerHeight="1.0px" android:layout_weight="1.0" android:layout_toRightOf="@id/iv_gap" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</RelativeLayout>

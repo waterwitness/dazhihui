@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/market_index_grid_label" android:background="@drawable/theme_black_market_label_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip36">
+        <ImageView android:id="@id/market_index_more" android:layout_width="@dimen/dip50" android:layout_height="fill_parent" android:src="@drawable/theme_black_label_more" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc" />
+        <TextView android:textSize="@dimen/font14" android:textColor="@color/theme_black_market_list_label_name" android:gravity="center" android:id="@id/market_index_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip10" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.CustomGridView android:id="@id/market_index_gv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dip2" android:listSelector="@drawable/theme_black_gridview_selected_bg" android:horizontalSpacing="@dimen/dip1" android:verticalSpacing="@dimen/dip5" android:numColumns="3" />
+</merge>

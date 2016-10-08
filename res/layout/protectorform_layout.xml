@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/relativelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip20" android:layout_below="@id/addTitle">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tl_tx1" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/dip10" android:layout_marginBottom="@dimen/dip10" android:text="超时时间" android:layout_alignBaseline="@id/pf_spinner" />
+        <Spinner android:id="@id/pf_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="20.0dip" android:layout_marginBottom="@dimen/dip10" android:drawSelectorOnTop="true" android:layout_toRightOf="@id/tl_tx1" style="@style/trade_spinner_style_bk" />
+    </RelativeLayout>
+    <Button android:textSize="@dimen/font_medium" android:textColor="@color/white_color" android:id="@id/pf_btn" android:background="@drawable/btn_blue_blue" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="确定" android:layout_below="@id/relativelayout" android:layout_centerHorizontal="true" style="@style/title_button_normal" />
+</RelativeLayout>

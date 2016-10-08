@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/trade_list_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/trade_title_list" android:focusable="true" android:scrollbars="none" android:layout_width="@dimen/dip105" android:layout_height="wrap_content" android:listSelector="@drawable/xc_list_item_bg" android:cacheColorHint="@color/transparent" android:divider="@color/trade_list_pressed" android:dividerHeight="@dimen/dip1" />
+    <View android:id="@id/divider" android:background="@color/trade_list_pressed" android:layout_width="@dimen/dip105" android:layout_height="@dimen/dip1" android:layout_below="@id/trade_title_list" />
+    <RelativeLayout android:id="@id/entrust_set_layout" android:background="@drawable/xc_list_item_bg" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:focusable="true" android:layout_width="@dimen/dip105" android:layout_height="@dimen/item_height" android:layout_below="@id/divider">
+        <ImageView android:id="@id/entrust_add_image" android:layout_width="@dimen/dip18" android:layout_height="@dimen/dip18" android:layout_marginRight="@dimen/dip5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="#ff3572f1" android:id="@id/trade_entrust_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="券商设置" android:singleLine="true" android:layout_toRightOf="@id/entrust_add_image" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

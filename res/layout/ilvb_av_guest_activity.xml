@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ilvb_guest_screen_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/ilvb_av_video_layer_ui" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ilvb_guest_video_layer_ui" />
+    <RelativeLayout android:id="@id/loading_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/loading_group_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ilvb_loading_bg" android:scaleType="centerCrop" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频正在连接中..." android:layout_centerInParent="true" />
+        <ImageView android:id="@id/loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:src="@drawable/ilvb_loading_video_icon" android:scaleType="centerInside" android:layout_above="@id/loading_text" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <com.tencent.avsdk.widget.SwipeBackLayout android:id="@id/above_video_swipe" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.avsdk.widget.AboveVideoContainView android:id="@id/above_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.tencent.avsdk.widget.SwipeBackLayout>
+    <com.tencent.avsdk.widget.AboveVideoNotSwipeView android:id="@id/above_video_not_swipe" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.tencent.avsdk.widget.GameOverView android:id="@id/ilvb_game_over_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

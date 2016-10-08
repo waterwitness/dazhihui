@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/fund_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/fund_header" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.FundTitle android:id="@id/fund_title" android:background="@drawable/menu_main_bg" android:layout_width="fill_parent" android:layout_height="@dimen/tlineMinHeight" android:layout_below="@id/fund_header" />
+    <com.android.dazhihui.ui.widget.MenuItemView android:id="@id/fund_menu" android:background="@drawable/menu_main_bg1" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:layout_below="@id/fund_title" dzh:selectdrawable="@drawable/trangle" dzh:type="8" />
+    <FrameLayout android:id="@id/fund_frame" android:background="#ff111519" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/fund_menu" />
+    <com.android.dazhihui.ui.widget.MinuteDetailCtrl android:id="@id/funddetail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:layout_below="@id/fund_title" />
+</RelativeLayout>

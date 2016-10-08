@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pop_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentBottom="true">
+        <Button android:textColor="#ff007aff" android:id="@id/btn_take_photo" android:background="@drawable/kwlopen_background_view_rounded_top" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="20.0dip" android:text="拍照" />
+        <View android:background="@color/kwl_light_white" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+        <Button android:textColor="#ff007aff" android:id="@id/btn_pick_photo" android:background="@drawable/kwlopen_background_view_rounded_bottom" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="从相册选择" />
+        <Button android:textColor="#ff007aff" android:id="@id/btn_cancel" android:background="@drawable/kwlopen_background_view_rounded_middle" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="取消" />
+    </LinearLayout>
+</RelativeLayout>

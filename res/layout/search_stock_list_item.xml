@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/stockType" android:background="#ff303940" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:minHeight="30.0dip" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:ellipsize="end" android:id="@id/searchListStockCode" android:paddingLeft="@dimen/dip5" android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="100.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:ellipsize="end" android:id="@id/searchListStockName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:minWidth="120.0dip" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/right_add_ll" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="6.0sp" android:textColor="@color/white_gray" android:gravity="center" android:id="@id/searchListAdded" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+        <ImageView android:id="@id/searchListAddIcon" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_add_stock" android:scaleType="center" android:minHeight="30.0dip" />
+        <ImageView android:id="@id/searchListDelIcon" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_delete_stock" android:scaleType="center" android:minHeight="30.0dip" />
+    </LinearLayout>
+</LinearLayout>

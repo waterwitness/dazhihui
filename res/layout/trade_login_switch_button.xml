@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@drawable/tradelogin_switchbutton_text_color" android:gravity="center" android:id="@id/left_text" android:background="@drawable/tradelogin_switchbutton_left_bg" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="A股" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0sp" android:textColor="@drawable/tradelogin_switchbutton_text_color" android:gravity="center" android:id="@id/right_text" android:background="@drawable/tradelogin_switchbutton_right_bg" android:padding="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="港美" android:singleLine="true" android:layout_weight="1.0" />
+</LinearLayout>

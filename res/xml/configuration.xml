@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+    <system>
+        <item name="ISDEBUG" description="是否为调试模式" value="false" />
+        <item name="CHARSET" description="http请求/响应编码格式" value="UTF-8" />
+        <item name="IS_THIRD_INTEGRATION" description="是否为第三方集成版本，true表示是，false表示不是" value="false" />
+        <item name="VIDEO_SAVE_PATH" value="/mobiletrader" />
+        <item name="disableWebViewCache" description="禁用webview cache model" value="false" />
+        <item name="webviewCount" description="webview管理池中webview的个数，根据项目中用到多少h5模块来指定" value="1" />
+        <item name="IMG_SIZE" description="影像大小，单位为KB" value="200" />
+        <item name="SMS_CHANNEL" description="发送验证码的短信通道号码" value="10698000088536606" />
+        <item name="LICENSE" description="思迪证书签名控件License" value="CngtA/owAwLB0TvE7+KM5ZXyicddiRKwKwqiy2hTrIQIbZ89mY067lAs5TRiT416ZTwWTxkanUxGuiGmogONlBEnfEoGJ5CMnk1sehZtu/+hkwiAzapORWfGYJd+69/62FaWneqx8kr+ZsdvHlN0CQ==" />
+        <item name="CHECK_SUCCESS" description="视频见证成功消息" value="SYS:10000" />
+        <item name="CHECK_FAILED" description="视频见证失败消息" value="SYS:10001" />
+        <item name="USER_LEAVE_ROOM" description="手动退出房间" value="SYS:10002" />
+        <item name="SEAT_LEAVE_ROOM" description="坐席退出房间，针对恶意账户清除出队列" value="SYS:10003" />
+        <item name="SEAT_FORCE_QUIT" description="坐席强制退出房间" value="SYS:10004" />
+        <item name="USER_CONFIRM_QUIT" description="用户确认退出房间" value="SYS:10005" />
+        <item name="SEAT_REFRESH_IE" description="坐席刷新浏览器" value="SYS:10006" />
+        <item name="NETWORK_PROBLEM" description="网络问题" value="SYS:10007" />
+        <item name="VIDEO_PROBLEM" description="视频问题 " value="SYS:10008" />
+        <item name="CHECK_REJECT" description="用户驳回" value="SYS:10009" />
+        <item name="TEXT_MSG" description="文字消息" value="USR:0:" />
+    </system>
+    <address-config>
+        <address name="CHANNEL_VERIFY_URL" description="appkey校验" retry="1" route="true" timeout="60000" value="http://120.27.182.208/servlet/CheckSecChannel" />
+    </address-config>
+    <module-config>
+        <module name="open" class="com.thinkive.android.ui.OpenWebFragment" description="开户模块" />
+    </module-config>
+    <logger>
+        <properties name="LOG_OUTPUT" description="系统日志输出方式[LOG.ALL | LOG.CONSOLE | LOG.FILE | LOG.CLOSE]" value="LOG.FILE" />
+        <properties name="LOG_LEVEL" description="系统日志级别[INFO | DEBUG | WARN | ERROR]" value="DEBUG" />
+    </logger>
+</configs>

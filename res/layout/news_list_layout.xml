@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/market_top_advert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView android:id="@id/loadAndRefreshView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/market_top_advert">
+        <ListView android:id="@id/listView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="#ffc8c8c8" android:dividerHeight="1.0px" android:headerDividersEnabled="true" android:footerDividersEnabled="true" />
+    </com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView>
+    <com.android.dazhihui.ui.widget.PageLoadTip android:id="@id/pageLoadTip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

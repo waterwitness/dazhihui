@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.haitong">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/entrustable_tableLayout" android:background="#ff11141a" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mainmenu_upbar" />
+</RelativeLayout>

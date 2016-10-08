@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip70"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/dip15" android:paddingTop="@dimen/dip10" android:paddingRight="@dimen/dip15" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:gravity="center" android:id="@id/img_qs" android:layout_width="@dimen/dip50" android:layout_height="@dimen/dip50" android:src="@drawable/icon" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:layout_toLeftOf="@id/img_gou" android:layout_toRightOf="@id/img_qs">
+            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_large" android:textColor="#ff222222" android:gravity="center_vertical" android:id="@id/tv_qs_name" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="湘财证券" android:layout_weight="1.0" />
+            <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textSize="@dimen/font_small" android:textColor="#ff999999" android:gravity="center_vertical" android:id="@id/tv_account" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="\ 021354446746" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_gou" android:visibility="visible" android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:src="@drawable/wt_gou" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/dip70" android:layout_alignParentBottom="true" />
+</RelativeLayout>

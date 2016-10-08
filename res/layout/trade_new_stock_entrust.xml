@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip35">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_stock_apply_size" />
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/tv_sged" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" />
+            </LinearLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <RelativeLayout android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="@dimen/dip35">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/tv_sgdm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_stock_apply_stock" android:layout_alignParentTop="true" />
+                <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_code" android:background="@null" android:layout_width="@dimen/dip180" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:hint="@string/new_stock_apply_stock_hint" android:singleLine="true" android:maxLength="6" android:layout_toRightOf="@id/tv_sgdm" />
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:gravity="left" android:id="@id/tv_name" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/et_code" />
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+            <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dip35">
+                <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_stock_apply_price" />
+                <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_price" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip10" android:hint="@string/new_stock_apply_price" android:numeric="decimal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:layout_marginTop="@dimen/dip10">
+            <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_stock_apply_amount" />
+            <EditText android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/et_count" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip30" android:layout_marginRight="@dimen/dip10" android:hint="@string/new_stock_apply_amount_hint" android:numeric="integer" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:layout_gravity="right" android:id="@id/tv_ava_count" android:layout_width="wrap_content" android:layout_height="@dimen/dip20" android:layout_marginTop="@dimen/dip5" android:layout_marginRight="@dimen/dip10" />
+        <Button android:textSize="@dimen/font_smaller" android:textColor="@color/white" android:id="@id/btn" android:background="@drawable/wt_button" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" android:layout_marginLeft="@dimen/dip10" android:layout_marginRight="@dimen/dip10" android:text="@string/new_stock_apply1" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/blue" android:id="@id/tv_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip20" android:text="温馨提示" android:singleLine="false" android:layout_toLeftOf="@id/tv_analyse" />
+            <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/blue" android:layout_gravity="right" android:id="@id/tv_analyse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip20" android:text="@string/new_stock_analyse" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/tlg" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="false" dzh:title="@string/gpmc" />
+</LinearLayout>

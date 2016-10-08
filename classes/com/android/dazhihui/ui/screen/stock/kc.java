@@ -1,0 +1,21 @@
+package com.android.dazhihui.ui.screen.stock;
+
+import android.view.View;
+import android.view.View.OnClickListener;
+
+class kc
+  implements View.OnClickListener
+{
+  kc(ju paramju) {}
+  
+  public void onClick(View paramView)
+  {
+    this.a.c();
+  }
+}
+
+
+/* Location:              E:\apk\dazhihui2\classes-dex2jar.jar!\com\android\dazhihui\ui\screen\stock\kc.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

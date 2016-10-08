@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="home_help_layout">false</item>
+    <item type="layout" name="kwlopen_rectcamera">false</item>
+    <item type="layout" name="kwlopen_rotate_right">false</item>
+    <item type="layout" name="kwlopen_rotate_right_offsetx">false</item>
+    <item type="layout" name="my_cordova_frag">false</item>
+    <item type="layout" name="search_people_help_layout">false</item>
+</resources>

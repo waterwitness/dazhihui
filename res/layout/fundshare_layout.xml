@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/table3_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/fundshare_table" android:layout_width="fill_parent" android:layout_height="wrap_content" dzh:scroll="false" dzh:title="@string/gpmc" />
+</RelativeLayout>

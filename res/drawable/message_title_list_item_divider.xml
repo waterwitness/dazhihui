@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@color/dividerColor1" android:insetLeft="10.0dip" android:insetRight="@dimen/dip10"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

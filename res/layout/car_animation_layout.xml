@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/carText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xx送了一个汽车" />
+    <com.android.dazhihui.ui.widget.adv.GifView android:id="@id/carView" android:background="@drawable/car1" android:layout_width="200.0dip" android:layout_height="wrap_content" />
+</LinearLayout>

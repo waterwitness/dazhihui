@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="#ff33b5e5" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/title_back" android:background="@drawable/titlebar_btn_selector" android:visibility="invisible" android:layout_width="@dimen/titlebar_btn_width" android:layout_height="fill_parent" android:src="@drawable/kwlopen_titlebar_back" android:scaleType="center" />
+    <TextView android:textSize="@dimen/titlebar_title_textsize" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="手机开户" android:singleLine="true" android:layout_weight="1.0" />
+    <ImageButton android:id="@id/title_refresh" android:background="@drawable/titlebar_btn_selector" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/titlebar_refresh" android:scaleType="center" />
+</LinearLayout>

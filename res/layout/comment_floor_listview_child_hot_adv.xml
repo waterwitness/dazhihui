@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adv138_rl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/hotComment_tag_rl" android:background="@color/theme_black_bbs_label_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="0.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/hotComment_tag_rl">
+            <RelativeLayout android:id="@id/comment_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/floor_user_icon" android:visibility="gone" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/icon_homehead_adv" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/user_info_area_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/floor_user_icon">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/theme_black_bbs_user_name" android:gravity="center" android:id="@id/floor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/floor_close" android:background="@drawable/theme_white_guh_cap_bg" android:padding="3.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关闭" android:layout_alignBaseline="@id/floor_name" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.android.dazhihui.ui.widget.adv.AdvertView android:gravity="center_vertical" android:id="@id/myAdvView138" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginTop="6.0dip" android:layout_below="@id/comment_top" />
+            <View android:id="@id/list_divider" android:background="@color/theme_black_bbs_divider_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" android:layout_below="@id/myAdvView138" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

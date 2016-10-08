@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/kuang_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font_smaller" android:textColor="@color/theme_white_stock_name" android:gravity="center" android:id="@id/del_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="删除" android:layout_weight="1.0" />
+</LinearLayout>

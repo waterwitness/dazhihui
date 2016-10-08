@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.haitong">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/shape08" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <TableLayout android:id="@id/history_select" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow>
+            <TextView android:textSize="@dimen/font_medium" android:id="@id/sd_btn" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起始日期" />
+            <EditText android:textSize="@dimen/font_medium" android:id="@id/startdate_et" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            <Button android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </TableRow>
+        <View android:background="@color/darkgray" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TableRow>
+            <TextView android:textSize="@dimen/font_medium" android:id="@id/ed_btn" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结束日期" />
+            <EditText android:textSize="@dimen/font_medium" android:id="@id/enddate_et" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/font_small" android:textColor="@color/white_color" android:layout_gravity="center|right" android:id="@id/query_btn" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查询" style="@style/title_button_normal" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:id="@id/date_linear" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="单个日期" />
+        <EditText android:textSize="@dimen/font_medium" android:id="@id/date_et" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/entrustable_tableLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Button android:id="@id/Button01" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="底部按钮" />
+</LinearLayout>

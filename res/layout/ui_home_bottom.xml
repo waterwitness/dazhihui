@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/myAdvView114" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/look_plate_Layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/line" android:background="#ff28303b" android:layout_width="9.0dip" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff00acf9" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:text="@string/home_group_broad_market" android:layout_toRightOf="@id/line" android:layout_centerVertical="true" />
+            <ImageView android:background="#ff28303b" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_toRightOf="@id/group_name" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:paddingBottom="@dimen/home_dp_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_h">
+            <TextView android:textSize="16.0sp" android:textColor="#ffaeb3b8" android:id="@id/tv_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.1" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_time_to_content">
+                <TextView android:textSize="12.0sp" android:textColor="#ffaeb3b8" android:gravity="right" android:id="@id/tv_item_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffaeb3b8" android:gravity="center_horizontal" android:id="@id/tv_item_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip5" android:layout_alignParentRight="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffaeb3b8" android:gravity="left" android:id="@id/tv_item_hf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/tv_item_ll" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

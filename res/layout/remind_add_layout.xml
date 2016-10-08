@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/add_self_stock_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/group_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip14">
+            <ImageView android:id="@id/line" android:background="@color/theme_black_self_stock_second_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" />
+            <RelativeLayout android:id="@id/left_rect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_centerVertical="true">
+                <RelativeLayout android:id="@id/go_to_suggest" android:background="@drawable/theme_black_self_click_bg" android:layout_width="wrap_content" android:layout_height="23.0dip" android:minWidth="68.0dip" android:layout_centerInParent="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/center_part_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/go_to_suggest_image" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/self_suggest_image" android:scaleType="centerInside" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/theme_black_self_stock_label_name" android:gravity="center" android:id="@id/go_to_suggest_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="推荐" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/go_to_suggest_hot" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/red_item_normal" android:scaleType="centerInside" android:layout_toRightOf="@id/center_part_left" android:layout_alignParentTop="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advertView139" android:background="@drawable/theme_black_self_click_bg" android:layout_width="70.0dip" android:layout_height="23.0dip" android:layout_marginLeft="9.0dip" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true">
+                <RelativeLayout android:id="@id/self_news_btn_layout" android:background="@drawable/theme_black_self_click_bg" android:layout_width="wrap_content" android:layout_height="23.0dip" android:minWidth="68.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/self_news_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <ImageView android:id="@id/self_news_image" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/self_news_image" android:scaleType="centerInside" />
+                        <TextView android:textSize="13.0sp" android:textColor="@color/theme_black_self_stock_label_name" android:gravity="center" android:id="@id/self_news_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/xinwen" android:layout_toRightOf="@id/self_news_image" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/go_to_self_news_hot" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/red_item_normal" android:scaleType="centerInside" android:layout_toRightOf="@id/self_news_center" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/self_stock_btn_layout" android:background="@drawable/theme_black_self_click_bg" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginLeft="@dimen/dip6" android:minWidth="68.0dip">
+                    <ImageView android:id="@id/self_money_image" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/self_money_image" android:scaleType="centerInside" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/theme_black_self_stock_label_name" android:gravity="center" android:id="@id/self_stock_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/stock_detail" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/self_stock_edit_view_layout" android:background="@drawable/theme_black_self_click_bg" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginLeft="@dimen/dip6" android:minWidth="68.0dip">
+                    <ImageView android:id="@id/self_stock_edit_image" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/self_edit_image" android:scaleType="centerInside" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/theme_black_self_stock_label_name" android:gravity="center" android:id="@id/self_stock_edit_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/bianji" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@id/nullView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/main_add_btn" />
+            <TextView android:textColor="#ff51555d" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/add_self_stock_tip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

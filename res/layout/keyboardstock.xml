@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/fast_key_id" android:background="#ffdcdcdc" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="160.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_full" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="全仓" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_half_full" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="1/2仓" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_third_full" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="1/3仓" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_double_third_full" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="2/3仓" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_point" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="." android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_one" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="1" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_four" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="4" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_seven" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="7" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_thousand" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="000" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_two" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="2" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_five" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="5" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_eight" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="8" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_zero" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="0" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_three" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="3" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_six" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="6" android:layout_weight="1.0" />
+        <TextView android:textSize="20.0sp" android:textColor="#ff222222" android:gravity="center" android:id="@id/fastdeal_keyboard_key_nine" android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="9" android:layout_weight="1.0" />
+        <RelativeLayout android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/fastdeal_keyboard_key_hide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fastdeal_key_hide_bg" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:background="@drawable/fastdeal_key_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/fastdeal_keyboard_key_del" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fastdeal_key_del_bg" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/fastdeal_keyboard_key_buy" android:background="@drawable/fastdeal_buy_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="买入" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

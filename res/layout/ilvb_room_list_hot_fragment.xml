@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.dzhrefresh.DzhRefreshScrollView android:id="@id/roomlist_refresh_id" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/adv_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/top_advert147" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wo_top_adv_none" android:scaleType="center" />
+                <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advert147" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tab_button" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_below="@id/adv_ll">
+                <ImageView android:id="@id/hongbao" android:visibility="visible" android:layout_width="45.0dip" android:layout_height="34.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="1.0dip" android:src="@drawable/buttom_icon_hongbao" android:scaleType="fitXY" />
+                <com.tencent.avsdk.widget.MyGallery android:id="@id/hot_gallery_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="35.0dip" android:overScrollMode="never" />
+            </LinearLayout>
+            <View android:id="@id/div" android:background="#ffc8c8c8" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/tab_button" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/div">
+                <ImageView android:id="@id/list_none_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dip150" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:src="@drawable/no_content" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/attention_none_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:layout_centerHorizontal="true">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/attention_none_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ilvb_attention_none" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip15" android:text="您的关注静悄悄" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="#ff999999" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快去看直播!" />
+                </LinearLayout>
+                <FrameLayout android:id="@id/ilvb_list_frame" android:paddingTop="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.android.dazhihui.ui.widget.dzhrefresh.DzhRefreshScrollView>
+</RelativeLayout>

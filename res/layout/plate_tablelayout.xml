@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/subplate_father_layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/plate_suggestion" android:background="#ff22252b" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip" android:layout_below="@id/title">
+        <ImageView android:id="@id/plate_suggestion_close" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/plate_suggestion_close" android:scaleType="center" android:minHeight="35.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffa200" android:id="@id/suggestion_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9:56" android:singleLine="true" android:layout_toRightOf="@id/plate_suggestion_close" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffa200" android:id="@id/suggestion_message" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="洪淑敏选中一只成分股" android:singleLine="true" android:layout_toRightOf="@id/suggestion_time" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/suggestion_arrows" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/plate_suggestion_arrows" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/tablelayout" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/plate_suggestion" />
+</RelativeLayout>

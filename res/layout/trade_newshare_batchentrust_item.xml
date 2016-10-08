@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <CheckBox android:id="@id/checkItem" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/dip16" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="深深房" />
+            <TextView android:textSize="@dimen/dip16" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="000028" android:layout_below="@id/tv_name" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/dip18" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="12.08" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/dip18" android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_avanum" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="5000" android:layout_weight="1.0" />
+        <EditText android:textSize="@dimen/dip18" android:textColor="@color/black" android:gravity="center|left" android:id="@id/et_num" android:background="@drawable/dropdown_editview_bg3" android:paddingTop="@dimen/dip5" android:paddingBottom="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" android:inputType="number" />
+    </LinearLayout>
+</LinearLayout>

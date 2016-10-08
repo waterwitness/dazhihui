@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ilvb_guest_not_swipe" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/dip5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip5" android:layout_marginRight="@dimen/dip5" android:layout_alignParentBottom="true">
+        <View android:id="@id/empty_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/dip40" android:layout_weight="7.0" />
+        <View android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="@dimen/dip40" android:layout_weight="6.0" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/ilvb_guest_not_swipe_btn_room_close" android:layout_width="@dimen/ilvb_guest_room_bottom_width" android:layout_height="@dimen/ilvb_guest_room_bottom_width" android:src="@drawable/ilvb_room_btn_top_close2" android:scaleType="centerInside" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/ilvb_guest_debug_param_video" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="@dimen/dip100" android:src="@drawable/ilvb_guest_icon_param_button" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+</RelativeLayout>

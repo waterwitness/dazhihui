@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/zixun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/market_top_advert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.DzhRefreshListView android:id="@id/rlv_news_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/market_top_advert" />
+    <com.android.dazhihui.ui.widget.PageLoadTip android:id="@id/pageLoadTip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

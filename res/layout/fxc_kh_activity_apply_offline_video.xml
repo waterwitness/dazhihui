@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff7a7872" android:layout_width="fill_parent" android:layout_height="43.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/fxc_kh_tv_record_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="00:00" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <SurfaceView android:id="@id/fxc_kh_offline_surfaceview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fxc_kh_ok_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <Button android:id="@id/fxc_kh_btn_play" android:background="@drawable/fxc_kh_record_success" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="24.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频录制成功" />
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请确保WIFI连接" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/fxc_kh_notice_text" android:background="#ff000000" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="视频录制过程中，请用普通话宣读下列文字：我是userName本人，自愿开设东方证券的上海A股、深圳A股账户。本人已知晓相关市场的投资风险，并承担一切盈亏。" android:layout_alignBottom="@id/fxc_kh_offline_surfaceview" android:lineSpacingExtra="5.0dip" />
+        <ProgressBar android:id="@id/fxc_kh_progress_bar" android:layout_width="fill_parent" android:layout_height="10.0dip" android:progressDrawable="@drawable/fxc_kh_progress_bar" android:layout_alignBottom="@id/fxc_kh_offline_surfaceview" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/fxc_kh_linear_stop" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <Button android:id="@id/fxc_kh_btn_delete" android:background="@drawable/fxc_kh_re" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="15.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/fxc_kh_btn_video" android:background="@drawable/fxc_kh_video_btn" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerInParent="true" />
+        <Button android:id="@id/fxc_kh_btn_video_cancel" android:background="@drawable/fxc_kh_video_cancel" android:visibility="gone" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerInParent="true" />
+        <Button android:id="@id/fxc_kh_btn_upload" android:background="@drawable/fxc_kh_upload" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

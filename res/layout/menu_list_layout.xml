@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/touming_color" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/menu_list_listview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/listview_item_bk" android:cacheColorHint="@color/touming_color" android:divider="@drawable/simple_list_divider" />
+</LinearLayout>

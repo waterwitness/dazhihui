@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/top_headline" android:background="@color/kwlopen_camera_bg_color" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <ImageView android:id="@id/back_btn" android:background="@drawable/kwlopen_back_btn_bg" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/arc_hf_video_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <RelativeLayout android:background="@drawable/kwlopen_point_red_bg" android:layout_width="10.0dip" android:layout_height="10.0dip" />
+                    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/kwl_white" android:id="@id/arc_hf_video_timer_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/kwl_black" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/top_headline" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/upload_video_layout" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/repeat_record_layout" android:background="@color/kwlopen_camera_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/imageView1" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/kwlopen_icon_video_record" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/kwl_white" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重新录制" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/upload_record_layout" android:background="#99e77019" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/kwlopen_icon_video_upload" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/kwl_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频上传" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/start_play_btn" android:background="@drawable/kwlopen_start_play_btn_style" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

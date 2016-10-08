@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ETFFundMenu">
+        <item>@string/ETFFundMenu_SingleMarketBuy</item>
+        <item>@string/ETFFundMenu_SingleMarketSell</item>
+        <item>@string/ETFFundMenu_SingleMarketCancel</item>
+    </string-array>
+    <string-array name="OfferRepurchaseMenu">
+        <item>@string/OfferRepurchaseMenu_HGSB</item>
+        <item>@string/OfferRepurchaseMenu_TQZZ</item>
+        <item>@string/OfferRepurchaseMenu_YYTQZZ</item>
+        <item>@string/OfferRepurchaseMenu_BZZX</item>
+        <item>@string/OfferRepurchaseMenu_YYBZZX</item>
+        <item>@string/OfferRepurchaseMenu_DRWT</item>
+        <item>@string/OfferRepurchaseMenu_LSWT</item>
+        <item>@string/OfferRepurchaseMenu_LSCJ</item>
+        <item>@string/OfferRepurchaseMenu_WDQHYCX</item>
+        <item>@string/OfferRepurchaseMenu_ZDZQHYCX</item>
+    </string-array>
+    <string-array name="bd">
+        <item>胜平负</item>
+        <item>半全场</item>
+        <item>比分</item>
+        <item>上下单双</item>
+        <item>总进球</item>
+    </string-array>
+    <string-array name="bigtrade_type">
+        <item>大笔买入</item>
+        <item>大笔卖出</item>
+        <item>机构吃货</item>
+        <item>机构吐货</item>
+        <item>机构买单挂单</item>
+        <item>机构卖单挂单</item>
+    </string-array>
+    <string-array name="bottom_right_text">
+        <item>机选5注</item>
+        <item>确定</item>
+        <item>机选10注</item>
+    </string-array>
+    <string-array name="browser_share_array">
+        <item>分享到微信</item>
+        <item>分享到朋友圈</item>
+        <item>分享到微博</item>
+    </string-array>
+    <string-array name="browsermore_array">
+        <item>分享</item>
+        <item>用浏览器打开</item>
+        <item>复制连接</item>
+    </string-array>
+    <string-array name="cash_table_header">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>涨跌</item>
+        <item>昨收</item>
+        <item>成交量</item>
+        <item>成交额</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>振幅%</item>
+        <item>涨速%</item>
+        <item>换手%</item>
+        <item>量比</item>
+        <item>委比%</item>
+        <item>市盈</item>
+        <item>市净</item>
+    </string-array>
+    <string-array name="category_entries">
+        <item>单字</item>
+        <item>词语</item>
+        <item>句子</item>
+    </string-array>
+    <string-array name="category_values">
+        <item>read_syllable</item>
+        <item>read_word</item>
+        <item>read_sentence</item>
+    </string-array>
+    <string-array name="crh_img_source">
+        <item>拍照</item>
+        <item>相册</item>
+    </string-array>
+    <string-array name="csy_expected_gallery_name">
+        <item>1日</item>
+        <item>3日</item>
+        <item>1周</item>
+        <item>2周</item>
+        <item>1月</item>
+        <item>3月</item>
+    </string-array>
+    <string-array name="dde_table_header">
+        <item>名称</item>
+        <item>当日ddx</item>
+        <item>当日ddy</item>
+        <item>当日ddz</item>
+        <item>60日ddx</item>
+        <item>60日ddy</item>
+        <item>10日飘红</item>
+        <item>连续飘红</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+    </string-array>
+    <string-array name="default_table_header">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>涨跌</item>
+        <item>昨收</item>
+        <item>成交量</item>
+        <item>成交额</item>
+        <item>最高</item>
+        <item>最低</item>
+    </string-array>
+    <string-array name="dwa_entries">
+        <item>开启</item>
+        <item>关闭</item>
+    </string-array>
+    <string-array name="dzlh_table_header">
+        <item>名称</item>
+        <item>涨幅%</item>
+        <item>五日涨幅%</item>
+        <item>关注原因</item>
+    </string-array>
+    <string-array name="emot_entries">
+        <item>正常</item>
+        <item>高兴</item>
+        <item>悲伤</item>
+        <item>生气</item>
+    </string-array>
+    <string-array name="emot_values">
+        <item>neutral</item>
+        <item>happy</item>
+        <item>sad</item>
+        <item>angry</item>
+    </string-array>
+    <string-array name="engine_entries">
+        <item>本地合成</item>
+        <item>在线合成</item>
+    </string-array>
+    <string-array name="engine_values">
+        <item>local</item>
+        <item>cloud</item>
+    </string-array>
+    <string-array name="fiveminute_table_header">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>五分钟涨%</item>
+    </string-array>
+    <string-array name="fund_table_header">
+        <item>基金名称</item>
+        <item>当期日期</item>
+        <item>最新净值</item>
+        <item>累计净值</item>
+        <item>上期日期</item>
+        <item>上期净值</item>
+        <item>上期累计</item>
+        <item>日增长率</item>
+        <item>周增长率</item>
+        <item>月增长率</item>
+        <item>年增长率</item>
+        <item>基金代码</item>
+    </string-array>
+    <string-array name="fund_table_header_1">
+        <item>基金名称</item>
+        <item>净值</item>
+        <item>涨幅%</item>
+        <item>累计净值</item>
+        <item>截止日期</item>
+        <item>上期净值</item>
+    </string-array>
+    <string-array name="fund_table_header_2">
+        <item>基金名称</item>
+        <item>万(百万)份收益</item>
+        <item>7日年化收益率</item>
+        <item>上期万(百万)份收益</item>
+        <item>上期7日年化收益率</item>
+        <item>截止日期</item>
+    </string-array>
+    <string-array name="fund_table_header_3">
+        <item>股票名称</item>
+        <item>本期持股</item>
+        <item>占基金</item>
+        <item>占流通</item>
+        <item>上期持股</item>
+        <item>增减幅度</item>
+        <item>股票代码</item>
+    </string-array>
+    <string-array name="fund_table_header_4">
+        <item>截止日期</item>
+        <item>期初份额</item>
+        <item>本期申购</item>
+        <item>本期赎回</item>
+        <item>期末份额</item>
+        <item>本期净购</item>
+    </string-array>
+    <string-array name="fund_table_header_5">
+        <item>截止日期</item>
+        <item>持有户数</item>
+        <item>户均份额</item>
+        <item>机构份额</item>
+        <item>机构比例</item>
+        <item>个人份额</item>
+        <item>个人比例</item>
+    </string-array>
+    <string-array name="fund_table_header_HB">
+        <item>基金名称</item>
+        <item>当期日期</item>
+        <item>万份收益</item>
+        <item>七日收益率</item>
+        <item>上期日期</item>
+        <item>上期万份收益</item>
+        <item>上期七日收益率</item>
+        <item>基金代码</item>
+    </string-array>
+    <string-array name="fund_type_list">
+        <item>股票基金</item>
+        <item>债券基金</item>
+        <item>混合基金</item>
+        <item>保本基金</item>
+        <item>货币基金</item>
+    </string-array>
+    <string-array name="fundline_laber">
+        <item>日期</item>
+        <item>净值</item>
+        <item>累计</item>
+    </string-array>
+    <string-array name="fundline_laber1">
+        <item>日期</item>
+        <item>累计收益率</item>
+    </string-array>
+    <string-array name="future_table_header">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>涨跌</item>
+        <item>日增</item>
+        <item>总手</item>
+        <item>持仓</item>
+        <item>结算</item>
+        <item>昨结算</item>
+        <item>今开</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>昨收</item>
+    </string-array>
+    <string-array name="future_table_header_1">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>涨跌</item>
+        <item>昨收</item>
+        <item>日增</item>
+        <item>总手</item>
+        <item>持仓</item>
+        <item>结算</item>
+        <item>今开</item>
+        <item>最高</item>
+        <item>最低</item>
+    </string-array>
+    <string-array name="future_table_header_bohai">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>涨跌</item>
+        <item>最新含税价</item>
+        <item>平均含税价</item>
+        <item>日增</item>
+        <item>总手</item>
+        <item>持仓</item>
+        <item>结算</item>
+        <item>昨结算</item>
+        <item>今开</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>昨收</item>
+    </string-array>
+    <string-array name="ise_language_entries">
+        <item>英语</item>
+        <item>汉语</item>
+    </string-array>
+    <string-array name="ise_language_values">
+        <item>en_us</item>
+        <item>zh_cn</item>
+    </string-array>
+    <string-array name="jclq_array">
+        <item>混投</item>
+        <item>胜负</item>
+        <item>让分胜负</item>
+        <item>大小分</item>
+        <item>胜分差</item>
+    </string-array>
+    <string-array name="jclq_bet_array">
+        <item>混投投注</item>
+        <item>胜负投注</item>
+        <item>让分胜负投注</item>
+        <item>大小分投注</item>
+        <item>胜分差投注</item>
+    </string-array>
+    <string-array name="jczq">
+        <item>胜平负</item>
+        <item>比分</item>
+        <item>让球胜平负</item>
+        <item>总进球</item>
+        <item>半全场</item>
+    </string-array>
+    <string-array name="jczq_array">
+        <item>混投</item>
+        <item>胜平负</item>
+        <item>让球胜平负</item>
+        <item>比分</item>
+        <item>总进球</item>
+        <item>半全场</item>
+        <item>单关固定</item>
+        <item>胜平负</item>
+        <item>比分</item>
+        <item>总进球</item>
+        <item>上下单双</item>
+        <item>半全场</item>
+    </string-array>
+    <string-array name="jczq_bet_array">
+        <item>混投投注</item>
+        <item>胜平负投注</item>
+        <item>让球胜平负投注</item>
+        <item>比分投注</item>
+        <item>总进球投注</item>
+        <item>半全场投注</item>
+        <item></item>
+        <item>胜平负投注</item>
+        <item>比分投注</item>
+        <item>总进球投注</item>
+        <item>上下单双投注</item>
+        <item>半全场投注</item>
+    </string-array>
+    <string-array name="klinectrl_label1">
+        <item>时间</item>
+        <item>今开</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>收盘</item>
+        <item>成交量</item>
+        <item>成交额</item>
+        <item>涨幅</item>
+        <item>换手</item>
+    </string-array>
+    <string-array name="klinectrl_label2">
+        <item>时</item>
+        <item>开</item>
+        <item>高</item>
+        <item>低</item>
+        <item>收</item>
+        <item>量</item>
+        <item>幅</item>
+        <item>持</item>
+        <item>增</item>
+        <item>增量</item>
+    </string-array>
+    <string-array name="language_entries">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>河南话</item>
+        <item>英语</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>mandarin</item>
+        <item>cantonese</item>
+        <item>henanese</item>
+        <item>en_us</item>
+    </string-array>
+    <string-array name="level2_table_header">
+        <item>股票名称</item>
+        <item>当日ddx</item>
+        <item>当日ddy</item>
+        <item>当日ddz</item>
+        <item>60日ddx</item>
+        <item>60日ddy</item>
+        <item>10日飘红</item>
+        <item>连续飘红</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+    </string-array>
+    <string-array name="lottery_3d_type">
+        <item>直选单式</item>
+        <item>组选单式</item>
+        <item>直选复式</item>
+        <item>组选复式</item>
+        <item>直选胆拖</item>
+        <item>组选胆拖</item>
+        <item>直选和值</item>
+        <item>组选和值</item>
+        <item>直选跨度</item>
+        <item>组选跨度</item>
+        <item>直选组三</item>
+        <item>组选组三</item>
+    </string-array>
+    <string-array name="lottery_dlt_type">
+        <item>单式</item>
+        <item>复式</item>
+        <item>胆拖</item>
+    </string-array>
+    <string-array name="lottery_ks_type">
+        <item>和值</item>
+        <item>豹子通选</item>
+        <item>豹子单选</item>
+        <item>三不同号</item>
+        <item>顺子通选</item>
+        <item>二同号复选</item>
+        <item>二同号单选</item>
+        <item>二不同号</item>
+    </string-array>
+    <string-array name="lottery_pl3_type">
+        <item>直选单式</item>
+        <item>组选单式</item>
+        <item>直选复式</item>
+        <item>组选复式</item>
+        <item>直选胆拖</item>
+        <item>组选胆拖</item>
+        <item>直选和值</item>
+        <item>组选和值</item>
+        <item>直选跨度</item>
+        <item>组选跨度</item>
+        <item>直选组三</item>
+        <item>组选组三</item>
+    </string-array>
+    <string-array name="lottery_pl5_type">
+        <item>单式</item>
+        <item>复式</item>
+    </string-array>
+    <string-array name="lottery_poker_type">
+        <item>同花</item>
+        <item>同花包选</item>
+        <item>顺子</item>
+        <item>顺子包选</item>
+        <item>同花顺</item>
+        <item>同花顺包选</item>
+        <item>豹子</item>
+        <item>豹子包选</item>
+        <item>对子</item>
+        <item>对子包选</item>
+        <item>任选一</item>
+        <item>任选二</item>
+        <item>任选三</item>
+        <item>任选四</item>
+        <item>任选五</item>
+        <item>任选六</item>
+    </string-array>
+    <string-array name="lottery_qlc_type">
+        <item>单式</item>
+        <item>复式</item>
+        <item>胆拖</item>
+    </string-array>
+    <string-array name="lottery_qxc_type">
+        <item>单式</item>
+        <item>复式</item>
+    </string-array>
+    <string-array name="lottery_ssq_type">
+        <item>单式</item>
+        <item>复式</item>
+        <item>胆拖</item>
+    </string-array>
+    <string-array name="lottery_syxw_type">
+        <item>任选前一单式</item>
+        <item>任选前一复式</item>
+        <item>任选二单式</item>
+        <item>任选二复式</item>
+        <item>任选二胆拖</item>
+        <item>前二直选单式</item>
+        <item>前二直选复式</item>
+        <item>前二组选单式</item>
+        <item>前二组选复式</item>
+        <item>前二组选胆拖</item>
+        <item>任选三单式</item>
+        <item>任选三复式</item>
+        <item>任选三胆拖</item>
+        <item>前三直选单式</item>
+        <item>前三直选复式</item>
+        <item>前三组选单式</item>
+        <item>前三组选复式</item>
+        <item>前三组选胆拖</item>
+        <item>任选四单式</item>
+        <item>任选四复式</item>
+        <item>任选四胆拖</item>
+        <item>任选五单式</item>
+        <item>任选五复式</item>
+        <item>任选五胆拖</item>
+        <item>任选六单式</item>
+        <item>任选六复式</item>
+        <item>任选六胆拖</item>
+        <item>任选七单式</item>
+        <item>任选七复式</item>
+        <item>任选七胆拖</item>
+        <item>任选八单式</item>
+        <item>任选八复式</item>
+        <item>任选八胆拖</item>
+    </string-array>
+    <string-array name="lq">
+        <item>让分胜负</item>
+        <item>大小分</item>
+        <item>胜负</item>
+        <item>胜分差</item>
+    </string-array>
+    <string-array name="message_set_String">
+        <item>股价预警推送</item>
+        <item>自选股消息推送</item>
+        <item>公共消息推送</item>
+        <item>自选异动提醒</item>
+        <item>导师持仓变动提醒</item>
+        <item>导师回复提醒</item>
+        <item>彩票消息推送</item>
+    </string-array>
+    <string-array name="message_title">
+        <item>全部消息</item>
+        <item>公共消息</item>
+        <item>自选股消息</item>
+        <item>彩票消息</item>
+        <item>股价预警</item>
+    </string-array>
+    <string-array name="message_warning_set">
+        <item>股价高于：</item>
+        <item>股价低于：</item>
+        <item>日涨幅度：</item>
+        <item>日跌幅度：</item>
+        <item>日换手率：</item>
+        <item>每日地雷：开</item>
+    </string-array>
+    <string-array name="mine_stock_title_array">
+        <item>自选行情</item>
+        <item>自选DDE</item>
+        <item>自选资金流</item>
+        <item>自选编辑</item>
+    </string-array>
+    <string-array name="minute_deals_item">
+        <item>时间</item>
+        <item>价格</item>
+        <item>量</item>
+        <item>增仓</item>
+        <item>性质</item>
+    </string-array>
+    <string-array name="minute_deals_type">
+        <item>多开仓</item>
+        <item>多平仓</item>
+        <item>空开仓</item>
+        <item>空平仓</item>
+        <item>双开仓</item>
+        <item>双平仓</item>
+        <item>多换手</item>
+        <item>空换手</item>
+    </string-array>
+    <string-array name="minute_detail_array_fund">
+        <item>金额:</item>
+        <item>隐收:</item>
+        <item>总溢:</item>
+        <item>杠杆:</item>
+    </string-array>
+    <string-array name="minute_detail_array_index">
+        <item>成交额:</item>
+        <item>成交量:</item>
+        <item>市值:</item>
+        <item>流通:</item>
+    </string-array>
+    <string-array name="minute_detail_array_plate">
+        <item>今开:</item>
+        <item>昨收:</item>
+        <item>成交额:</item>
+        <item>成交量:</item>
+    </string-array>
+    <string-array name="minute_detail_array_stock">
+        <item>市值:</item>
+        <item>总手:</item>
+        <item>流通:</item>
+        <item>换手:</item>
+    </string-array>
+    <string-array name="minute_fund_detail_array">
+        <item>涨停</item>
+        <item>量比</item>
+        <item>换手</item>
+        <item>振幅</item>
+        <item>委比</item>
+        <item>总手</item>
+        <item>金额</item>
+        <item>整体溢价</item>
+        <item>价格杠杆</item>
+        <item>隐含收益</item>
+        <item>跌停</item>
+        <item>均价</item>
+        <item>今开</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>外盘</item>
+        <item>内盘</item>
+        <item>母基估值</item>
+        <item>上折需涨</item>
+        <item>下折需跌</item>
+    </string-array>
+    <string-array name="minute_gridview_array_land_5">
+        <item>F10</item>
+        <item>Level2</item>
+        <item>盘口</item>
+        <item>大单</item>
+        <item></item>
+    </string-array>
+    <string-array name="minute_hk_detail_array">
+        <item>今开</item>
+        <item>昨收</item>
+        <item>均价</item>
+        <item>振幅</item>
+        <item>换手</item>
+        <item>现手</item>
+        <item>总手</item>
+        <item>金额</item>
+        <item>量比</item>
+        <item>内盘</item>
+        <item>外盘</item>
+    </string-array>
+    <string-array name="minute_index_detail_array">
+        <item>最新</item>
+        <item>涨跌</item>
+        <item>今开</item>
+        <item>总手</item>
+        <item>换手</item>
+        <item>总额</item>
+        <item>总市值</item>
+        <item>最高</item>
+        <item>涨停</item>
+        <item>均价</item>
+        <item>涨幅</item>
+        <item>昨收</item>
+        <item>现手</item>
+        <item>振幅</item>
+        <item>量比</item>
+        <item>流通</item>
+        <item>最低</item>
+        <item>跌停</item>
+    </string-array>
+    <string-array name="minute_index_item">
+        <item>名称</item>
+        <item>净额</item>
+        <item>占成交额%</item>
+        <item>涨幅%</item>
+    </string-array>
+    <string-array name="minute_jlb_table_header">
+        <item>时间</item>
+        <item>价格</item>
+        <item>量</item>
+        <item>增仓</item>
+        <item>性质</item>
+    </string-array>
+    <string-array name="minute_lv2">
+        <item>DDX</item>
+        <item>成交单数</item>
+        <item>买卖总量</item>
+        <item>成交量</item>
+    </string-array>
+    <string-array name="minute_money_array">
+        <item>最新</item>
+        <item>今开</item>
+        <item>均价</item>
+        <item>涨跌</item>
+        <item>涨幅</item>
+        <item>总手</item>
+        <item>换手</item>
+        <item>量比</item>
+        <item>内盘</item>
+        <item>外盘</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>昨收</item>
+    </string-array>
+    <string-array name="minute_option_array">
+        <item>今开</item>
+        <item>昨结</item>
+        <item>均价</item>
+        <item>涨停</item>
+        <item>跌停</item>
+        <item>持仓</item>
+        <item>增仓</item>
+        <item>行权日</item>
+        <item>行权价</item>
+        <item>量比</item>
+        <item>内盘</item>
+        <item>外盘</item>
+        <item>总手</item>
+    </string-array>
+    <string-array name="minute_option_detail_one_array">
+        <item>卖出</item>
+        <item>买入</item>
+        <item>最新</item>
+        <item>涨幅</item>
+        <item>涨跌</item>
+        <item>均价</item>
+        <item>总手</item>
+        <item>现手</item>
+        <item>持仓</item>
+        <item>增仓</item>
+        <item>日增</item>
+        <item>结算</item>
+        <item>前结</item>
+    </string-array>
+    <string-array name="minute_option_detail_two_array">
+        <item>卖出</item>
+        <item>买入</item>
+        <item>最新</item>
+        <item>涨幅</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>昨收</item>
+        <item>振幅</item>
+        <item>量比</item>
+        <item>内盘</item>
+        <item>外盘</item>
+        <item>涨停</item>
+        <item>跌停</item>
+    </string-array>
+    <string-array name="minute_other_index_detail_two_array">
+        <item>今开</item>
+        <item>昨收</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>涨跌</item>
+        <item>涨幅</item>
+        <item>金额</item>
+    </string-array>
+    <string-array name="minute_plate_item">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>DDX</item>
+        <item>换手</item>
+    </string-array>
+    <string-array name="minute_poplist_array">
+        <item>分时DDX</item>
+        <item>成交单数</item>
+        <item>买卖总量</item>
+    </string-array>
+    <string-array name="minute_qhsx_array">
+        <item>多开仓</item>
+        <item>多平仓</item>
+        <item>空开仓</item>
+        <item>空平仓</item>
+        <item>双开仓</item>
+        <item>双平仓</item>
+        <item>多换手</item>
+        <item>空换手</item>
+    </string-array>
+    <string-array name="minute_stock_detail_array">
+        <item>涨停</item>
+        <item>量比</item>
+        <item>换手</item>
+        <item>振幅</item>
+        <item>委比</item>
+        <item>总手</item>
+        <item>金额</item>
+        <item>流通股</item>
+        <item>总股本</item>
+        <item>市盈率</item>
+        <item>跌停</item>
+        <item>均价</item>
+        <item>今开</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>外盘</item>
+        <item>内盘</item>
+        <item>流通值</item>
+        <item>总市值</item>
+        <item>市净率</item>
+    </string-array>
+    <string-array name="minute_zsgx_table_header">
+        <item>名称</item>
+        <item>涨幅%</item>
+        <item>贡献点数</item>
+        <item>股票代码</item>
+    </string-array>
+    <string-array name="minutectrl_label">
+        <item>时:</item>
+        <item>现:</item>
+        <item>幅:</item>
+        <item>均:</item>
+        <item>量:</item>
+    </string-array>
+    <string-array name="minutectrl_label_two">
+        <item>市值</item>
+        <item>流通</item>
+        <item>市盈</item>
+        <item>市净</item>
+    </string-array>
+    <string-array name="minutekline_menu_array_4">
+        <item>VOL</item>
+        <item>MACD</item>
+        <item>KDJ</item>
+        <item>RSI</item>
+        <item>BIAS</item>
+        <item>CCI</item>
+        <item>W&amp;R</item>
+        <item>BOLL</item>
+        <item>DMA</item>
+        <item>参数设置</item>
+    </string-array>
+    <string-array name="minutekline_menu_array_4_all">
+        <item>VOL</item>
+        <item>MACD</item>
+        <item>KDJ</item>
+        <item>RSI</item>
+        <item>BIAS</item>
+        <item>CCI</item>
+        <item>W&amp;R</item>
+        <item>BOLL</item>
+        <item>DMA</item>
+        <item>DDX</item>
+        <item>DDY</item>
+        <item>DDZ</item>
+        <item>SUPL</item>
+        <item>BS</item>
+    </string-array>
+    <string-array name="minutekline_menu_array_5">
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+        <item>日K线</item>
+        <item>周K线</item>
+        <item>月K线</item>
+    </string-array>
+    <string-array name="minutekline_menu_array_land_5">
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+    </string-array>
+    <string-array name="module_sub_flow_in">
+        <item>最近1天</item>
+        <item>净额</item>
+        <item>占成交额%</item>
+        <item>涨幅%</item>
+    </string-array>
+    <string-array name="module_sub_table_header">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+        <item>涨跌</item>
+        <item>昨收</item>
+        <item>成交量</item>
+        <item>成交额</item>
+        <item>最高</item>
+        <item>最低</item>
+    </string-array>
+    <string-array name="module_table_header">
+        <item>板块</item>
+        <item>涨幅%</item>
+        <item>领涨股</item>
+        <item>涨速%</item>
+        <item>换手%</item>
+        <item>量比</item>
+        <item>涨跌家数</item>
+        <item>5日涨幅%</item>
+        <item>净额</item>
+    </string-array>
+    <string-array name="news_title_name">
+        <item>头条</item>
+        <item>自选</item>
+        <item>披露</item>
+        <item>新股</item>
+    </string-array>
+    <integer-array name="news_title_type">
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+    </integer-array>
+    <string-array name="news_title_url">
+        <item>/wap/data/news/news/sjzx/txsxw/page_1.json</item>
+        <item>/wap/data/ipad/news/xwzxc/page_1.json</item>
+        <item>/wap/data/news/news/sjzx/jysplxx/page_1.json</item>
+        <item>http://mnews.gw.com.cn/wap/news/xgfx/gaoduan/index.html</item>
+    </string-array>
+    <string-array name="option_table_header">
+        <item>名称</item>
+        <item>最新</item>
+        <item>涨跌</item>
+        <item>涨幅</item>
+        <item>买一价</item>
+        <item>卖一价</item>
+        <item>总手</item>
+        <item>持仓量</item>
+        <item>昨结</item>
+        <item>行权价</item>
+        <item>行权日</item>
+    </string-array>
+    <string-array name="partstatic_table_header">
+        <item>名称</item>
+        <item>7日涨幅%</item>
+        <item>7日换手%</item>
+        <item>30日涨幅%</item>
+        <item>30日换手%</item>
+        <item>最新</item>
+        <item>涨幅%</item>
+    </string-array>
+    <string-array name="program_title">
+        <item>序号</item>
+        <item>期号</item>
+        <item>倍数</item>
+        <item>累计投入</item>
+        <item>中奖盈利</item>
+        <item>盈利率</item>
+    </string-array>
+    <string-array name="pstitle">
+        <item>排列三(直选)</item>
+        <item>排列三(组三)</item>
+        <item>排列三(组六)</item>
+    </string-array>
+    <string-array name="punc_entries">
+        <item>有标点</item>
+        <item>无标点</item>
+    </string-array>
+    <string-array name="punc_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="pzhd_xb">
+        <item>胡金凤</item>
+        <item>谢杨</item>
+        <item>吴晓健</item>
+    </string-array>
+    <string-array name="result_level_entries">
+        <item>plain</item>
+        <item>complete</item>
+    </string-array>
+    <string-array name="sdtitle">
+        <item>福彩3D(直选)</item>
+        <item>福彩3D(组三)</item>
+        <item>福彩3D(组六)</item>
+    </string-array>
+    <string-array name="selecttip">
+        <item>每位至少选择1个号码</item>
+        <item>至少选择2个号码</item>
+        <item>至少选择3个号码</item>
+    </string-array>
+    <string-array name="selfstock_sync_setting_array">
+        <item>本地自选股覆盖云端自选股</item>
+        <item>云端自选股覆盖本地自选股</item>
+        <item>云端自选股和本地自选股合并</item>
+    </string-array>
+    <string-array name="selfstock_sync_setting_relogin_array">
+        <item>本地自选股覆盖云端自选股</item>
+        <item>云端自选股覆盖本地自选股</item>
+        <item>云端自选股和本地自选股合并</item>
+        <item>暂不需要自选股同步</item>
+    </string-array>
+    <string-array name="setting_data_clear_array">
+        <item>清除自选列表、最新浏览</item>
+        <item>清除账户信息及绑定的手机号码</item>
+        <item>清除委托交易账户信息</item>
+        <item>全部清除</item>
+    </string-array>
+    <string-array name="share_array">
+        <item>新浪微博</item>
+        <item>微信朋友圈</item>
+        <item>微信好友</item>
+    </string-array>
+    <string-array name="spplaytype">
+        <item>直选</item>
+        <item>组三</item>
+        <item>组六</item>
+    </string-array>
+    <string-array name="stock_cash_header">
+        <item>名称</item>
+        <item>净额</item>
+        <item>占成交额%</item>
+        <item>流入</item>
+        <item>流出</item>
+        <item>成交额</item>
+        <item>涨幅%</item>
+        <item>换手%</item>
+    </string-array>
+    <string-array name="stock_details_array">
+        <item>最高:</item>
+        <item>最低:</item>
+        <item>市值:</item>
+        <item>总手:</item>
+        <item>流通:</item>
+        <item>换手:</item>
+    </string-array>
+    <string-array name="stock_details_array_hot">
+        <item>总手:</item>
+        <item>换手:</item>
+        <item>市值:</item>
+        <item>量比:</item>
+        <item>最高:</item>
+        <item>最低:</item>
+    </string-array>
+    <string-array name="stock_hk_details_array">
+        <item>最高:</item>
+        <item>最低:</item>
+        <item>今开:</item>
+        <item>昨收:</item>
+        <item>均价:</item>
+        <item>振幅:</item>
+    </string-array>
+    <string-array name="stock_hk_stock_details_array">
+        <item>现手:</item>
+        <item>总手:</item>
+        <item>金额:</item>
+        <item>量比:</item>
+        <item>内盘:</item>
+        <item>外盘:</item>
+    </string-array>
+    <string-array name="stock_popwin_array">
+        <item>快买</item>
+        <item>快卖</item>
+        <item>持仓</item>
+    </string-array>
+    <string-array name="stock_popwin_array2">
+        <item>刷新</item>
+        <item>预警</item>
+        <item>大盘报价</item>
+        <item>指数贡献</item>
+    </string-array>
+    <string-array name="stock_popwin_array3">
+        <item>刷新</item>
+        <item>F10</item>
+    </string-array>
+    <string-array name="stock_popwin_array4">
+        <item>刷新</item>
+        <item>盘口</item>
+    </string-array>
+    <string-array name="stock_popwin_array5">
+        <item>刷新</item>
+        <item>预警</item>
+    </string-array>
+    <string-array name="stock_popwin_array6">
+        <item>刷新</item>
+        <item>盘口信息</item>
+        <item>level2</item>
+    </string-array>
+    <string-array name="stock_popwin_array6_xc">
+        <item>刷新</item>
+        <item>盘口信息</item>
+        <item>level2</item>
+        <item>快买</item>
+        <item>快卖</item>
+    </string-array>
+    <string-array name="stock_popwin_array7">
+        <item>刷新</item>
+        <item>预警</item>
+    </string-array>
+    <string-array name="stock_popwin_array_fund">
+        <item>快买</item>
+        <item>快卖</item>
+    </string-array>
+    <string-array name="stock_popwin_array_hk">
+        <item>预警</item>
+        <item>F10</item>
+        <item>免责声明</item>
+    </string-array>
+    <string-array name="stock_popwin_array_margin">
+        <item>融资买入</item>
+        <item>普通买入</item>
+        <item>融券卖出</item>
+        <item>普通卖出</item>
+        <item>买券还券</item>
+        <item>卖券还款</item>
+        <item>撤单</item>
+    </string-array>
+    <string-array name="stock_popwin_array_new">
+        <item>预警</item>
+        <item>技术面</item>
+        <item>数据面</item>
+        <item>板块联动</item>
+        <item>添加桌面</item>
+        <item>盘口信息</item>
+        <item>level2</item>
+        <item>F10</item>
+    </string-array>
+    <string-array name="stock_popwin_array_shensanban">
+        <item>刷新</item>
+        <item>盘口</item>
+        <item>F10</item>
+    </string-array>
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="sv_table_header">
+        <item>名称</item>
+        <item>净额</item>
+        <item>占成交额%</item>
+        <item>流入</item>
+        <item>流出</item>
+        <item>成交额</item>
+        <item>涨幅%</item>
+        <item>换手%</item>
+    </string-array>
+    <string-array name="together_buy_filter_type">
+        <item></item>
+        <item>全部彩种</item>
+        <item></item>
+        <item>双色球</item>
+        <item>大乐透</item>
+        <item>竞彩足球</item>
+        <item>3D</item>
+        <item>胜负彩</item>
+        <item>任选九</item>
+        <item>竞彩篮球</item>
+        <item>北京单场</item>
+        <item>排列3</item>
+        <item>排列5</item>
+        <item>七星彩</item>
+        <item>七乐彩</item>
+    </string-array>
+    <string-array name="trade_title_name">
+        <item>A股</item>
+        <item>港美</item>
+    </string-array>
+    <integer-array name="trade_title_type">
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕—女青、中英、普通话</item>
+        <item>小宇—男青、中英、普通话</item>
+        <item>凯瑟琳—女青、英</item>
+        <item>亨利—男青、英</item>
+        <item>玛丽—女青、英</item>
+        <item>小研—女青、中英、普通话</item>
+        <item>小琪—女青、中英、普通话</item>
+        <item>小峰—男青、中英、普通话</item>
+        <item>小梅—女青、中英、粤语</item>
+        <item>小莉—女青、中英、台湾普通话</item>
+        <item>小蓉—女青、中、四川话</item>
+        <item>小芸—女青、中、东北话</item>
+        <item>小坤—男青、中、河南话</item>
+        <item>小强—男青、中、湖南话</item>
+        <item>小莹—女青、中、陕西话</item>
+        <item>小新—男童、中、普通话</item>
+        <item>楠楠—女童、中、普通话</item>
+        <item>老孙—男老、中、普通话</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+    <string-array name="week">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="zc_array">
+        <item>胜负彩</item>
+        <item>任选九</item>
+    </string-array>
+    <string-array name="zc_bet_array">
+        <item>胜负彩投注</item>
+        <item>任选九投注</item>
+    </string-array>
+</resources>

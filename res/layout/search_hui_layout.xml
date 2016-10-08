@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_ll" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/search_bg" android:background="@drawable/theme_white_search_hui_input_bg" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/search_icon" />
+            <EditText android:textSize="14.0sp" android:textColor="#ff222222" android:id="@id/searchEdit" android:background="@android:color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="选股策略/概念/关键词/问题" android:singleLine="true" android:maxLength="20" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/searchstock_cancel" android:padding="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:layout_marginRight="5.0dip" android:src="@drawable/cancel" android:scaleType="centerInside" />
+            <View android:textSize="16.0sp" android:layout_gravity="center" android:id="@id/search_div" android:background="#ffd6d6d6" android:layout_width="1.0sp" android:layout_height="25.0dip" android:layout_marginRight="-1.0sp" />
+            <TextView android:textSize="18.0sp" android:textColor="#ff222222" android:gravity="center" android:layout_gravity="center" android:id="@id/cancel_or_search" android:layout_width="65.0dip" android:layout_height="fill_parent" android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0sp" android:layout_weight="1.0">
+        <ListView android:id="@id/listView" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="-2.0dip" />
+        <ListView android:id="@id/history_listView" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="-2.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/errView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/search_info" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:layout_gravity="center" android:id="@id/errText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="没有结果哦~" />
+        </LinearLayout>
+        <com.android.dazhihui.ui.widget.MyWebView android:id="@id/webview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/sou_ll" android:background="@color/transparent" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:id="@id/sou_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜:" />
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/sou_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textColor="#ff222222" android:gravity="center" android:id="@id/tv_about" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="该技术由科大讯飞提供" />
+    <RelativeLayout android:id="@id/speech_rl" android:background="#fff0f0f5" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/theme_white_search_hui_speech_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/speech_talk" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff222222" android:id="@id/buttom_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="按住 说话" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

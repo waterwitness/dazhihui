@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bottom_tab_divider" android:background="@color/theme_black_main_screen_bg" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_tab_group" android:background="@color/theme_black_main_screen_tab_bg" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <RelativeLayout android:id="@id/bottom_menu_button_1" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_1" android:text="@string/free_page" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_1" android:src="@drawable/theme_black_tab_icon_zixuan" android:layout_above="@id/tab_text_1" style="@style/main_tab_menu_image" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_2" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_2" android:text="@string/market_page" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_2" android:src="@drawable/theme_black_tab_icon_market" android:layout_above="@id/tab_text_2" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/shichang_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_3" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_3" android:text="@string/news_page" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_3" android:src="@drawable/theme_black_tab_icon_news" android:layout_above="@id/tab_text_3" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/zixunRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/zixunNew" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_4" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_4" android:text="@string/trade_page" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_4" android:src="@drawable/theme_black_tab_icon_fund" android:layout_above="@id/tab_text_4" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/trade_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_5" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_5" android:text="@string/findering_page" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_5" android:src="@drawable/theme_white_tab_icon_junp_shiba" android:layout_above="@id/tab_text_5" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/woRed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/woNew" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/advert135" android:background="@drawable/hb_bg" android:paddingLeft="4.0dip" android:paddingTop="2.0dip" android:paddingRight="4.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:text="红包" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_6" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_6" android:text="首页" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_6" android:src="@drawable/theme_black_tab_icon_shiba" android:layout_above="@id/tab_text_6" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/trade_red_6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_7" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_7" android:text="关注" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_7" android:src="@drawable/theme_black_tab_icon_guanzhu" android:layout_above="@id/tab_text_7" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/trade_red_7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_8" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_8" android:text="话题" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_8" android:src="@drawable/theme_black_tab_icon_guandian" android:layout_above="@id/tab_text_8" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/trade_red_8" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_9" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_9" android:text="社群" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_9" android:src="@drawable/theme_black_tab_icon_huodong" android:layout_above="@id/tab_text_9" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/trade_red_9" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/bottom_menu_button_10" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:visibility="gone" style="@style/menu_tab">
+            <TextView android:id="@id/tab_text_10" android:text="大智慧" style="@style/main_tab_menu_text" />
+            <ImageView android:id="@id/tab_image_10" android:src="@drawable/theme_black_tab_icon_dzh" android:layout_above="@id/tab_text_10" style="@style/main_tab_menu_image" />
+            <ImageView android:id="@id/trade_red_10" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="17.0dip" android:src="@drawable/basic_source_hint_bg" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/item_news_bg" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/news_image_height" android:layout_toLeftOf="@id/newsLeftImg" android:layout_alignParentLeft="true">
+        <TextView android:textSize="@dimen/font16" android:textColor="#ff000000" android:id="@id/news_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:layout_alignParentTop="true" android:lineSpacingExtra="1.0px" />
+        <TextView android:textSize="@dimen/font13" android:textColor="@color/kuaixun_summary" android:id="@id/news_summary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" android:maxLines="1" android:singleLine="true" android:layout_below="@id/news_title" android:lineSpacingExtra="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="11.0sp" android:textColor="#ff3f83cf" android:id="@id/news_biaozhi" android:background="@drawable/news_kx_yd_bg" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="9.0dip" android:text="置顶" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff9d9d9d" android:id="@id/news_yuedu" android:background="@drawable/news_kx_yd_bg" android:paddingLeft="6.0dip" android:paddingTop="1.0dip" android:paddingRight="6.0dip" android:paddingBottom="1.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="239阅读" />
+            <View android:layout_width="wrap_content" android:layout_height="1.0px" android:layout_weight="1.0" />
+            <TextView android:textSize="11.0sp" android:textColor="#ff9d9d9d" android:id="@id/news_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13:19" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="top" android:id="@id/newsLeftImg" android:layout_width="@dimen/news_image_width" android:layout_height="@dimen/news_image_height" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:contentDescription="@null" />
+</RelativeLayout>

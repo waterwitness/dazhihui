@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/tl_fund" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:paddingLeft="@dimen/dip2" android:paddingRight="@dimen/dip2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center|left" android:id="@id/tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="浦发银行" android:layout_weight="1.0" />
+            <TextView android:gravity="center|right" android:id="@id/tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="5567.08" android:layout_weight="1.0" />
+            <TextView android:gravity="center|right" android:id="@id/tv_5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="51.3" android:layout_weight="1.0" />
+            <TextView android:gravity="center|right" android:id="@id/tv_7" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="-72%" android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow android:paddingLeft="@dimen/dip2" android:paddingRight="@dimen/dip2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center|left" android:id="@id/tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="浦发银行" android:layout_weight="1.0" />
+            <TextView android:gravity="center|right" android:id="@id/tv_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="5567.08" android:layout_weight="1.0" />
+            <TextView android:gravity="center|right" android:id="@id/tv_6" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="51.3" android:layout_weight="1.0" />
+            <TextView android:gravity="center|right" android:id="@id/tv_8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="-72%" android:layout_weight="1.0" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_festmenufund" android:background="#ffefeef4" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/image1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black" android:layout_gravity="center" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="申购" />
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="#ffd8d8d8" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/image2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black" android:layout_gravity="center" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="赎回" />
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="#ffd8d8d8" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/image3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black" android:layout_gravity="center" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="分拆" />
+        </LinearLayout>
+        <View android:layout_gravity="center" android:background="#ffd8d8d8" android:layout_width="1.0dip" android:layout_height="30.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/image4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="@color/black" android:layout_gravity="center" android:id="@id/text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="行情" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+package com.android.dazhihui.ui.delegate.screen.xc.trade;
+
+import android.view.View;
+import android.view.View.OnClickListener;
+
+class z
+  implements View.OnClickListener
+{
+  z(y paramy, int paramInt) {}
+  
+  public void onClick(View paramView)
+  {
+    y.a(this.b).a(this.a);
+  }
+}
+
+
+/* Location:              E:\apk\dazhihui2\classes-dex2jar.jar!\com\android\dazhihui\ui\delegate\screen\xc\trade\z.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

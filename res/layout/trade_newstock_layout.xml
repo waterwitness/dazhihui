@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffeeefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_festmenu" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="@dimen/dip40">
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff3572f1" android:gravity="center" android:id="@id/tv_xgsg" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="新股申购" android:layout_weight="1.0" />
+        <View android:background="#ffc5c5c5" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_zqcx" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="新股中签" android:layout_weight="1.0" />
+        <View android:background="#ffc5c5c5" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ff000000" android:gravity="center" android:id="@id/tv_phcx" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="配号查询" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/trade_content" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

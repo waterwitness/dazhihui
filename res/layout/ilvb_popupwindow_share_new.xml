@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/popupMenu" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareView" android:background="#b3000000" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="20.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/shareWeixing" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="微信" android:drawableTop="@drawable/weixing_img" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/sharePengyou" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="微信朋友圈" android:drawableTop="@drawable/pengyou_img" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/shareWeiBo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="新浪微博" android:drawableTop="@drawable/weibo_img" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/share_friend" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="视吧口令" android:drawableTop="@drawable/share_friend_img" android:drawablePadding="5.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

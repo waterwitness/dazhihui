@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.NoScrollGridView android:id="@id/room_gridview" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginTop="@dimen/dip5" android:layout_marginRight="@dimen/dip10" android:listSelector="@color/transparent" android:horizontalSpacing="@dimen/dip10" android:verticalSpacing="@dimen/dip12" android:stretchMode="columnWidth" android:numColumns="2" />
+    <View android:id="@id/ilvb_list_gap" android:background="@color/wo_news_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip1" android:layout_below="@id/room_gridview" />
+    <TextView android:textSize="@dimen/font15" android:textColor="#ff3e69c5" android:gravity="center" android:id="@id/ilvb_list_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip40" android:layout_marginTop="@dimen/dip1" android:text="查看更多热播" android:layout_below="@id/ilvb_list_gap" />
+</RelativeLayout>

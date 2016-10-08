@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/surfaceView_anychat" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="70.0dip" />
+    <RelativeLayout android:id="@id/show_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/top_nav" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/top_nav_alpha" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <antistatic.spinnerwheel.WheelVerticalView android:id="@id/wheelText1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/botom_nav" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/imageView_overturn" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/crh_video_overturn" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:id="@id/textView_reRecord" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="25.0dip" android:layout_marginLeft="25.0dip" android:text="重新录制" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center" android:id="@id/imageView_start" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/crh_start" />
+        </FrameLayout>
+        <ImageView android:id="@id/imageView_video_prompt" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="30.0dip" android:src="@drawable/crh_video_prompt" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/timeview" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imageView_timebg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/crh_time_bg" android:layout_below="@id/imageView_video_prompt" android:layout_centerHorizontal="true" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="70.0sp" android:layout_gravity="center" android:id="@id/textView_timenum" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="5" android:layout_centerHorizontal="true" />
+        </FrameLayout>
+        <ImageView android:id="@id/imageView_video_prompt2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="35.0dip" android:src="@drawable/crh_videostart_prompt" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <Chronometer android:textSize="18.0sp" android:textColor="#ff873324" android:id="@id/chronometer1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/top_nav" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0dip" android:textColor="@android:color/white" android:id="@id/textView_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在连接服务器进行验证,请稍后...." android:layout_above="@id/timeview" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

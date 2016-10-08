@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/faterview" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/header" android:background="#ff2e3137" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true">
+        <com.android.dazhihui.ui.widget.WriteableImageView android:id="@id/head_menu_left" android:paddingLeft="3.0dip" android:paddingTop="7.0dip" android:paddingRight="1.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="40.0dip" android:layout_height="@dimen/cheader_item_height" android:layout_marginLeft="2.0dip" android:src="@drawable/back_arrow" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/activity_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股友会" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/more_bbs_list_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/header" />
+</RelativeLayout>

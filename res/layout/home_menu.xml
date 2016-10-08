@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ptr="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhMainHeader android:id="@id/dzhMainHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.android.dazhihui.ui.widget.dzhrefresh.StickyRefreshScrollView android:id="@id/home_menu_scrollview" android:background="@color/wo_news_bg" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dzhMainHeader" ptr:ptrMode="both" ptr:ptrDrawableEnd="@color/wo_news_bg">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/top_advert147" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/wo_top_adv_none" android:scaleType="center" />
+            <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advert147" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:background="@color/white" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="193.0dip"
+              xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+                <com.android.dazhihui.ui.widget.flip.ViewFlow android:id="@id/viewFlow" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.android.dazhihui.ui.widget.flip.CircleFlowIndicator android:id="@id/vf_indic_ad" android:padding="@dimen/dip2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" dzh:activeColor="#ffff8000" dzh:inactiveColor="#ffc8c8c8" dzh:radius="2.399994dip" dzh:inactiveType="fill" dzh:activeType="fill" dzh:circleSeparation="@dimen/dip15" />
+            </RelativeLayout>
+            <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <com.android.dazhihui.ui.widget.WisdomHot android:id="@id/wisdomHot" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/test_goto" android:background="@color/white" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_setting" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳转测试" android:drawablePadding="15.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/test_goto_webview" android:background="@color/white" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_setting" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="webview测试" android:drawablePadding="15.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/test_goto_cordova" android:background="@color/white" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_setting" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金证cordova测试" android:drawablePadding="15.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/test_goto_ilvb" android:background="@color/white" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_setting" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳转腾讯互动直播" android:drawablePadding="15.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/test_create_ilvb" android:background="@color/white" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/icon_setting" android:scaleType="fitXY" android:contentDescription="@null" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试手机当主播" android:drawablePadding="15.0dip" />
+                <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/lixianchicang_show" android:background="@color/white" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="盈亏统计" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/lxcc_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/dryk_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="当日盈亏(CNY)" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/dryk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0.00" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="#ffd6d6d6" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ljyk_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="持仓盈亏(CNY)" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/ljyk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0.00" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <View android:layout_gravity="center_vertical" android:background="#ffd6d6d6" android:layout_width="1.0px" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ccsz_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="13.0sp" android:textColor="@color/color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="持仓市值(CNY)" android:layout_weight="1.0" />
+                        <TextView android:textSize="15.0sp" android:textColor="#ff666666" android:id="@id/ccsz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="0.00" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.android.dazhihui.ui.widget.dzhrefresh.StickyRefreshScrollView>
+    <RelativeLayout android:id="@id/zhezhao" android:background="#e0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/advert137" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

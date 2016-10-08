@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rl_codesearch" android:background="@color/white" android:paddingLeft="@dimen/dip10" android:paddingTop="@dimen/dip20" android:paddingRight="@dimen/dip10" android:paddingBottom="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/font_small" android:textColor="@color/white" android:id="@id/btn_codesearch" android:background="@drawable/wt_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_stock_query1" android:layout_alignTop="@id/et_code" android:layout_alignBottom="@id/et_code" android:layout_alignParentRight="true" />
+        <EditText android:id="@id/et_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:hint="请输入代码" android:singleLine="true" android:maxLength="6" android:numeric="integer" android:layout_toLeftOf="@id/btn_codesearch" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/ll_old_table" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" dzh:scroll="false" dzh:selectdrawable="@color/lightblue" dzh:headdrawable="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ctrl_bottom_minute" android:text="@string/ctrl_fenshi" style="@style/MinuteTextView" />
+    <View android:id="@id/line_gap_1" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/ctrl_bottom_dayskLine" android:text="@string/ctrl_dayK" style="@style/MinuteTextView" />
+    <View android:id="@id/line_gap_2" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/ctrl_bottom_weeksLine" android:text="@string/ctrl_weekedK" style="@style/MinuteTextView" />
+    <View android:id="@id/line_gap_3" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/ctrl_bottom_monthsLine" android:text="@string/ctrl_monthK" style="@style/MinuteTextView" />
+    <View android:id="@id/line_gap_4" android:layout_width="0.5dip" android:layout_height="fill_parent" />
+    <TextView android:id="@id/ctrl_bottom_fenzhong" android:paddingLeft="5.0dip" android:paddingRight="12.0dip" android:text="@string/ctrl_minutes_bottom" android:drawableRight="@drawable/minute_updown" android:drawablePadding="0.0dip" style="@style/MinuteTextView" />
+    <TextView android:layout_gravity="right" android:id="@id/ctrl_bottom_deleteChoose" android:layout_marginLeft="@dimen/dip5" android:text="返回竖屏" style="@style/MinuteTextView" />
+</LinearLayout>

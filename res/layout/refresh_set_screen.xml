@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_normal" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/wo_item_border" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:id="@id/tv1" android:layout_width="@dimen/dip100" android:layout_height="wrap_content" android:text="@string/listRefreshTime" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/wo_text_color" android:gravity="right" android:id="@id/listTime" android:layout_width="@dimen/dip40" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/listSeek" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="55" android:progress="10" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/seekbar_new_icon" android:layout_toLeftOf="@id/listTime" android:layout_toRightOf="@id/tv1" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/wo_item_line" android:layout_width="wrap_content" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:id="@id/tv2" android:layout_width="@dimen/dip100" android:layout_height="wrap_content" android:text="@string/minuteRefreshTime" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/wo_text_color" android:gravity="right" android:id="@id/minuteTime" android:layout_width="@dimen/dip40" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/minuteSeek" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="55" android:progress="10" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/seekbar_new_icon" android:layout_toLeftOf="@id/minuteTime" android:layout_toRightOf="@id/tv2" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/wo_item_line" android:layout_width="wrap_content" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:id="@id/tv3" android:layout_width="@dimen/dip100" android:layout_height="wrap_content" android:text="@string/kLineRefreshTime" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/wo_text_color" android:gravity="right" android:id="@id/klineTime" android:layout_width="@dimen/dip40" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/klineSeek" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="55" android:progress="10" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/seekbar_new_icon" android:layout_toLeftOf="@id/klineTime" android:layout_toRightOf="@id/tv3" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/wo_item_line" android:layout_width="wrap_content" android:layout_height="1.0px" />
+        <RelativeLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:id="@id/tv4" android:layout_width="@dimen/dip100" android:layout_height="wrap_content" android:text="@string/mineStockTime" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/wo_text_color" android:gravity="right" android:id="@id/mainTime" android:layout_width="@dimen/dip40" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/mainSeek" android:paddingLeft="@dimen/dip10" android:paddingRight="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="55" android:progress="10" android:progressDrawable="@drawable/seekbar" android:minHeight="2.0dip" android:thumb="@drawable/seekbar_new_icon" android:layout_toLeftOf="@id/mainTime" android:layout_toRightOf="@id/tv4" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

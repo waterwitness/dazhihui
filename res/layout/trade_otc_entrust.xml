@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="产品代码" />
+        <EditText android:id="@id/et_code" android:layout_width="0.0dip" android:layout_height="wrap_content" android:digits="0123456789qwertyuiopasdfghjklzxcvbnmQWRTYUIOPASDFGHJKLZXCVBNM" android:autoText="false" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="产品名称" />
+        <EditText android:enabled="false" android:id="@id/et_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:password="false" android:numeric="integer" android:autoText="false" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="产品净值" />
+        <EditText android:enabled="false" android:id="@id/et_net" android:layout_width="0.0dip" android:layout_height="wrap_content" android:password="false" android:numeric="integer" android:autoText="false" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tv_available_funds" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用资金" />
+        <EditText android:id="@id/et_available_funds" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:password="false" android:numeric="integer" android:autoText="false" android:layout_weight="1.0" android:inputType="none" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tv_syed" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用额度" />
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/gray" android:id="@id/et_syed" android:paddingLeft="@dimen/dip10" android:layout_width="0.0dip" android:layout_height="wrap_content" android:autoText="false" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/tv_amount" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="认购金额" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <EditText android:id="@id/et_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="false" android:numeric="decimal" android:autoText="false" />
+            <TextView android:textSize="@dimen/font_small" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_tormb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:layout_below="@id/et_amount" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <HorizontalScrollView android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_book" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <CheckBox android:textSize="@dimen/font_smaller" android:textColor="@color/black" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20" android:text="我已仔细阅读相关条款,充分了解本产品的风险,愿意承担相关风险。" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_method" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:padding="5.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="巨额方式" />
+        <Spinner android:id="@id/sp_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawSelectorOnTop="true" />
+    </LinearLayout>
+    <RelativeLayout android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip5" android:layout_marginBottom="@dimen/dip5">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/font_medium" android:textColor="@color/white_color" android:id="@id/btn_subscription" android:background="@drawable/btn_blue_blue" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="@dimen/dip30" android:layout_marginRight="20.0dip" android:text="@string/option_purchase" android:layout_weight="1.0" />
+            <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/btn_reset" android:background="@drawable/btn_white_white" android:paddingLeft="@dimen/dip20" android:paddingRight="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="@dimen/dip30" android:layout_marginLeft="20.0dip" android:text="@string/reset" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/entrustable_tableLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="true" dzh:title="@string/gpmc" />
+</LinearLayout>

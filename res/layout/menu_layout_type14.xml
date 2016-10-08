@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty141" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/hushen_guba" android:layout_weight="1.0" style="@style/item_menustyle" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty142" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/hushen_zhangdie" android:layout_weight="1.0" style="@style/item_menustyle" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty143" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/fiveminute_zhangdie" android:layout_weight="1.0" style="@style/item_menustyle" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/menu_ty144" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/plate_zhangdie" android:layout_weight="1.0" style="@style/item_menustyle" />
+</merge>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/theme_black_market_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.DzhMainHeader android:id="@id/dzhMainHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/pageOne" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dzhMainHeader">
+        <RelativeLayout android:id="@id/searchstock_input" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+            <ImageView android:id="@id/img_micro" android:paddingTop="2.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/icon_micro" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/drivid" android:background="@drawable/search_drivid" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip5" android:layout_marginRight="@dimen/dip5" android:layout_toLeftOf="@id/img_micro" />
+            <LinearLayout android:id="@id/input_viewgroup" android:background="@color/theme_white_market_list_head_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dip5" android:layout_toLeftOf="@id/drivid">
+                <ImageView android:layout_gravity="center" android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:layout_marginLeft="5.0dip" android:src="@drawable/search_icon" android:scaleType="centerInside" />
+                <EditText android:textSize="13.0sp" android:textColor="@color/theme_black_market_list_item_stock_name" android:textColorHint="#ff808080" android:layout_gravity="center_vertical" android:id="@id/edit" android:background="@null" android:padding="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入股票代码或者拼音首字母" android:maxLength="6" />
+            </LinearLayout>
+            <ImageView android:id="@id/searchstock_cancel" android:padding="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:layout_marginRight="@dimen/dip8" android:src="@drawable/cancel" android:scaleType="centerInside" android:layout_alignRight="@id/input_viewgroup" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/label_group" android:background="@color/theme_black_market_list_label_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/theme_black_market_list_label_name" android:gravity="center|left" android:id="@id/label_recent_stock" android:paddingLeft="@dimen/dip5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dip35" android:text="最新浏览" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="@color/theme_black_market_list_label_name" android:gravity="center|left" android:id="@id/label_search_result" android:paddingLeft="@dimen/dip5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/dip35" android:text="查询结果" android:layout_alignParentLeft="true" />
+            <com.android.dazhihui.ui.widget.adv.AdvertView android:gravity="center|right" android:id="@id/myAdvView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.android.dazhihui.ui.widget.LabelMenu android:id="@id/label_menu_view" android:background="@color/theme_black_market_list_label_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip35" />
+        <FrameLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/searchstock_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@color/theme_black_self_stock_second_line" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.inputmethodservice.KeyboardView android:id="@id/keyboard_view" android:background="@color/black" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowColor="@color/white" android:shadowRadius="0.0" android:layout_alignParentBottom="true" android:keyBackground="@drawable/btn_keyboard_key" android:keyTextColor="@color/black" android:keyPreviewLayout="@layout/key_preview_layout" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <fragment android:name="com.android.dazhihui.ui.screen.stock.SearchPeopleFragment" android:id="@id/pageTwo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dzhMainHeader" />
+    <fragment android:name="com.android.dazhihui.ui.screen.stock.SearchHuiFragment" android:id="@id/pageThree" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/dzhMainHeader" />
+</RelativeLayout>

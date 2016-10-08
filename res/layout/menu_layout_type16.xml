@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/font_large" android:id="@id/menu_ty161" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/current_position" android:layout_weight="1.0" style="@style/item_menustyle" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_large" android:id="@id/menu_ty162" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/query_deal" android:layout_weight="1.0" style="@style/item_menustyle" />
+</merge>

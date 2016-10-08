@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="14.0sp" android:id="@id/tv_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <com.android.dazhihui.ui.widget.dzhrefresh.DzhLoading android:id="@id/dzhLoading" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:layout_toLeftOf="@id/tv_notice" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:layout_gravity="bottom" android:background="@color/lightgray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_date" android:background="@color/white" android:paddingLeft="@dimen/dip10" android:paddingTop="@dimen/dip20" android:paddingRight="@dimen/dip10" android:paddingBottom="@dimen/dip20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@id/ll_start_date" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/query_start_date" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/tv_start_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-05-04" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wt_query_icon" android:layout_toLeftOf="@id/ll_end_date" android:layout_toRightOf="@id/ll_start_date" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_end_date" android:paddingRight="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="#ffa3a3a3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/query_end_date" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:id="@id/tv_end_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015-05-04" />
+            </LinearLayout>
+        </RelativeLayout>
+        <Button android:textSize="@dimen/font_small" android:textColor="@color/white" android:id="@id/btn_query" android:background="@drawable/wt_button" android:layout_width="fill_parent" android:layout_height="@dimen/dip50" android:layout_marginTop="@dimen/dip20" android:text="@string/new_stock_query1" />
+    </LinearLayout>
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="15.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_nothing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:layout_marginTop="@dimen/dip30" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip30" android:src="@drawable/norecord" />
+        <com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.android.dazhihui.ui.widget.NoScrollListView android:id="@id/lv" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffe5e5e5" android:dividerHeight="1.0dip" />
+            </ScrollView>
+        </com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView>
+    </RelativeLayout>
+</LinearLayout>

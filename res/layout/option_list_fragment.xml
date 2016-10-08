@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_view" android:background="@color/theme_black_market_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title_layout" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" android:layout_alignParentTop="true" dzh:midTextColor="#ffaaaaaa" dzh:leftDrawable="@drawable/icon_menu" dzh:rightDrawable="@drawable/icon_search" dzh:menuDrawable="@drawable/icon_refresh" />
+    <include android:id="@id/middle_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dip70" android:layout_below="@id/title_layout" layout="@layout/market_option_header_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bs_layout" android:layout_width="fill_parent" android:layout_height="@dimen/dip60" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ffebf0f2" android:gravity="center" android:id="@id/purchant_btn" android:background="@drawable/option_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/option_purchase" android:drawableTop="@drawable/option_buyer_bg" android:layout_weight="1.0" />
+        <View android:background="#ff195494" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/font_small" android:textColor="#ffebf0f2" android:gravity="center" android:id="@id/sell_btn" android:background="@drawable/option_btn_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/option_sell" android:drawableTop="@drawable/option_seller_bg" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/option_list_table" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_bs_layout" android:layout_below="@id/middle_layout" />
+</RelativeLayout>

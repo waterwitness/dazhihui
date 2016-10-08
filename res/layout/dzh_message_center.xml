@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/title" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <com.android.dazhihui.ui.widget.SelfStockRefreshLayout android:id="@id/refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/container" android:background="#ffefeff4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </com.android.dazhihui.ui.widget.SelfStockRefreshLayout>
+</RelativeLayout>

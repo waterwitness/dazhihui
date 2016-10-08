@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/kwlopen_video_session" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="center" android:id="@id/kwlopen_surface_remote" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:layout_gravity="bottom" android:id="@id/kwlopen_progress_remote" android:layout_width="fill_parent" android:layout_height="5.0dip" android:max="100" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/kwlopen_mProgressNotice" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="vertical" android:id="@id/kwlopen_frame_local_area" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/kwlopen_surface_local" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ProgressBar android:id="@id/kwlopen_progress_local" android:layout_width="fill_parent" android:layout_height="5.0dip" android:max="100" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+</FrameLayout>

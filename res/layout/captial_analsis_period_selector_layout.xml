@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/captial_analysis_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/captial_stock_black" android:id="@id/btn_month" android:background="@drawable/captial_analysis_data_selector_middle_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="本月" android:layout_weight="1.0" />
+    <Button android:textColor="@color/captial_stock_black" android:id="@id/btn_2months" android:background="@drawable/captial_analysis_data_selector_middle_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="近两月" android:layout_weight="1.0" />
+    <Button android:textColor="@color/captial_stock_black" android:id="@id/btn_3months" android:background="@drawable/captial_analysis_data_selector_middle_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="近三月" android:layout_weight="1.0" />
+    <Button android:textColor="@color/captial_stock_black" android:id="@id/btn_halfyear" android:background="@drawable/captial_analysis_data_selector_right_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="近半年" android:layout_weight="1.0" />
+</LinearLayout>

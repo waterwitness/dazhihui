@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />   
+	<script type="text/javascript" src="js/cordova-3.5.0.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <!--照片范例-->
+    <div class="popConfirm" style="display:none;" id="popConfirm">
+	    <div class="mask"></div>
+	    <div class="popmsg">
+		      <a class="fancy-close" id="closePopConfirm">&nbsp;</a>
+		      <h2>身份证照片范例</h2>
+		      <div class="msgcont msgcont1">
+		         <span class="pic"><img src="gui-resource/guitwo/images/photo_03.jpg" /></span>
+               <p style="font-size:1.2rem;">拍摄建议：光线良好、水平放置、字体清晰</p>
+                 <a id="hidePop" href="#" class="btn_9">我知道了</a>
+		      </div>
+	    </div>
+	</div>
+ 
+	  <div class="row">
+	    <div class="col-xs-12">
+	      <h3 class="title">上传影像</h3>
+	      </div>
+	   </div>
+	   <div class="container yingxiang">
+	   		<div class="two-img-msg" id="img_msg" style="display:none;">请拍摄您本人的身份证正反面照片 <a id="showPop" href="#">查看范例</a></div>
+		    <div class="row img-box">
+	           <div class="y_box">
+					<!-- <h1 class="pictype1"><span>身份证正面</span></h1> -->
+		            <div class="col-xs-6 two-col-xs-6">
+						<div class="y_bg">
+						
+							<a  href="javascript:uploadImage();">
+								<span><!-- <em class="c_black"></em> -->
+                           <i>&nbsp;</i>
+                           <img width="100%" height="100%" id="img1" /></span>
+								<!-- <strong>请使用在有效期之内的第二代身份证原件</strong> -->
+							</a>
+							
+						</div>
+		            </div>
+		             
+		            <div class="col-xs-6" style="padding: 0 6px;" id="front_oper_box">
+						<span>请使用在有效期之内的第二代身份证原件正面</span>
+			            <div class="fileInput">
+								<form action="upload.do?fileName=" method='POST' target="submitFrame"
+									  enctype='multipart/form-data' name="form1" id="form1">
+									<input type="file" name="upfile" id="upfile" class="upfile"
+										onchange="imageSubmit(this,0);"  accept="image/*;capture=camera"/>
+									<input class="upFileBtn" type="button" value="上传图片"
+										onclick="document.getElementById('upfile').click()" />
+								</form>
+						</div>
+		            </div>
+	           </div>
+	        </div>
+	        <!-- 暂时不知何用，取消
+			<div class="clear" id="clear"></div>
+	        -->
+			<div class="row img-box">
+	            <div class="y_box">
+					<!-- <h1 class="pictype2"><span>身份证反面</span></h1> -->
+		            <div class="col-xs-6 two-col-xs-6">
+						<div class="y_bg y_bg1">
+							<a href="javascript:captureImg();">
+								<span><!-- <em class="c_black">&nbsp;</em> -->
+                              
+                              <i>&nbsp;</i><img width="100%" height="100%" id="img2" /></span>
+								<!-- <strong>请使用在有效期之内的第二代身份证原件</strong> -->
+							</a>
+							
+						</div>
+		            </div>
+			        <div class="col-xs-6" style="padding: 0 6px;" id="back_oper_box">
+						 <span>请使用在有效期之内的第二代身份证反面</span>
+				         <div class="fileInput">
+								<form action="upload.do?fileName=" method='POST' target="submitFrame"
+								      enctype='multipart/form-data' name="form2" id="form2">
+									<input type="file" name="upfile2" id="upfile2" class="upfile"
+										onchange="imageSubmit(this,1);" accept="image/*"/>
+									<input class="upFileBtn" type="button" value="上传图片"
+										onclick="document.getElementById('upfile2').click()" />
+								</form>
+						  </div>
+			         </div>
+			         
+				</div>
+	          </div>
+	      
+	      <div class=" row " style="display:none" id="headerDiv">
+		      <div class="y_box  ">
+					<!-- <h1 class="pictype2"><span>正面免冠照</span></h1> -->
+			        <div class="col-xs-6 two-col-xs-6"> 
+						<div class="y_bg y_bg2">
+							<a href="javascript:document.getElementById('upfile3').click();">
+								<span><!-- <em class="c_black">&nbsp;</em> --><img width="100%" height="100%" id="img3" /></span>
+								<!-- <strong>请使用清晰的正面免冠照</strong> -->
+							</a>
+						</div>
+		            </div>
+			        <div class="col-xs-6" style="padding: 0 6px;">
+						<span>请使用清晰的正面免冠照</span>
+			            <div class="fileInput">
+								<form action="upload.do?fileName=" method='POST' target="submitFrame"
+								      enctype='multipart/form-data' name="form3" id="form3">
+									<input type="file" name="upfile3" id="upfile3" class="upfile"
+										onchange="imageSubmit(this,2);" accept="image/*"/>
+									<input class="upFileBtn" type="button" value="上传图片"
+										onclick="document.getElementById('upfile3').click()" />
+								</form>
+						</div>
+					</div>
+		       </div>
+	       </div>
+	       
+			<div class="row " style="display:none" id="bankCardDiv">
+		        <div class="y_box ">
+					<!-- <h1 class="pictype2"><span>银行卡照</span></h1> -->
+		            <div class="col-xs-6 two-col-xs-6">
+						<div class="y_bg y_bg2">
+							<a href="javascript:document.getElementById('upfile4').click();">
+								<span><em class="c_black">&nbsp;</em><img width="100%" height="100%" id="img4" /></span>
+								<!-- <strong>请使用清晰的银行卡照</strong> -->
+							</a>	
+							
+						</div>
+		           </div>
+		           <div class="col-xs-6" style="padding-left:0;">
+		           		<div class="fileInput">
+							<form action="upload.do?fileName=" method='POST' target="submitFrame"
+							      enctype='multipart/form-data' name="form4" id="form4">
+								<input type="file" name="upfile4" id="upfile4" class="upfile"
+									onchange="imageSubmit(this,3);" accept="image/*"/>
+								<input class="upFileBtn" type="button" value="上传图片"
+									onclick="document.getElementById('upfile4').click()" />
+							</form>
+						</div>
+		            </div>
+				</div>
+	        </div>
+	</div>
+ 
+	<div class="row">
+	     <div class="col-xs-12">
+	    	<div class="xieyi" id="step2agree"></div>
+	     </div>
+	</div>
+	
+	<div class="row mar-top">
+	      <div class="col-xs-12 bottom_div" >
+		  	<a href="javascript:void(0)"  class="btn btn-default btn-lg btn-block btn_3" id="step1btn">继续开户</a>
+		  </div>
+		  <div class="col-xs-12 bottom_div" >
+		  	<button onclick="uploadImage();">上传图片</button>
+		  </div>
+	</div>
+	
+	<div id="setp2overlay" class="overlay" style="display:none;"></div>
+	<div class="setp-close" id="setp_close"><div class="setp-msg">协议内容</div><div class="setp-x" id="setp_close_x">X</div></div>
+	<div id="setp2win" class="agreement win"  style="display:none"></div>
+
+ </div>
+<script type="text/javascript" src="js/image_info.js"></script>
+
+<iframe name="submitFrame" width="0" height="0" style="display: none"></iframe>
+<script>
+	function uploadImage(){
+		var params={};
+		params['action'] = "uploadImage";
+		cordova.exec(function(args){
+			var kk = args;
+			 alert(kk.substring(0,6));
+			// alert(args);
+			// document.getElementById("imgShow").src=args;
+
+		},function(e){
+
+
+		}, "webInterface", params['action'], [params]);
+
+	}
+
+	function call(param){
+		alert(param);
+
+	}
+
+</script>
+</body>
+</html>

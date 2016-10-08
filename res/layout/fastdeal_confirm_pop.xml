@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/half_transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/fast_pop_root" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/fast_pop_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="委托确认" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+            <TextView android:textColor="#ff545454" android:gravity="left" android:layout_gravity="left" android:id="@id/fastdeal_pop_userinfo_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="账号：" />
+            <TextView android:textColor="#ff545454" android:gravity="left" android:layout_gravity="left" android:id="@id/fastdeal_pop_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="名称：" />
+            <TextView android:textColor="#ff545454" android:gravity="left" android:layout_gravity="left" android:id="@id/fastdeal_pop_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="代码：" />
+            <TextView android:textColor="#ff545454" android:gravity="left" android:layout_gravity="left" android:id="@id/fastdeal_pop_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="数量：" />
+            <TextView android:textColor="#ff545454" android:gravity="left" android:layout_gravity="left" android:id="@id/fastdeal_pop_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="价格：" />
+        </LinearLayout>
+        <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/fastdeal_pop_cancel" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="取消" android:layout_weight="1.0" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/fastdeal_pop_confirm" android:background="@drawable/fastdeal_buy_bg" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="确认买入" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

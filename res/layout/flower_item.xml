@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="66.0dip">
+        <RelativeLayout android:id="@id/leftContent" android:layout_width="230.0dip" android:layout_height="54.0dip" android:layout_alignParentBottom="true">
+            <RelativeLayout android:background="@drawable/flower_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="27.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="34.0dip" android:layout_marginRight="55.0dip" android:layout_centerVertical="true">
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="花妹妹dsdsdsdsds" android:singleLine="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="#fff7f262" android:id="@id/userSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="送了一个掌声称号" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.android.dazhihui.ui.widget.CircleImageView android:id="@id/circleImageView" android:layout_width="54.0dip" android:layout_height="fill_parent" android:src="#ffffffff" dzh:civ_border_width="1.0px" dzh:civ_border_color="#ffffffff" />
+        </RelativeLayout>
+        <ImageView android:id="@id/flowerImg" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_marginLeft="-50.0dip" android:src="@drawable/applause" android:layout_toRightOf="@id/leftContent" />
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="#ff33cccc" android:gravity="center" android:id="@id/beishu" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="X34" android:layout_toRightOf="@id/flowerImg" />
+    </RelativeLayout>
+</LinearLayout>

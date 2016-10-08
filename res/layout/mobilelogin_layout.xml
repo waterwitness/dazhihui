@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/addTitle" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/verify_mobile" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/addTitle">
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/ml_tx1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="请输入手机号码" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/ml_tx1">
+            <EditText android:textSize="@dimen/font_medium" android:id="@id/ml_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="11" android:numeric="integer" android:layout_toLeftOf="@id/ml_gap" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                <requestFocus />
+            </EditText>
+            <View android:id="@id/ml_gap" android:layout_width="20.0dip" android:layout_height="0.0dip" android:layout_toLeftOf="@id/ll_sendpassword" />
+            <LinearLayout android:id="@id/ll_sendpassword" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/ml_phone" android:layout_alignBottom="@id/ml_phone" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:gravity="center" android:layout_gravity="center" android:id="@id/ml_sendpassword" android:background="@drawable/btn_white_white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="获取验证码" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/ml_tx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="请输入验证码" android:layout_below="@id/layout1" android:layout_alignParentLeft="true" />
+        <LinearLayout android:id="@id/layout2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ml_tx2" android:layout_alignLeft="@id/ml_tx2">
+            <EditText android:textSize="@dimen/font_medium" android:id="@id/ml_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="" android:numeric="integer" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/btnlayout" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/layout2" android:layout_centerVertical="true">
+            <Button android:textSize="@dimen/font_medium" android:textColor="@color/darkgray2" android:id="@id/ml_btn" android:background="@drawable/btn_white_white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="验证" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/phoneNumberL" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" android:layout_below="@id/btnlayout">
+            <TextView android:textSize="@dimen/font_smaller1" android:textColor="@color/back_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="如接收不到验证码，请拨打" />
+            <TextView android:textSize="@dimen/font_smaller1" android:textColor="#ff3272f1" android:id="@id/phoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 4008881551" />
+            <TextView android:textSize="@dimen/font_smaller1" android:textColor="@color/back_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-7-2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/disclaimer" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/addTitle">
+        <TextView android:id="@id/text1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="      您已进入证券公司交易系统。您理解并同意，大智慧仅为信息发布平台，对于您在该系统内进行的资产查询、证券买卖等所有操作行为，大智慧公司不承担任何责任。" />
+        <TextView android:id="@id/text2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="      大智慧特别提醒您应该妥善保管您的账号和密码。当您不再使用本服务时，请完全退出。因您保管不善而可能导致的证券账户资金信息泄露及资金损失等事故，责任由您自行承担。" android:layout_below="@id/text1" />
+        <Button android:id="@id/haveReade" android:background="@drawable/confrim_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="阅读并同意" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

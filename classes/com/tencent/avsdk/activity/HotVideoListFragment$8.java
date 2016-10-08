@@ -1,0 +1,37 @@
+package com.tencent.avsdk.activity;
+
+import com.android.dazhihui.ui.widget.dzhrefresh.BaseRefreshView;
+import com.android.dazhihui.ui.widget.dzhrefresh.LoadAndRefreshView;
+import com.android.dazhihui.ui.widget.dzhrefresh.b;
+
+class HotVideoListFragment$8
+  implements b
+{
+  HotVideoListFragment$8(HotVideoListFragment paramHotVideoListFragment) {}
+  
+  public void onFooterLoad(BaseRefreshView paramBaseRefreshView, int paramInt1, int paramInt2)
+  {
+    if (HotVideoListFragment.access$1000(this.this$0) == null) {
+      this.this$0.initConfig();
+    }
+    if (HotVideoListFragment.access$200(this.this$0) != null)
+    {
+      paramBaseRefreshView = (IlvbRoomChildFragment)HotVideoListFragment.access$200(this.this$0).getCurrentFrament();
+      if (paramBaseRefreshView != null) {
+        paramBaseRefreshView.sendMoreRoomList();
+      }
+    }
+    if (HotVideoListFragment.access$100(this.this$0) != null)
+    {
+      HotVideoListFragment.access$100(this.this$0).removeCallbacks(HotVideoListFragment.access$1100(this.this$0));
+      HotVideoListFragment.access$002(this.this$0, false);
+      HotVideoListFragment.access$100(this.this$0).postDelayed(HotVideoListFragment.access$1100(this.this$0), 5000L);
+    }
+  }
+}
+
+
+/* Location:              E:\apk\dazhihui2\classes-dex2jar.jar!\com\tencent\avsdk\activity\HotVideoListFragment$8.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

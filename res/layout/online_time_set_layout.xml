@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/online_set_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:layout_marginRight="@dimen/dip10">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="#ff9a9a9a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保持在线" />
+        </LinearLayout>
+        <View android:background="#ffb5b5b5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/dip5" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/radio_group_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:weightSum="2.0">
+            <LinearLayout android:gravity="center" android:id="@id/ll_today" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keeplogining_selected" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_today" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="当日" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@id/ll_days" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keeplogining_unselected" />
+                <TextView android:textSize="@dimen/font_medium" android:textColor="#ff9a9a9a" android:gravity="center" android:id="@id/tv_days" android:paddingLeft="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="多日" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font12" android:textColor="#ff333333" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:text="退回后台或屏幕，重新回到软件，为您自动登录交易" />
+        <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="#ff9a9a9a" android:gravity="center_vertical" android:id="@id/mintext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="#ff9a9a9a" android:gravity="center_vertical" android:id="@id/maxtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="180" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/online_set_Seekbar" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="2.0dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/online_seekbar_bg" android:thumb="@drawable/trade_seekbar_icon" android:layout_toLeftOf="@id/maxtext" android:layout_toRightOf="@id/mintext" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingTop="@dimen/dip10" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_medium" android:textColor="#ff333333" android:id="@id/timetext" android:paddingLeft="@dimen/dip3" android:paddingRight="@dimen/dip3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="180" />
+            <TextView android:textSize="@dimen/font_medium" android:textColor="#ff9a9a9a" android:id="@id/tv_dw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分钟" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/font_small" android:textColor="@color/white_color" android:layout_gravity="center_horizontal" android:id="@id/online_confirm_bt" android:background="@drawable/btn_blue_blue" android:paddingTop="@dimen/dip8" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip20" android:layout_marginBottom="@dimen/dip20" android:text="@string/confirm" />
+    </LinearLayout>
+</LinearLayout>

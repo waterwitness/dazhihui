@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dialog" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="218.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="center" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="特别提示" />
+        <View android:background="#ff2c8ce7" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text=" 1、预估可能分拆数量仅供参考" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/split_Dialog_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:lineSpacingExtra="5.0dip" />
+        <Button android:textSize="18.0sp" android:textColor="#ffffffff" android:id="@id/chaifen_isconfirm" android:background="#ff2c8ce7" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="再次确定" />
+    </LinearLayout>
+</RelativeLayout>

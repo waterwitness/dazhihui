@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="true"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="200" apk:drawable="@drawable/fireworks_flower1" />
+    <item apk:duration="200" apk:drawable="@drawable/fireworks_flower2" />
+    <item apk:duration="200" apk:drawable="@drawable/fireworks_flower3" />
+    <item apk:duration="200" apk:drawable="@drawable/fireworks_flower4" />
+</animation-list>

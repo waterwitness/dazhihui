@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/item" android:background="@drawable/theme_black_selfstock_item_bg" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/item_lock" android:layout_width="75.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/theme_black_stock_name" android:gravity="bottom|center" android:id="@id/column_stock_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/theme_black_stock_code" android:gravity="center|top" android:id="@id/column_stock_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/arrow_left" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_src" android:layout_toRightOf="@id/item_lock" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/arrow_right" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right_src" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <FrameLayout android:textSize="15.0dip" android:gravity="center_vertical" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/arrow_right" android:layout_toRightOf="@id/arrow_left">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item_content" android:layout_width="wrap_content" android:layout_height="40.0dip" />
+    </FrameLayout>
+</RelativeLayout>

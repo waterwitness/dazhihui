@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_normal" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="@dimen/dip100" android:layout_height="@dimen/dip100" android:src="@drawable/about_icon" android:scaleType="centerInside" android:contentDescription="@string/desc" />
+                <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_gravity="bottom|center" android:id="@id/versionTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip90" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/newGuide" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/newGuide" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/riskNote" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/fxts" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/reboNote" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/rebo_note" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/feedback" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/yjfk" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="VersionCode" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/wo_text_color" android:id="@id/text_version_code" android:text="@string/has_newest_version" style="@style/left_text_tip" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/check_new_version" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/home_menu_update" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/img_new_version" android:visibility="gone" android:src="@drawable/messagewarn" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/desc" style="@style/left_new_tip" />
+                    <TextView android:textColor="@color/wo_text_color" android:id="@id/textView_version_note" android:visibility="gone" android:text="@string/has_newest_version" style="@style/left_text_tip" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/hotImg" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/kfrx" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:src="@drawable/tel_icon" android:scaleType="centerInside" android:layout_toLeftOf="@id/kfrx_phonenum" android:layout_centerVertical="true" android:contentDescription="@string/desc" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:gravity="center_vertical" android:id="@id/kfrx_phonenum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:text="@string/phonenumber" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:id="@id/coopImg" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/dip50">
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip10" android:text="@string/hzrx" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="@dimen/dip30" android:layout_height="@dimen/dip30" android:src="@drawable/tel_icon" android:scaleType="centerInside" android:layout_toLeftOf="@id/hzrx_phonenum" android:layout_centerVertical="true" android:contentDescription="@string/desc" />
+                    <TextView android:textSize="@dimen/font16" android:textColor="@color/wo_text_color" android:gravity="center_vertical" android:id="@id/hzrx_phonenum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:text="@string/hzrx_phonenum" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/copyright" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip20">
+                <TextView android:textColor="@color/wo_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/company" />
+                <TextView android:textColor="@color/wo_text_color" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/copyright" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font16" android:textColorLink="@color/wap" android:autoLink="web" android:layout_gravity="center_horizontal" android:padding="@dimen/dip10" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/aboutWap" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

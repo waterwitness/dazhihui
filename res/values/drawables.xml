@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="barcolor">false</item>
+    <item type="drawable" name="dfpx_arrow">false</item>
+    <item type="drawable" name="kwlopen_record_back_selector">false</item>
+    <item type="drawable" name="kwlopen_record_start_selector">false</item>
+    <item type="drawable" name="kwlopen_record_stop_selector">false</item>
+    <item type="drawable" name="my_custom_tab_indicator">false</item>
+    <item type="drawable" name="rarrow">false</item>
+    <item type="drawable" name="zfpx_arrow">false</item>
+    <item type="drawable" name="color_normal">#ffe4612e</item>
+    <item type="drawable" name="color_pressed">#ffb64e25</item>
+    <item type="drawable" name="kwlopen_video_bg">#ff6699cc</item>
+    <item type="drawable" name="layout_backgroud">#ff000000</item>
+    <item type="drawable" name="line_background">#ff161823</item>
+    <item type="drawable" name="normal">#ffffffff</item>
+    <item type="drawable" name="pressed">#ffefefef</item>
+    <item type="drawable" name="trans">#ff7b7b7b</item>
+</resources>

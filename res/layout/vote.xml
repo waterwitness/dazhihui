@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/res/com.android.dazhihui">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/mainmenu_upbar" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dip10" android:paddingBottom="@dimen/dip10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ljtp_no" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/font_small" android:textColor="@color/darkgray2" android:id="@id/btn_ljtp_no" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="非累计投票议案" />
+            <ImageView android:id="@id/img_ljtp_no" android:background="@drawable/text_bg_selected_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_ljtp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textSize="@dimen/font_small" android:textColor="@color/darkgray2" android:id="@id/btn_ljtp" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="累计投票议案" />
+            <ImageView android:id="@id/img_ljtp" android:background="@drawable/text_bg_selected_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip20" android:layout_marginRight="@dimen/dip20" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/view_ljya_no" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:id="@id/view_ljya" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

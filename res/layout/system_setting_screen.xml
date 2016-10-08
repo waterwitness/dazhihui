@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wo_news_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dzh="http://schemas.android.com/apk/res-auto">
+    <com.android.dazhihui.ui.widget.DzhHeader android:id="@id/customHeader" android:background="@drawable/title_bg" android:layout_width="fill_parent" android:layout_height="@dimen/title_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/channelView" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/item_dzh_hotvideo" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="自选股页面显示推荐主播" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/items_hotvideo" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:button="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/item_dzh_stock_switch" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="分时页面显示推荐主播" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/items_stock_cb" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:checked="true" android:button="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/item_dzh_lottery" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/home_menu_free_stock_syn" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/items_syn" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:button="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/screenOn" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/screenOn" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:button="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/switch_theme" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="切换主题" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/theme_white_stock_code" android:layout_gravity="center_vertical" android:id="@id/current_skin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="仅在WIFI环境展示用户头像" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/switch_user_avatar" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:button="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/item_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/xxdlPush" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <CheckBox android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/xxdlPushSwitch" android:background="@drawable/setting_switch" android:layout_width="55.0dip" android:layout_height="35.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="10.0dip" android:button="@null" />
+                    </LinearLayout>
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:gravity="center_vertical" android:id="@id/refreshSet" android:background="@drawable/item_bg" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/refreshSet" />
+                    <View android:background="@color/wo_item_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:gravity="center_vertical" android:id="@id/dataClear" android:background="@drawable/item_bg" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/dataClear" />
+                    <View android:id="@id/feedback_line" android:background="@color/wo_item_line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="20.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:gravity="center_vertical" android:id="@id/feedback" android:background="@drawable/item_bg" android:paddingLeft="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="意见反馈" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/wo_item_border" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="30.0dip">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/about_dzh" android:background="@drawable/item_bg" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="关于" android:drawablePadding="15.0dip" />
+                        <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:layout_gravity="center_vertical" android:id="@id/vesion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" />
+                        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/icon_plate_more" android:contentDescription="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/reLoginView" android:background="@drawable/wo_item_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="16.0sp" android:textColor="@color/wo_text_color" android:gravity="center" android:id="@id/reLogin" android:background="@drawable/item_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="1.0px" android:layout_marginBottom="1.0px" android:text="@string/exitLogin" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <com.android.dazhihui.ui.widget.PopupMenu android:gravity="bottom" android:id="@id/popup_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/more_text_color" android:gravity="center" android:id="@id/black_skin" android:background="@drawable/browser_list_item_select_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="黑色主题" android:drawableBottom="@drawable/browser_list_divider" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/more_text_color" android:gravity="center" android:id="@id/white_skin" android:background="@drawable/browser_list_item_select_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="白色主题" android:drawableBottom="@drawable/browser_list_divider" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/more_text_color" android:gravity="center" android:id="@id/cancel_set_skin" android:background="@drawable/browser_list_item_select_color" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="0.0dip" android:text="取消" />
+        </com.android.dazhihui.ui.widget.PopupMenu>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/theme_black_market_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.dazhihui.ui.widget.adv.AdvertView android:id="@id/market_top_advert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <RelativeLayout android:id="@id/goto_hk" android:background="@color/theme_black_market_section_label_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_below="@id/market_top_advert">
+        <ImageView android:id="@id/goto_hk_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/us_hk_shang" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/goto_hk_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="港股" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hk" android:scaleType="centerInside" android:layout_toLeftOf="@id/goto_hk_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/is_us" android:background="@color/theme_black_market_section_label_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_below="@id/goto_hk">
+        <View android:id="@id/divider" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/is_us_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/us_hk_xia" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/theme_black_stock_name" android:gravity="center" android:id="@id/is_us_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="美股" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/us" android:scaleType="centerInside" android:layout_toLeftOf="@id/is_us_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/goto_us" android:background="@color/theme_black_market_section_label_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="32.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/goto_us_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/us_hk_shang" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/theme_black_stock_name" android:gravity="center" android:id="@id/goto_us_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="美股" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/us" android:scaleType="centerInside" android:layout_toLeftOf="@id/goto_us_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.android.dazhihui.ui.widget.dzhrefresh.DzhRefreshListView android:id="@id/dzh_listview" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:drawSelectorOnTop="false" android:cacheColorHint="#00000000" android:divider="@drawable/theme_black_list_divider_line" android:dividerHeight="1.0px" android:layout_above="@id/goto_us" android:layout_below="@id/is_us" />
+</RelativeLayout>

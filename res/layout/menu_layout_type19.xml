@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_ty191L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/menu_ty191" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zixun" style="@style/item_menustyle_new" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffff9c00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/image_dilei_01" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img191" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="10.0dip" android:src="@drawable/hot_item" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_ty192L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/menu_ty192" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dadan" style="@style/item_menustyle_new" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffff9c00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/image_dilei_02" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img192" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="10.0dip" android:src="@drawable/hot_item" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_ty193L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/menu_ty193" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hudong" style="@style/item_menustyle_new" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffff9c00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/image_dilei_03" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img193" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="10.0dip" android:src="@drawable/hot_item" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/menu_ty194L" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/menu_ty194" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bidu" style="@style/item_menustyle_new" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffff9c00" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/image_dilei_04" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img194" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="10.0dip" android:src="@drawable/hot_item" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+    <View android:background="@color/gray" android:layout_width="@dimen/dipHalf" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:id="@id/menu_ty195L" android:background="@color/stock_more_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/menu_ty195" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more" style="@style/item_menustyle_new" />
+        <ImageView android:layout_gravity="center|right|top" android:id="@id/menu_img195" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/red_item_normal" android:scaleType="fitCenter" android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</LinearLayout>

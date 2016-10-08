@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:dzh="http://schemas.android.com/apk/lib/com.android.dazhihui">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_trade_entrust" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/trade_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/dip5">
+            <LinearLayout android:orientation="vertical" android:id="@id/content1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_alignParentLeft="true">
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="@dimen/font_medium" android:layout_gravity="center|left" android:id="@id/et_code" android:background="@drawable/wt_et_frame_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="证券代码" android:singleLine="true" android:maxLength="6" android:numeric="integer" />
+                    <TextView android:textSize="@dimen/font_medium" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_name" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="证券名称" android:layout_alignBaseline="@id/et_code" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+                    <EditText android:textSize="@dimen/font_medium" android:layout_gravity="center_vertical" android:id="@id/et_price" android:background="@drawable/wt_et_frame_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="100.0dip" android:text="" android:hint="委托价格" android:singleLine="true" android:numeric="decimal" android:layout_toLeftOf="@id/img_price_up" android:layout_toRightOf="@id/img_price_down" android:inputType="numberDecimal" />
+                    <ImageView android:id="@id/img_price_down" android:background="@drawable/wt_price_down_blue" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/et_price" android:layout_alignBottom="@id/et_price" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/img_price_up" android:background="@drawable/wt_price_up_blue" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/et_price" android:layout_alignBottom="@id/et_price" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dip10">
+                    <LinearLayout android:id="@id/ll_dt" android:background="@drawable/xc_buy" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跌停:" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/green" android:layout_gravity="center|left" android:id="@id/tv_dt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/ll_zt" android:background="@drawable/xc_sell" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="涨停:" />
+                        <TextView android:textSize="@dimen/font_small" android:textColor="@color/red" android:layout_gravity="center|left" android:id="@id/tv_zt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="@dimen/font_medium" android:layout_gravity="center|left" android:id="@id/et_num" android:background="@drawable/wt_et_frame_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="\ 999999999" android:hint="买入数量" android:singleLine="true" android:maxLength="9" android:numeric="integer" />
+                    <com.android.dazhihui.ui.delegate.screen.ggt.CustomTextView android:textColor="@color/gray" android:gravity="center|right" android:id="@id/tv_ava_num" android:paddingRight="@dimen/dip5" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="可买0股" android:singleLine="true" android:layout_alignBaseline="@id/et_num" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/black" android:gravity="center|left" android:id="@id/tv_tormb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dip10" android:text="￥168.00" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/opearte_btns" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="@dimen/font_medium" android:textColor="@drawable/wt_button_buy_text_color" android:id="@id/btn_entrust" android:background="@drawable/wt_button_buy" android:paddingLeft="@dimen/dip20" android:paddingTop="@dimen/dip8" android:paddingRight="@dimen/dip20" android:paddingBottom="@dimen/dip8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mairu" style="@style/title_button_normal" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/content2" android:background="@drawable/wt_frame_blue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dip7" android:layout_toRightOf="@id/content1" android:layout_alignTop="@id/content1" android:layout_alignBottom="@id/content1">
+                <LinearLayout android:orientation="vertical" android:id="@id/five_buyorsell" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="10.0">
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sall_5" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="卖5" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_sell5_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="12.36" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_sell5_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="100000" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/sall_4" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="卖4" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_sell4_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="\ 111111111" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_sell4_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="100000" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/sall_3" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="卖3" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_sell3_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_sell3_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/sall_2" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="卖2" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_sell2_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_sell2_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/sall_1" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="卖1" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_sell1_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_sell1_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:id="@id/buy_1" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="买1" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_buy1_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_buy1_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/buy_2" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="买2" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_buy2_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_buy2_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/buy_3" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="买3" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_buy3_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_buy3_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/buy_4" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="买4" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_buy4_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_buy4_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/buy_5" android:background="@drawable/xc_buy" android:paddingRight="@dimen/dip10" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="买5" android:layout_weight="1.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:gravity="center|right" android:id="@id/tv_buy5_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                        <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/black" android:gravity="center|right" android:id="@id/tv_buy5_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="2.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <com.android.dazhihui.ui.widget.TableLayoutGroup android:id="@id/ll_old_table" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" dzh:headdrawable="@android:color/white" dzh:selectdrawable="@color/lightblue" dzh:scroll="false" dzh:title="@string/gpmc" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_table" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="left" android:id="@id/tv_1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="名称/市值" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="盈亏/收益率" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="持仓/可用" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font_smallest" android:textColor="@color/gray" android:gravity="right" android:id="@id/tv_4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="成本/现价" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/img_nothing" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dip30" android:layout_marginTop="@dimen/dip10" android:layout_marginRight="@dimen/dip30" android:layout_marginBottom="@dimen/dip10" android:src="@drawable/norecord" />
+                <ListView android:id="@id/lv_cc" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="#ffe5e5e5" android:dividerHeight="1.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/keyboard_quantity_layout" />
+    </FrameLayout>
+</RelativeLayout>

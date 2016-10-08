@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/bbs_menu_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/bbs_menu_group" android:background="#fff7f9fb" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#ffc3c3c5" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bbs_menu_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:minHeight="55.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/menu_dianzan_iv" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/bbs_dianzan_no" android:scaleType="centerInside" />
+            <ImageView android:layout_gravity="center" android:id="@id/menu_biaoqing_iv" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/biaoqing" android:scaleType="centerInside" />
+            <RelativeLayout android:layout_gravity="center" android:id="@id/jianpan_and_add_menu_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+                <ImageView android:id="@id/menu_jianpan_iv" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/bbs_jianpan" android:scaleType="centerInside" />
+                <ImageView android:id="@id/menu_add_iv" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/guh_add_menu_more" android:scaleType="centerInside" />
+            </RelativeLayout>
+            <EditText android:textSize="15.0sp" android:textColor="#ff000000" android:textColorHint="#ffc3c3c3" android:layout_gravity="center_vertical" android:id="@id/comment_edt" android:background="@drawable/bbs_comment_view_bg" android:paddingLeft="10.0dip" android:paddingRight="5.0dip" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="8.0dip" android:maxHeight="100.0dip" android:hint="发表话题" android:maxLength="140" android:layout_weight="1.0" android:textCursorDrawable="@drawable/color_cursor" />
+            <Button android:textColor="#ff797979" android:id="@id/comment_send" android:background="@drawable/bbs_no_comment_btn_bg" android:layout_width="75.0dip" android:layout_height="35.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="发表" />
+        </LinearLayout>
+        <include layout="@layout/bbs_phrase_list" />
+        <include layout="@layout/send_msg_tool" />
+    </LinearLayout>
+</LinearLayout>
